@@ -52,10 +52,11 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# HTML pages - short cache with revalidation
+# HTML pages - always revalidate with CDN
 [[headers]]
   for = "/*"
   [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin-when-cross-origin"
