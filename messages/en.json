@@ -363,6 +363,26 @@
     "subtitle": "Book a personalized demo and see how DQ View can simplify your next data migration, improve data quality, and accelerate your transformation program.",
     "scheduleDemo": "Schedule Your Demo"
   },
+  "globalPresence": {
+    "badge": "GLOBAL PRESENCE",
+    "title1": "Operating across",
+    "title2": "6 countries worldwide",
+    "subtitle": "With offices spanning Europe, the Americas, Asia, and Australia, we deliver follow-the-sun support for enterprise transformation programs.",
+    "hqLabel": "Headquarters",
+    "offices": {
+      "almere": { "city": "Almere", "country": "Netherlands", "role": "Headquarters" },
+      "myrtleBeach": { "city": "Myrtle Beach, SC", "country": "United States", "role": "Americas" },
+      "leicester": { "city": "Leicester", "country": "United Kingdom", "role": "UK & Ireland" },
+      "walldorf": { "city": "Walldorf", "country": "Germany", "role": "DACH Region" },
+      "chennai": { "city": "Chennai", "country": "India", "role": "Engineering Hub" },
+      "blacktown": { "city": "Blacktown, NSW", "country": "Australia", "role": "APAC" }
+    },
+    "stats": {
+      "countries": "Countries",
+      "employees": "Employees",
+      "support": "Follow-the-Sun Support"
+    }
+  },
   "footer": {
     "description": "Unified data quality, ETL, and scrambling platform powered by Agentic AI. Built for enterprise data transformation programs.",
     "platform": "Platform",

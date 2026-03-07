@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import Insights from "@/components/Insights";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import GlobalPresence from "@/components/GlobalPresence";
 import UseCaseShowcase from "@/components/UseCaseShowcase";
 import Comparison from "@/components/Comparison";
 import { getBlogPosts, getEvents } from "@/lib/content";
@@ -41,6 +42,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <Testimonials />
       <Insights blogs={blogs} events={getEvents()} />
       <CTA />
+      <GlobalPresence />
       <Footer />
     </>
   );

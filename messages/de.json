@@ -363,6 +363,26 @@
     "subtitle": "Buchen Sie eine persönliche Demo und erfahren Sie, wie DQ View Ihre nächste Datenmigration vereinfachen, die Datenqualität verbessern und Ihr Transformationsprogramm beschleunigen kann.",
     "scheduleDemo": "Demo vereinbaren"
   },
+  "globalPresence": {
+    "badge": "GLOBALE PRÄSENZ",
+    "title1": "Aktiv in",
+    "title2": "6 Ländern weltweit",
+    "subtitle": "Mit Büros in Europa, Amerika, Asien und Australien bieten wir Follow-the-Sun-Support für Enterprise-Transformationsprogramme.",
+    "hqLabel": "Hauptsitz",
+    "offices": {
+      "almere": { "city": "Almere", "country": "Niederlande", "role": "Hauptsitz" },
+      "myrtleBeach": { "city": "Myrtle Beach, SC", "country": "Vereinigte Staaten", "role": "Amerika" },
+      "leicester": { "city": "Leicester", "country": "Vereinigtes Königreich", "role": "UK & Irland" },
+      "walldorf": { "city": "Walldorf", "country": "Deutschland", "role": "DACH-Region" },
+      "chennai": { "city": "Chennai", "country": "Indien", "role": "Engineering Hub" },
+      "blacktown": { "city": "Blacktown, NSW", "country": "Australien", "role": "APAC" }
+    },
+    "stats": {
+      "countries": "Länder",
+      "employees": "Mitarbeiter",
+      "support": "Follow-the-Sun-Support"
+    }
+  },
   "footer": {
     "description": "Einheitliche Plattform für Datenqualität, ETL und Scrambling, angetrieben von Agentic AI. Entwickelt für Enterprise-Datentransformationsprogramme.",
     "platform": "Plattform",

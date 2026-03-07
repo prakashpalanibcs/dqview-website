@@ -363,6 +363,26 @@
     "subtitle": "Vraag een persoonlijke demo aan en ontdek hoe DQ View uw volgende datamigratie kan vereenvoudigen, de datakwaliteit kan verbeteren en uw transformatieprogramma kan versnellen.",
     "scheduleDemo": "Plan uw demo"
   },
+  "globalPresence": {
+    "badge": "WERELDWIJDE AANWEZIGHEID",
+    "title1": "Actief in",
+    "title2": "6 landen wereldwijd",
+    "subtitle": "Met kantoren in Europa, Amerika, Azië en Australië bieden wij follow-the-sun-ondersteuning voor enterprise-transformatieprogramma's.",
+    "hqLabel": "Hoofdkantoor",
+    "offices": {
+      "almere": { "city": "Almere", "country": "Nederland", "role": "Hoofdkantoor" },
+      "myrtleBeach": { "city": "Myrtle Beach, SC", "country": "Verenigde Staten", "role": "Amerika" },
+      "leicester": { "city": "Leicester", "country": "Verenigd Koninkrijk", "role": "VK & Ierland" },
+      "walldorf": { "city": "Walldorf", "country": "Duitsland", "role": "DACH-regio" },
+      "chennai": { "city": "Chennai", "country": "India", "role": "Engineering Hub" },
+      "blacktown": { "city": "Blacktown, NSW", "country": "Australië", "role": "APAC" }
+    },
+    "stats": {
+      "countries": "Landen",
+      "employees": "Medewerkers",
+      "support": "Follow-the-Sun-ondersteuning"
+    }
+  },
   "footer": {
     "description": "Uniform platform voor datakwaliteit, ETL en scrambling, aangedreven door Agentic AI. Gebouwd voor enterprise-datatransformatieprogramma's.",
     "platform": "Platform",
