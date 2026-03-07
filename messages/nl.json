@@ -1,0 +1,373 @@
+{
+  "metadata": {
+    "title": "DQ View | Uniform platform voor datakwaliteit, ETL & scrambling",
+    "description": "Eén platform voor datakwaliteitsprofiling, ETL-transformatie en data-scrambling. Vereenvoudig SAP S/4HANA-migraties met AI-gestuurde data-intelligentie."
+  },
+  "navbar": {
+    "platform": "Platform",
+    "solutions": "Oplossingen",
+    "howItWorks": "Hoe het werkt",
+    "resources": "Kenniscentrum",
+    "bookDemo": "Demo aanvragen",
+    "productLinks": {
+      "dataQualityProfiling": { "title": "Datakwaliteitsprofiling", "desc": "Geautomatiseerde controles op volledigheid, nauwkeurigheid & consistentie" },
+      "etlPipeline": { "title": "ETL Pipeline", "desc": "Extraheren, transformeren & laden met slimme regels" },
+      "dataScrambling": { "title": "Data Scrambling", "desc": "GDPR- & HIPAA-conforme datamaskering" },
+      "agenticAi": { "title": "Agentic AI", "desc": "Ingebouwde AI die automatisch problemen detecteert & oplost" },
+      "integrations": { "title": "Integraties", "desc": "SAP, Oracle, SQL Server & platte bestanden" },
+      "dataStaging": { "title": "Data Staging", "desc": "Ingebouwde staging met validatie vóór het laden" }
+    },
+    "resourceLinks": {
+      "caseStudies": { "title": "Klantverhalen", "desc": "Succesverhalen van klanten" },
+      "blog": { "title": "Blog", "desc": "Inzichten & artikelen" },
+      "events": { "title": "Evenementen", "desc": "Ontmoet ons op aankomende evenementen" }
+    },
+    "mobileResources": "Kenniscentrum"
+  },
+  "hero": {
+    "badge": "Nu met ingebouwde Agentic AI",
+    "headline1": "Eén platform.",
+    "headline2": "Elke datafase.",
+    "subheadline": "DQ View verenigt datakwaliteitsprofiling, ETL-transformatie en data-scrambling in één AI-gestuurd platform. Vereenvoudig uw SAP S/4HANA-migraties en elimineer gereedschapswildgroei.",
+    "bookDemo": "Demo aanvragen",
+    "seeHowItWorks": "Bekijk hoe het werkt",
+    "stats": {
+      "fasterResolution": { "value": "3x", "label": "Snellere probleemoplossing" },
+      "dataErrors": { "value": "70%", "label": "Minder datafouten" },
+      "migrationOptimized": { "value": "50%", "label": "Migratie geoptimaliseerd" },
+      "auditReady": { "value": "100%", "label": "Auditgereed & compliant" }
+    },
+    "dashboardTitle": "DQ View — Datamigratie-pipeline",
+    "pipeline": {
+      "extract": "Extraheren",
+      "profile": "Profileren",
+      "validate": "Valideren",
+      "transform": "Transformeren",
+      "load": "Laden"
+    },
+    "metrics": {
+      "recordsProcessed": { "label": "Verwerkte records", "value": "1,247,832", "change": "+12.4%" },
+      "qualityScore": { "label": "Kwaliteitsscore", "value": "98.7%", "change": "+2.1%" },
+      "errorsDetected": { "label": "Fouten gedetecteerd", "value": "342", "change": "-67%" },
+      "fieldsScrambled": { "label": "Velden gescrambled", "value": "89", "change": "100%" }
+    }
+  },
+  "trustBar": {
+    "trustedBy": "Vertrouwd door ondernemingen wereldwijd",
+    "worldsBrewer": "'s Werelds #2 brouwer",
+    "integratesWith": "Integreert met uw data-ecosysteem"
+  },
+  "problemSolution": {
+    "badge": "DE UITDAGING",
+    "title1": "Datamigratie is",
+    "titleHighlight": "het #1 risico",
+    "title2": "in S/4HANA-programma's",
+    "subtitle": "Organisaties worstelen met gefragmenteerde tools, handmatige processen en slechte datakwaliteit tijdens greenfield- en bluefield-implementaties.",
+    "withoutTitle": "Zonder DQ View",
+    "withoutSubtitle": "De huidige realiteit",
+    "withTitle": "Met DQ View",
+    "withSubtitle": "De nieuwe standaard",
+    "problems": {
+      "p1": "Meerdere losgekoppelde tools voor profiling, ETL en scrambling",
+      "p2": "Handmatige Excel-gebaseerde profiling die kritieke dataproblemen mist",
+      "p3": "Maanden vertraging tijdens datamigratie door slechte kwaliteit",
+      "p4": "Productiedata niet bruikbaar in testomgevingen zonder scrambling",
+      "p5": "Datafouten die pas tijdens de go-live van de migratie worden ontdekt, met storingen tot gevolg"
+    },
+    "solutions": {
+      "s1": "Eén uniform platform vervangt 4+ afzonderlijke tools",
+      "s2": "Geautomatiseerde profiling met aanpasbare regels",
+      "s3": "Verkort de migratiedoorlooptijd met 50%+",
+      "s4": "Conforme data-scrambling voor testomgevingen",
+      "s5": "Detecteer en los dataproblemen op voordat ze storingen veroorzaken"
+    }
+  },
+  "features": {
+    "badge": "UNIFORM PLATFORM",
+    "title1": "Alles wat u nodig heeft.",
+    "title2": "Eén platform.",
+    "subtitle": "Vervang uw gefragmenteerde gereedschapsketen door één intelligent platform dat datakwaliteit, ETL en scrambling afhandelt.",
+    "dataQualityProfiling": {
+      "title": "Datakwaliteitsprofiling",
+      "description": "Kant-en-klare profiling met aanpasbare regels voor volledigheid, nauwkeurigheid en consistentie. Detecteer afwijkingen en drift automatisch.",
+      "h1": "Aanpasbare profilingregels",
+      "h2": "Afwijkings- & driftdetectie",
+      "h3": "Realtime scorecards",
+      "h4": "Rapportage van ongeldige data"
+    },
+    "etlPipeline": {
+      "title": "ETL Pipeline Engine",
+      "description": "Volledige en incrementele extractie met slimme regels. Kant-en-klare en zelfbouw-transformatiefuncties met geoptimaliseerd laden.",
+      "h1": "Volledige & incrementele ladingen",
+      "h2": "Zelfbouw-transformaties",
+      "h3": "Datavalidatie vóór laden",
+      "h4": "Overschrijf- & toevoegopties"
+    },
+    "dataScrambling": {
+      "title": "Data Scrambling",
+      "description": "Scramble productiedata voor niet-productieomgevingen. GDPR-, HIPAA- en SOX-conform met controle op veldniveau.",
+      "h1": "Voorgedefinieerde scramblingprofielen",
+      "h2": "Controle op veldniveau",
+      "h3": "Uitvoering in testmodus"
+    },
+    "agenticAi": {
+      "title": "Agentic AI",
+      "description": "Ingebouwde AI-agents die automatisch dataproblemen detecteren, transformaties voorstellen en slimme beslissingen nemen in de gehele pipeline.",
+      "h1": "Automatische probleemdetectie",
+      "h2": "Slimme beslissingen",
+      "h3": "Continu leren"
+    },
+    "realTimeMonitoring": {
+      "title": "Realtime monitoring",
+      "description": "Continue monitoring-scorecards en uitvoeringsregistratie in elke fase van uw datapipeline.",
+      "h1": "Live scorecards",
+      "h2": "Uitvoeringsmonitoring",
+      "h3": "Wijzigingslogboeken & audittrails"
+    },
+    "complianceAudit": {
+      "title": "Compliance & audit",
+      "description": "100% auditgereedheid met volledige wijzigingslogboeken, audittrails en compliance-handhaving ingebouwd in elke bewerking.",
+      "h1": "Volledige audittrails",
+      "h2": "Wijzigingslogboeken",
+      "h3": "GDPR/HIPAA/SOX-gereed"
+    }
+  },
+  "howItWorks": {
+    "badge": "VEREENVOUDIGDE PIPELINE",
+    "title1": "Van bron naar doel.",
+    "title2": "Vereenvoudigd.",
+    "subtitle": "Wat voorheen 4 verschillende tools en maanden handmatig werk kostte, gebeurt nu in één gestroomlijnde workflow.",
+    "steps": {
+      "s1": {
+        "title": "Verbinden & extraheren",
+        "description": "Maak verbinding met uw SAP ECC, Oracle, SQL Server of een andere relationele database. Definieer extractieregels met voorwaarden, filters en incrementele opties. DQ View verwerkt volledige en delta-ladingen automatisch.",
+        "d1": "Regelgebaseerde extractie",
+        "d2": "Volledige & incrementele ladingen",
+        "d3": "Ondersteuning van meerdere bronnen"
+      },
+      "s2": {
+        "title": "Profileren & valideren",
+        "description": "Profileer uw data automatisch op volledigheid, nauwkeurigheid en consistentie. Detecteer duplicaten, ontbrekende verplichte velden en afwijkingen voordat ze migratieproblemen veroorzaken.",
+        "d1": "Automatische duplicaatdetectie",
+        "d2": "Controles op verplichte velden",
+        "d3": "Afwijkingsdetectie"
+      },
+      "s3": {
+        "title": "Transformeren & scramblen",
+        "description": "Pas transformatie-mappings toe voor bedrijfscodes, organisatiestructuren en rekeningen. Scramble gevoelige data voor testomgevingen met behoud van referentiële integriteit.",
+        "d1": "Slimme veldmapping",
+        "d2": "Data-scrambling",
+        "d3": "Referentiële integriteit"
+      },
+      "s4": {
+        "title": "Valideren & laden",
+        "description": "Valideer getransformeerde data tegen de regels van het doelsysteem voordat u laadt. Stage, controleer en laad met vertrouwen — met volledige audittrails voor elk record.",
+        "d1": "Validatie vóór laden",
+        "d2": "Staging & controle",
+        "d3": "Volledige audittrails"
+      }
+    }
+  },
+  "whyDqView": {
+    "badge": "WAAROM DQ VIEW",
+    "title1": "Gebouwd voor de programma's",
+    "title2": "die er het meest toe doen",
+    "subtitle": "DQ View is speciaal ontwikkeld voor enterprise-transformatieprogramma's waarin datamigratie de meest kritieke en complexe werkstroom is.",
+    "reasons": {
+      "r1": {
+        "title": "Eén platform, geen vijf",
+        "description": "Vervang afzonderlijke tools voor extractie, profiling, transformatie, scrambling en laden door één uniform platform dat elke fase van de datapipeline afhandelt."
+      },
+      "r2": {
+        "title": "Ingebouwde Agentic AI",
+        "description": "AI-agents detecteren automatisch dataproblemen, stellen transformatieregels voor en nemen slimme beslissingen — waardoor handmatig werk afneemt en uw programmalevering wordt versneld."
+      },
+      "r3": {
+        "title": "Scrambling zonder concessies",
+        "description": "Voer SIT/UAT uit met realistische productiedata. Scrambling op veldniveau met voorgedefinieerde profielen garandeert GDPR-, HIPAA- en SOX-compliance terwijl de data realistisch blijft."
+      },
+      "r4": {
+        "title": "Profiling die storingen voorkomt",
+        "description": "Ontdek duplicaten, ontbrekende verplichte velden en data-afwijkingen vóór de migratie — niet tijdens de go-live. Aanpasbare profilingregels vervangen handmatige Excel-controles."
+      },
+      "r5": {
+        "title": "Sneller waarde realiseren",
+        "description": "Verkort de migratiedoorlooptijd in elke fase en bij elke proefronde. Teams die DQ View gebruiken, halen consequent ambitieuze deadlines die met handmatige aanpakken onmogelijk leken."
+      },
+      "r6": {
+        "title": "Flexibele transformatie-engine",
+        "description": "Kant-en-klare en zelfbouw-transformatiefuncties met slimme veldmapping. Map bronbedrijfscodes, organisatiestructuren en reconciliatierekeningen eenvoudig naar het doel."
+      }
+    },
+    "programsTitle": "Programma's die wij",
+    "programsTitleHighlight": "aandrijven",
+    "programsSubtitle": "Van greenfield-implementaties tot regionale uitrolprogramma's: DQ View ondersteunt elk type SAP-transformatieprogramma.",
+    "programs": {
+      "p1": {
+        "title": "S/4HANA Greenfield",
+        "description": "Volledige datamigratie van SAP ECC naar S/4HANA met geautomatiseerde Business Partner-conversie, BP-roluitbreiding en koppeling van leveranciers/klanten."
+      },
+      "p2": {
+        "title": "S/4HANA Bluefield",
+        "description": "Selectieve datatransitie met complexe filtering, deduplicatie en transformatie op veldniveau voor master- en transactiedata."
+      },
+      "p3": {
+        "title": "S/4HANA GROW",
+        "description": "Snelle datalading vanuit legacy-applicaties naar GROW-omgevingen, waarbij ambitieuze deadlines voor cloud-first-implementaties worden gehaald."
+      },
+      "p4": {
+        "title": "S/4HANA Roll-Outs",
+        "description": "Regionale uitrolprogramma's met migratie, profiling en kwaliteitscontroles van master- en transactiedata over meerdere entiteiten."
+      },
+      "p5": {
+        "title": "Systeemconsolidatie",
+        "description": "Voeg data uit meerdere SAP- en niet-SAP-systemen samen in één doel met geautomatiseerde deduplicatie en conflictoplossing."
+      },
+      "p6": {
+        "title": "Testdatabeheer",
+        "description": "Scramble SAP- en niet-SAP-productiedata voor testomgevingen, waardoor realistisch testen mogelijk is zonder compliancerisico."
+      }
+    }
+  },
+  "useCases": {
+    "badge": "TOEPASSINGEN",
+    "title1": "Gebouwd voor echte",
+    "title2": "enterprise-uitdagingen",
+    "subtitle": "Van SAP S/4HANA-migraties tot continue datagovernance — DQ View verwerkt de meest complexe enterprise-datascenario's.",
+    "cases": {
+      "c1": {
+        "title": "SAP S/4HANA Greenfield-migratie",
+        "description": "Migreer leveranciers- en klantenstamgegevens van SAP ECC naar S/4HANA Business Partner met geautomatiseerde extractieregels, transformatie-mappings en kwaliteitsvalidatie."
+      },
+      "c2": {
+        "title": "Bluefield / Selectieve datatransitie",
+        "description": "Migreer selectief master- en transactiedata met complexe filtering, deduplicatie en transformatie op veldniveau — alles in één platform."
+      },
+      "c3": {
+        "title": "Testdatabeheer",
+        "description": "Scramble productiedata voor SIT/UAT-omgevingen, zodat teams met realistische data kunnen testen met behoud van GDPR- en HIPAA-compliance."
+      },
+      "c4": {
+        "title": "Continue datakwaliteitsgovernance",
+        "description": "Bewaak de datakwaliteit binnen uw onderneming met realtime scorecards, afwijkingsdetectie en geautomatiseerde profiling die problemen signaleert voordat ze escaleren."
+      }
+    }
+  },
+  "comparison": {
+    "badge": "VERGELIJKING",
+    "title1": "Waarom kiezen voor",
+    "title2": "DQ View?",
+    "subtitle": "Het enige platform dat datakwaliteit, ETL en scrambling verenigt — ter vervanging van meerdere puntoplossingen.",
+    "capability": "Functionaliteit",
+    "features": {
+      "f1": "Datakwaliteitsprofiling",
+      "f2": "ETL / Datatransformatie",
+      "f3": "Data Scrambling / Maskering",
+      "f4": "SAP S/4HANA-migratie",
+      "f5": "Ingebouwde Agentic AI",
+      "f6": "Realtime scorecards",
+      "f7": "Compliance (GDPR/HIPAA/SOX)",
+      "f8": "Uniform enkelvoudig platform"
+    }
+  },
+  "testimonials": {
+    "badge": "VERTROUWD DOOR ONDERNEMINGEN",
+    "title1": "Resultaten die",
+    "title2": "voor zich spreken",
+    "metrics": {
+      "m1": { "value": "100%", "label": "Datanauwkeurigheid" },
+      "m2": { "value": "70%", "label": "Meer efficiëntie" },
+      "m3": { "value": "3x", "label": "Snellere oplossing" },
+      "m4": { "value": "50%", "label": "Migratie geoptimaliseerd" }
+    },
+    "quotes": {
+      "q1": {
+        "quote": "Wij hebben DQ View gebruikt in het S/4HANA Roll-out-programma voor de VS om master- en transactiedata te migreren, inclusief profiling, wat heeft bijgedragen aan een aanzienlijke vermindering van de inspanning voor datamigratie.",
+        "company": "Evident Scientific",
+        "useCase": "S/4HANA Roll-out-programma — regio VS",
+        "tag": "Datamigratie & profiling"
+      },
+      "q2": {
+        "quote": "Wij hebben DQ View gebruikt in het S/4HANA GROW-programma om data vanuit legacy-applicaties in de GROW-applicaties te laden, waardoor we het gestelde doel van 3 maanden niet hebben overschreden.",
+        "company": "GRT Ethanol",
+        "useCase": "S/4HANA GROW-programma",
+        "tag": "Legacy naar S/4HANA-migratie"
+      },
+      "q3": {
+        "quote": "Coromandel International gebruikt DQ View voor het scramblen van hun SAP- en niet-SAP-applicaties, waardoor conforme testomgevingen in het gehele enterprise-landschap worden gewaarborgd.",
+        "company": "Coromandel International",
+        "useCase": "Enterprise Data Scrambling",
+        "tag": "SAP & niet-SAP-scrambling"
+      },
+      "q4": {
+        "quote": "'s Werelds #2 brouwer gebruikt DQ View voor het scramblen van hun niet-SAP-applicaties, waardoor teams met productieachtige data kunnen werken met volledige naleving van regelgeving.",
+        "company": "'s Werelds #2 brouwer",
+        "useCase": "Niet-SAP Data Scrambling",
+        "tag": "Data Scrambling"
+      }
+    }
+  },
+  "insights": {
+    "badge": "INZICHTEN & EVENEMENTEN",
+    "title1": "Blijf voorop met",
+    "title2": "onze nieuwste inzichten",
+    "subtitle": "Inzichten van het Business Core Solutions-team over datakwaliteit, SAP-transformatie en de toekomst van enterprise AI.",
+    "fromBlog": "Van de blog",
+    "upcomingEvents": "Aankomende evenementen",
+    "viewAllPosts": "Alle artikelen bekijken",
+    "viewAllEvents": "Alle evenementen bekijken"
+  },
+  "cta": {
+    "badge": "Bekijk DQ View in actie",
+    "title1": "Laten we samen de toekomst van",
+    "title2": "enterprise data vormgeven",
+    "subtitle": "Vraag een persoonlijke demo aan en ontdek hoe DQ View uw volgende datamigratie kan vereenvoudigen, de datakwaliteit kan verbeteren en uw transformatieprogramma kan versnellen.",
+    "scheduleDemo": "Plan uw demo"
+  },
+  "footer": {
+    "description": "Uniform platform voor datakwaliteit, ETL en scrambling, aangedreven door Agentic AI. Gebouwd voor enterprise-datatransformatieprogramma's.",
+    "platform": "Platform",
+    "platformLinks": {
+      "dataQualityProfiling": "Datakwaliteitsprofiling",
+      "etlPipeline": "ETL Pipeline",
+      "dataScrambling": "Data Scrambling",
+      "agenticAi": "Agentic AI",
+      "integrations": "Integraties"
+    },
+    "solutions": "Oplossingen",
+    "solutionLinks": {
+      "sapMigration": "SAP S/4HANA-migratie",
+      "testDataManagement": "Testdatabeheer",
+      "dataGovernance": "Datagovernance",
+      "compliance": "Compliance"
+    },
+    "resourcesTitle": "Kenniscentrum",
+    "resourcesLinks": {
+      "caseStudies": "Klantverhalen",
+      "blog": "Blog",
+      "events": "Evenementen"
+    },
+    "company": "Bedrijf",
+    "companyLinks": {
+      "aboutUs": "Over ons",
+      "careers": "Vacatures",
+      "contact": "Contact",
+      "partners": "Partners"
+    },
+    "copyright": "\u00a9 {year} Business Core Solutions. Alle rechten voorbehouden.",
+    "privacyPolicy": "Privacybeleid",
+    "termsOfService": "Algemene voorwaarden",
+    "cookiePolicy": "Cookiebeleid"
+  },
+  "blog": {
+    "badge": "BLOG",
+    "title1": "Inzichten &",
+    "title2": "Artikelen",
+    "subtitle": "Inzichten van het Business Core Solutions-team over datakwaliteit, SAP-transformatie en de toekomst van enterprise AI.",
+    "by": "Door",
+    "backToBlog": "Terug naar blog",
+    "readyToTransform": "Klaar om uw datamigratie te transformeren?",
+    "readyCta": "Ontdek hoe DQ View uw S/4HANA-transformatieprogramma kan vereenvoudigen.",
+    "bookDemo": "Demo aanvragen"
+  }
+}

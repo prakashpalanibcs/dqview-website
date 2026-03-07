@@ -1,0 +1,373 @@
+{
+  "metadata": {
+    "title": "DQ View | Unified Data Quality, ETL & Scrambling Platform",
+    "description": "One platform for data quality profiling, ETL transformation, and data scrambling. Simplify SAP S/4HANA migrations with AI-powered data intelligence."
+  },
+  "navbar": {
+    "platform": "Platform",
+    "solutions": "Solutions",
+    "howItWorks": "How It Works",
+    "resources": "Resources",
+    "bookDemo": "Book a Demo",
+    "productLinks": {
+      "dataQualityProfiling": { "title": "Data Quality Profiling", "desc": "Automated completeness, accuracy & consistency checks" },
+      "etlPipeline": { "title": "ETL Pipeline", "desc": "Extract, transform & load with smart rules" },
+      "dataScrambling": { "title": "Data Scrambling", "desc": "GDPR & HIPAA compliant data masking" },
+      "agenticAi": { "title": "Agentic AI", "desc": "Built-in AI that auto-detects & resolves issues" },
+      "integrations": { "title": "Integrations", "desc": "SAP, Oracle, SQL Server & flat files" },
+      "dataStaging": { "title": "Data Staging", "desc": "In-built staging with validation before load" }
+    },
+    "resourceLinks": {
+      "caseStudies": { "title": "Case Studies", "desc": "Customer success stories" },
+      "blog": { "title": "Blog", "desc": "Insights & articles" },
+      "events": { "title": "Events", "desc": "Meet us at upcoming events" }
+    },
+    "mobileResources": "Resources"
+  },
+  "hero": {
+    "badge": "Now with Agentic AI built-in",
+    "headline1": "One Platform.",
+    "headline2": "Every Data Stage.",
+    "subheadline": "DQ View unifies data quality profiling, ETL transformation, and data scrambling into a single AI-powered platform. Simplify your SAP S/4HANA migrations and eliminate tool sprawl.",
+    "bookDemo": "Book a Demo",
+    "seeHowItWorks": "See How It Works",
+    "stats": {
+      "fasterResolution": { "value": "3x", "label": "Faster Issue Resolution" },
+      "dataErrors": { "value": "70%", "label": "Reduction in Data Errors" },
+      "migrationOptimized": { "value": "50%", "label": "Migration Optimized" },
+      "auditReady": { "value": "100%", "label": "Audit Ready & Compliant" }
+    },
+    "dashboardTitle": "DQ View — Data Migration Pipeline",
+    "pipeline": {
+      "extract": "Extract",
+      "profile": "Profile",
+      "validate": "Validate",
+      "transform": "Transform",
+      "load": "Load"
+    },
+    "metrics": {
+      "recordsProcessed": { "label": "Records Processed", "value": "1,247,832", "change": "+12.4%" },
+      "qualityScore": { "label": "Quality Score", "value": "98.7%", "change": "+2.1%" },
+      "errorsDetected": { "label": "Errors Detected", "value": "342", "change": "-67%" },
+      "fieldsScrambled": { "label": "Fields Scrambled", "value": "89", "change": "100%" }
+    }
+  },
+  "trustBar": {
+    "trustedBy": "Trusted by enterprises worldwide",
+    "worldsBrewer": "World's #2 Brewer",
+    "integratesWith": "Integrates with your data ecosystem"
+  },
+  "problemSolution": {
+    "badge": "THE CHALLENGE",
+    "title1": "Data migration is",
+    "titleHighlight": "the #1 risk",
+    "title2": "in S/4HANA programs",
+    "subtitle": "Organizations struggle with fragmented tools, manual processes, and poor data quality during greenfield and bluefield implementations.",
+    "withoutTitle": "Without DQ View",
+    "withoutSubtitle": "The current reality",
+    "withTitle": "With DQ View",
+    "withSubtitle": "The new standard",
+    "problems": {
+      "p1": "Multiple disconnected tools for profiling, ETL, and scrambling",
+      "p2": "Manual Excel-based profiling that misses critical data issues",
+      "p3": "Months of delays during data migration due to poor quality",
+      "p4": "Unable to use production data in test environments without scrambling",
+      "p5": "Data errors discovered only during migration go-live, causing failures"
+    },
+    "solutions": {
+      "s1": "Unified platform replaces 4+ separate tools",
+      "s2": "Automated profiling with customizable rules",
+      "s3": "Reduce migration lead time by 50%+",
+      "s4": "Compliant data scrambling for test environments",
+      "s5": "Detect and resolve data issues before they cause failures"
+    }
+  },
+  "features": {
+    "badge": "UNIFIED PLATFORM",
+    "title1": "Everything you need.",
+    "title2": "One platform.",
+    "subtitle": "Replace your fragmented toolchain with a single, intelligent platform that handles data quality, ETL, and scrambling.",
+    "dataQualityProfiling": {
+      "title": "Data Quality Profiling",
+      "description": "Out-of-the-box profiling with customizable rules for completeness, accuracy, and consistency. Detect anomalies and drift automatically.",
+      "h1": "Customizable profiling rules",
+      "h2": "Anomaly & drift detection",
+      "h3": "Real-time scorecards",
+      "h4": "Invalid data reporting"
+    },
+    "etlPipeline": {
+      "title": "ETL Pipeline Engine",
+      "description": "Full and incremental extraction with smart rules. Ready-to-use and DIY transformation functions with optimized loading.",
+      "h1": "Full & incremental loads",
+      "h2": "DIY transformations",
+      "h3": "Data validation before load",
+      "h4": "Overwrite & append options"
+    },
+    "dataScrambling": {
+      "title": "Data Scrambling",
+      "description": "Scramble production data for non-production environments. GDPR, HIPAA, and SOX compliant with field-level control.",
+      "h1": "Predefined scrambling profiles",
+      "h2": "Field-level control",
+      "h3": "Test mode execution"
+    },
+    "agenticAi": {
+      "title": "Agentic AI",
+      "description": "Built-in AI agents that auto-detect data issues, suggest transformations, and make smart decisions throughout the pipeline.",
+      "h1": "Auto-detect issues",
+      "h2": "Smart decisions",
+      "h3": "Continuous learning"
+    },
+    "realTimeMonitoring": {
+      "title": "Real-Time Monitoring",
+      "description": "Continuous monitoring scorecards and execution tracking across every stage of your data pipeline.",
+      "h1": "Live scorecards",
+      "h2": "Execution monitoring",
+      "h3": "Change logs & audit trails"
+    },
+    "complianceAudit": {
+      "title": "Compliance & Audit",
+      "description": "100% audit readiness with complete change logs, audit trails, and compliance enforcement built into every operation.",
+      "h1": "Full audit trails",
+      "h2": "Change logs",
+      "h3": "GDPR/HIPAA/SOX ready"
+    }
+  },
+  "howItWorks": {
+    "badge": "SIMPLIFIED PIPELINE",
+    "title1": "From source to target.",
+    "title2": "Simplified.",
+    "subtitle": "What used to take 4 different tools and months of manual effort now happens in a single, streamlined workflow.",
+    "steps": {
+      "s1": {
+        "title": "Connect & Extract",
+        "description": "Connect to your SAP ECC, Oracle, SQL Server, or any relational database. Define extraction rules with conditions, filters, and incremental options. DQ View handles full and delta loads automatically.",
+        "d1": "Rule-based extraction",
+        "d2": "Full & incremental loads",
+        "d3": "Multi-source support"
+      },
+      "s2": {
+        "title": "Profile & Validate",
+        "description": "Automatically profile your data for completeness, accuracy, and consistency. Detect duplicates, missing mandatory fields, and anomalies before they cause migration failures.",
+        "d1": "Auto-detect duplicates",
+        "d2": "Mandatory field checks",
+        "d3": "Anomaly detection"
+      },
+      "s3": {
+        "title": "Transform & Scramble",
+        "description": "Apply transformation mappings for company codes, org structures, and accounts. Scramble sensitive data for test environments while maintaining referential integrity.",
+        "d1": "Smart field mapping",
+        "d2": "Data scrambling",
+        "d3": "Referential integrity"
+      },
+      "s4": {
+        "title": "Validate & Load",
+        "description": "Validate transformed data against target system rules before loading. Stage, review, and load with confidence — with complete audit trails for every record.",
+        "d1": "Pre-load validation",
+        "d2": "Staging & review",
+        "d3": "Full audit trails"
+      }
+    }
+  },
+  "whyDqView": {
+    "badge": "WHY DQ VIEW",
+    "title1": "Built for the programs",
+    "title2": "that matter most",
+    "subtitle": "DQ View is purpose-built for enterprise transformation programs where data migration is the most critical and complex workstream.",
+    "reasons": {
+      "r1": {
+        "title": "One Platform, Not Five",
+        "description": "Replace separate tools for extraction, profiling, transformation, scrambling, and loading with a single unified platform that handles every stage of the data pipeline."
+      },
+      "r2": {
+        "title": "Agentic AI Built-In",
+        "description": "AI agents auto-detect data issues, suggest transformation rules, and make smart decisions — reducing manual effort and accelerating your program delivery."
+      },
+      "r3": {
+        "title": "Scrambling Without Compromise",
+        "description": "Run SIT/UAT with real production-like data. Field-level scrambling with predefined profiles ensures GDPR, HIPAA, and SOX compliance while keeping data realistic."
+      },
+      "r4": {
+        "title": "Profiling That Prevents Failures",
+        "description": "Catch duplicates, missing mandatory fields, and data anomalies before migration — not during go-live. Customizable profiling rules replace manual Excel checks."
+      },
+      "r5": {
+        "title": "Faster Time-to-Value",
+        "description": "Reduce migration lead time at every stage and mock cycle. Teams using DQ View consistently meet aggressive timelines that seemed impossible with manual approaches."
+      },
+      "r6": {
+        "title": "Flexible Transformation Engine",
+        "description": "Ready-to-use and DIY transformation functions with smart field mapping. Map source company codes, org structures, and recon accounts to target with ease."
+      }
+    },
+    "programsTitle": "Programs we",
+    "programsTitleHighlight": "power",
+    "programsSubtitle": "From greenfield implementations to regional roll-outs, DQ View supports every type of SAP transformation program.",
+    "programs": {
+      "p1": {
+        "title": "S/4HANA Greenfield",
+        "description": "Full data migration from SAP ECC to S/4HANA with automated Business Partner conversion, BP role extension, and vendor/customer linking."
+      },
+      "p2": {
+        "title": "S/4HANA Bluefield",
+        "description": "Selective data transition with complex filtering, deduplication, and field-level transformation for master and transactional data."
+      },
+      "p3": {
+        "title": "S/4HANA GROW",
+        "description": "Rapid data loading from legacy applications to GROW environments, meeting aggressive timelines for cloud-first implementations."
+      },
+      "p4": {
+        "title": "S/4HANA Roll-Outs",
+        "description": "Regional roll-out programs with master and transaction data migration, profiling, and quality checks across multiple entities."
+      },
+      "p5": {
+        "title": "System Consolidation",
+        "description": "Merge data from multiple SAP and non-SAP systems into a single target with automated deduplication and conflict resolution."
+      },
+      "p6": {
+        "title": "Test Data Management",
+        "description": "Scramble SAP and non-SAP production data for test environments, enabling realistic testing without compliance risk."
+      }
+    }
+  },
+  "useCases": {
+    "badge": "USE CASES",
+    "title1": "Built for real-world",
+    "title2": "enterprise challenges",
+    "subtitle": "From SAP S/4HANA migrations to continuous data governance — DQ View handles the most complex enterprise data scenarios.",
+    "cases": {
+      "c1": {
+        "title": "SAP S/4HANA Greenfield Migration",
+        "description": "Migrate Vendor and Customer masters from SAP ECC to S/4HANA Business Partner with automated extraction rules, transformation mappings, and quality validation."
+      },
+      "c2": {
+        "title": "Bluefield / Selective Data Transition",
+        "description": "Selectively migrate master and transactional data with complex filtering, deduplication, and field-level transformation — all in one platform."
+      },
+      "c3": {
+        "title": "Test Data Management",
+        "description": "Scramble production data for SIT/UAT environments, enabling teams to test with realistic data while maintaining GDPR and HIPAA compliance."
+      },
+      "c4": {
+        "title": "Continuous Data Quality Governance",
+        "description": "Monitor data quality across your enterprise with real-time scorecards, anomaly detection, and automated profiling that catches issues before they escalate."
+      }
+    }
+  },
+  "comparison": {
+    "badge": "COMPARISON",
+    "title1": "Why choose",
+    "title2": "DQ View?",
+    "subtitle": "The only platform that unifies data quality, ETL, and scrambling — replacing multiple point solutions.",
+    "capability": "Capability",
+    "features": {
+      "f1": "Data Quality Profiling",
+      "f2": "ETL / Data Transformation",
+      "f3": "Data Scrambling / Masking",
+      "f4": "SAP S/4HANA Migration",
+      "f5": "Built-in Agentic AI",
+      "f6": "Real-Time Scorecards",
+      "f7": "Compliance (GDPR/HIPAA/SOX)",
+      "f8": "Unified Single Platform"
+    }
+  },
+  "testimonials": {
+    "badge": "TRUSTED BY ENTERPRISES",
+    "title1": "Results that",
+    "title2": "speak volumes",
+    "metrics": {
+      "m1": { "value": "100%", "label": "Data Accuracy" },
+      "m2": { "value": "70%", "label": "More Efficiency" },
+      "m3": { "value": "3x", "label": "Faster Resolution" },
+      "m4": { "value": "50%", "label": "Migration Optimized" }
+    },
+    "quotes": {
+      "q1": {
+        "quote": "We used DQ View in the S/4HANA Roll-out program for US to migrate the master and transaction data along with profiling which helped to reduce significant amount of effort in data migration.",
+        "company": "Evident Scientific",
+        "useCase": "S/4HANA Roll-out Program — US Region",
+        "tag": "Data Migration & Profiling"
+      },
+      "q2": {
+        "quote": "We used DQ View in the S/4HANA Grow program to load the data from legacy applications to the GROW applications which helped to not exceed the 3 months target that we had in hand while starting the program.",
+        "company": "GRT Ethanol",
+        "useCase": "S/4HANA GROW Program",
+        "tag": "Legacy to S/4HANA Migration"
+      },
+      "q3": {
+        "quote": "Coromandel International uses DQ View for scrambling their SAP and non-SAP applications, ensuring compliant test environments across their entire enterprise landscape.",
+        "company": "Coromandel International",
+        "useCase": "Enterprise Data Scrambling",
+        "tag": "SAP & Non-SAP Scrambling"
+      },
+      "q4": {
+        "quote": "The world's #2 brewer uses DQ View for scrambling their non-SAP applications, enabling teams to work with production-like data while maintaining full regulatory compliance.",
+        "company": "World's #2 Brewer",
+        "useCase": "Non-SAP Data Scrambling",
+        "tag": "Data Scrambling"
+      }
+    }
+  },
+  "insights": {
+    "badge": "INSIGHTS & EVENTS",
+    "title1": "Stay ahead with",
+    "title2": "our latest thinking",
+    "subtitle": "Insights from the Business Core Solutions team on data quality, SAP transformation, and the future of enterprise AI.",
+    "fromBlog": "From the Blog",
+    "upcomingEvents": "Upcoming Events",
+    "viewAllPosts": "View all posts",
+    "viewAllEvents": "View all events"
+  },
+  "cta": {
+    "badge": "See DQ View in action",
+    "title1": "Let's shape the future of",
+    "title2": "enterprise data together",
+    "subtitle": "Book a personalized demo and see how DQ View can simplify your next data migration, improve data quality, and accelerate your transformation program.",
+    "scheduleDemo": "Schedule Your Demo"
+  },
+  "footer": {
+    "description": "Unified data quality, ETL, and scrambling platform powered by Agentic AI. Built for enterprise data transformation programs.",
+    "platform": "Platform",
+    "platformLinks": {
+      "dataQualityProfiling": "Data Quality Profiling",
+      "etlPipeline": "ETL Pipeline",
+      "dataScrambling": "Data Scrambling",
+      "agenticAi": "Agentic AI",
+      "integrations": "Integrations"
+    },
+    "solutions": "Solutions",
+    "solutionLinks": {
+      "sapMigration": "SAP S/4HANA Migration",
+      "testDataManagement": "Test Data Management",
+      "dataGovernance": "Data Governance",
+      "compliance": "Compliance"
+    },
+    "resourcesTitle": "Resources",
+    "resourcesLinks": {
+      "caseStudies": "Case Studies",
+      "blog": "Blog",
+      "events": "Events"
+    },
+    "company": "Company",
+    "companyLinks": {
+      "aboutUs": "About Us",
+      "careers": "Careers",
+      "contact": "Contact",
+      "partners": "Partners"
+    },
+    "copyright": "© {year} Business Core Solutions. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "blog": {
+    "badge": "BLOG",
+    "title1": "Insights &",
+    "title2": "Articles",
+    "subtitle": "Insights from the Business Core Solutions team on data quality, SAP transformation, and the future of enterprise AI.",
+    "by": "By",
+    "backToBlog": "Back to Blog",
+    "readyToTransform": "Ready to transform your data migration?",
+    "readyCta": "See how DQ View can simplify your S/4HANA transformation program.",
+    "bookDemo": "Book a Demo"
+  }
+}
