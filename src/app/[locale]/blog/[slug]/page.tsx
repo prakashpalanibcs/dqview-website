@@ -1,11 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { getBlogPosts, getBlogBySlug } from "@/data/blogs";
+import { getBlogPosts, getBlogBySlug } from "@/lib/content";
 import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
 import { ArrowLeft, User } from "lucide-react";
+import { remark } from "remark";
+import html from "remark-html";
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
@@ -33,6 +35,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
   const t = await getTranslations({ locale, namespace: "blog" });
   const post = getBlogBySlug(locale, slug);
   if (!post) notFound();
+
+  const processedContent = await remark().use(html).process(post.content);
+  const contentHtml = processedContent.toString();
 
   return (
     <>
@@ -71,29 +76,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
           <div className="border-t border-white/5 mb-12" />
 
           {/* Content */}
-          <div className="space-y-10">
-            {post.sections.map((section, i) => (
-              <div key={i}>
-                {section.heading && (
-                  <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
-                    {section.heading}
-                  </h2>
-                )}
-                <div className="text-gray-300 leading-relaxed space-y-4">
-                  {section.content.split("\n\n").map((paragraph, j) => (
-                    <p key={j} className={paragraph.startsWith("\u2022") ? "pl-4" : ""}>
-                      {paragraph.split("\n").map((line, k) => (
-                        <span key={k}>
-                          {line}
-                          {k < paragraph.split("\n").length - 1 && <br />}
-                        </span>
-                      ))}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+          <div
+            className="prose prose-invert prose-emerald max-w-none prose-headings:text-white prose-headings:font-bold prose-p:text-gray-300 prose-p:leading-relaxed prose-li:text-gray-300 prose-a:text-emerald-400 prose-strong:text-white"
+            dangerouslySetInnerHTML={{ __html: contentHtml }}
+          />
 
           {/* CTA */}
           <div className="mt-16 p-8 rounded-2xl bg-surface border border-white/5 text-center">

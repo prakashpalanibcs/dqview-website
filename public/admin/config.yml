@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+i18n:
+  structure: multiple_folders
+  locales: [en, nl, de]
+  default_locale: en
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    i18n: true
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Excerpt", name: "excerpt", widget: "text", i18n: true }
+      - { label: "Tag", name: "tag", widget: "select", options: ["Data Quality", "Agentic AI", "SAP Migration", "Data Governance", "ETL"], i18n: duplicate }
+      - { label: "Author", name: "author", widget: "string", i18n: duplicate }
+      - { label: "Slug", name: "slug", widget: "string", i18n: duplicate }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "URL", name: "url", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }

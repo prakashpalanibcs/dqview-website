@@ -11,64 +11,16 @@ import {
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
-const blogs = [
-  {
-    titleKey: "data-quality-ops-s4-transformations",
-    url: "/blog/data-quality-ops-s4-transformations",
-    tag: "Data Quality",
-  },
-  {
-    titleKey: "rethinking-data-foundations-agentic-ai",
-    url: "/blog/rethinking-data-foundations-agentic-ai",
-    tag: "Agentic AI",
-  },
-  {
-    titleKey: "learn-how-bcs-simplifies-your-sap-system-conversion-journey",
-    url: "/blog/learn-how-bcs-simplifies-your-sap-system-conversion-journey",
-    tag: "SAP Migration",
-  },
-];
+interface InsightsProps {
+  blogs?: { title: string; excerpt: string; slug: string; tag: string }[];
+  events?: { title: string; location: string; description: string; url: string }[];
+}
 
-const events = [
-  {
-    title: "ALM Summit NA 2026",
-    location: "Newtown Square, PA",
-    description:
-      "BCS at ALM Summit North America 2026 — presenting on SAP ALM and agentic operations.",
-    url: "https://boisterous-starburst-5ef9b7.netlify.app/insights/events/alm-summit-na",
-  },
-  {
-    title: "Identity Summit 2026",
-    location: "Sydney, Australia",
-    description:
-      "Presentations on identity governance and agentic access management.",
-    url: "https://boisterous-starburst-5ef9b7.netlify.app/insights/events/identity-summit-sydney",
-  },
-  {
-    title: "PKOM SAP 2026",
-    location: "Goa, India",
-    description:
-      "Connecting with SAP partners and customers across the APAC region.",
-    url: "https://boisterous-starburst-5ef9b7.netlify.app/insights/events/pkom-sap-goa",
-  },
-  {
-    title: "SYNC-VNSG 2026",
-    location: "Nieuwegein, Netherlands",
-    description:
-      "Presentations on agentic enterprise operations and SAP transformation.",
-    url: "https://boisterous-starburst-5ef9b7.netlify.app/insights/events/sync-vnsg-amsterdam",
-  },
-];
-
-export default function Insights({ blogs: blogData }: { blogs?: { title: string; excerpt: string; slug: string; tag: string }[] }) {
+export default function Insights({ blogs: blogData, events = [] }: InsightsProps) {
   const t = useTranslations("insights");
 
-  const displayBlogs = blogData || blogs.map((b) => ({
-    title: b.titleKey,
-    excerpt: "",
-    slug: b.url.replace("/blog/", ""),
-    tag: b.tag,
-  }));
+  const displayBlogs = blogData || [];
+  const displayEvents = events;
 
   return (
     <section id="insights" className="relative py-24 lg:py-32">
@@ -144,7 +96,7 @@ export default function Insights({ blogs: blogData }: { blogs?: { title: string;
               <h3 className="text-lg font-semibold text-white">{t("upcomingEvents")}</h3>
             </div>
             <div className="space-y-4">
-              {events.map((event, index) => (
+              {displayEvents.map((event, index) => (
                 <motion.a
                   key={event.title}
                   href={event.url}
