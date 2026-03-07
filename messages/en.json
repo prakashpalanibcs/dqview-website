@@ -253,6 +253,45 @@
       }
     }
   },
+  "useCaseShowcase": {
+    "badge": "SEE IT IN ACTION",
+    "title1": "Real-world scenario:",
+    "title2": "BP Vendor Migration",
+    "subtitle": "See how DQ View orchestrates the full Business Partner migration from SAP ECC to S/4HANA — the most complex workstream in any transformation program.",
+    "scenarioTag": "Business Partner",
+    "scenarioTitle": "Vendor to Business Partner Migration — SAP ECC to S/4HANA",
+    "scenarioDescription": "50,000+ vendor records across multiple company codes and purchasing organizations, migrated with automated extraction rules, profiling, transformation, and loading into DMC staging tables.",
+    "stages": {
+      "extract": {
+        "title": "Extract",
+        "description": "Rule-based extraction of vendor address, tax, bank, company code, and purchasing org data. Auto-exclude blocked or flagged vendors."
+      },
+      "profile": {
+        "title": "Profile",
+        "description": "Validate company codes, detect duplicates, and check mandatory fields. Invalid records routed to owners automatically."
+      },
+      "transform": {
+        "title": "Transform",
+        "description": "Map source company codes, purchasing orgs, and recon accounts to target. Extend BP roles and link vendor numbers."
+      },
+      "validate": {
+        "title": "Validate",
+        "description": "Pre-load validation against S/4HANA rules. Only clean, profiled data proceeds to DMC staging tables."
+      },
+      "load": {
+        "title": "Load",
+        "description": "Direct load into DMC staging tables with simulation runs. 95%+ first-pass rate in DMC migration."
+      }
+    },
+    "metrics": {
+      "accuracy": "Data Accuracy",
+      "efficiency": "More Efficient",
+      "firstPass": "DMC First-Pass Rate",
+      "leadTime": "Faster Lead Time"
+    },
+    "ctaText": "Read the full technical walkthrough of this BP migration scenario.",
+    "readFullStory": "Read Full Story"
+  },
   "comparison": {
     "badge": "COMPARISON",
     "title1": "Why choose",

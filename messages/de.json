@@ -253,6 +253,45 @@
       }
     }
   },
+  "useCaseShowcase": {
+    "badge": "IN AKTION ERLEBEN",
+    "title1": "Praxisszenario:",
+    "title2": "BP-Lieferantenmigration",
+    "subtitle": "Erleben Sie, wie DQ View die vollständige Business Partner-Migration von SAP ECC zu S/4HANA orchestriert — der komplexeste Arbeitsstrom in jedem Transformationsprogramm.",
+    "scenarioTag": "Business Partner",
+    "scenarioTitle": "Lieferant-zu-Business-Partner-Migration — SAP ECC zu S/4HANA",
+    "scenarioDescription": "50.000+ Lieferantendatensätze über mehrere Buchungskreise und Einkaufsorganisationen, migriert mit automatisierten Extraktionsregeln, Profiling, Transformation und Laden in DMC-Staging-Tabellen.",
+    "stages": {
+      "extract": {
+        "title": "Extrahieren",
+        "description": "Regelbasierte Extraktion von Lieferantenadress-, Steuer-, Bank-, Buchungskreis- und Einkaufsorganisationsdaten. Automatischer Ausschluss gesperrter Lieferanten."
+      },
+      "profile": {
+        "title": "Profilieren",
+        "description": "Buchungskreise validieren, Duplikate erkennen und Pflichtfelder prüfen. Ungültige Datensätze automatisch an Verantwortliche weitergeleitet."
+      },
+      "transform": {
+        "title": "Transformieren",
+        "description": "Quell-Buchungskreise, Einkaufsorganisationen und Abstimmkonten auf Ziel mappen. BP-Rollen erweitern und Lieferantennummern verknüpfen."
+      },
+      "validate": {
+        "title": "Validieren",
+        "description": "Validierung vor dem Laden gegen S/4HANA-Regeln. Nur saubere, profilierte Daten gelangen in DMC-Staging-Tabellen."
+      },
+      "load": {
+        "title": "Laden",
+        "description": "Direktes Laden in DMC-Staging-Tabellen mit Simulationsläufen. 95%+ Erfolgsrate beim ersten Durchlauf der DMC-Migration."
+      }
+    },
+    "metrics": {
+      "accuracy": "Datengenauigkeit",
+      "efficiency": "Mehr Effizienz",
+      "firstPass": "DMC-Erstdurchlaufrate",
+      "leadTime": "Schnellere Durchlaufzeit"
+    },
+    "ctaText": "Lesen Sie die vollständige technische Beschreibung dieses BP-Migrationsszenarios.",
+    "readFullStory": "Vollständigen Bericht lesen"
+  },
   "comparison": {
     "badge": "VERGLEICH",
     "title1": "Warum",

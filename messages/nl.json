@@ -253,6 +253,45 @@
       }
     }
   },
+  "useCaseShowcase": {
+    "badge": "BEKIJK HET IN ACTIE",
+    "title1": "Praktijkscenario:",
+    "title2": "BP Leveranciersmigratie",
+    "subtitle": "Ontdek hoe DQ View de volledige Business Partner-migratie van SAP ECC naar S/4HANA orkestreert — de meest complexe werkstroom in elk transformatieprogramma.",
+    "scenarioTag": "Business Partner",
+    "scenarioTitle": "Leverancier naar Business Partner-migratie — SAP ECC naar S/4HANA",
+    "scenarioDescription": "50.000+ leveranciersrecords over meerdere bedrijfscodes en inkooporganisaties, gemigreerd met geautomatiseerde extractieregels, profilering, transformatie en laden in DMC-stagingtabellen.",
+    "stages": {
+      "extract": {
+        "title": "Extraheren",
+        "description": "Regelgebaseerde extractie van leveranciersadres, belasting, bank, bedrijfscode en inkooporganisatiegegevens. Automatisch geblokkeerde leveranciers uitsluiten."
+      },
+      "profile": {
+        "title": "Profileren",
+        "description": "Valideer bedrijfscodes, detecteer duplicaten en controleer verplichte velden. Ongeldige records automatisch naar eigenaren gerouteerd."
+      },
+      "transform": {
+        "title": "Transformeren",
+        "description": "Map bronbedrijfscodes, inkooporganisaties en afstemmingsrekeningen naar het doel. Breid BP-rollen uit en koppel leveranciersnummers."
+      },
+      "validate": {
+        "title": "Valideren",
+        "description": "Validatie vóór laden tegen S/4HANA-regels. Alleen schone, geprofileerde data gaat door naar DMC-stagingtabellen."
+      },
+      "load": {
+        "title": "Laden",
+        "description": "Direct laden in DMC-stagingtabellen met simulatieruns. 95%+ slagingspercentage bij eerste doorgang in DMC-migratie."
+      }
+    },
+    "metrics": {
+      "accuracy": "Datanauwkeurigheid",
+      "efficiency": "Meer efficiëntie",
+      "firstPass": "DMC eerste-doorgang",
+      "leadTime": "Snellere doorlooptijd"
+    },
+    "ctaText": "Lees de volledige technische uitleg van dit BP-migratiescenario.",
+    "readFullStory": "Lees het volledige verhaal"
+  },
   "comparison": {
     "badge": "VERGELIJKING",
     "title1": "Waarom kiezen voor",
