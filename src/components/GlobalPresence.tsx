@@ -23,7 +23,7 @@ export default function GlobalPresence() {
   const t = useTranslations("globalPresence");
 
   return (
-    <section className="relative py-24 lg:py-32">
+    <section id="global-presence" className="relative py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <motion.div

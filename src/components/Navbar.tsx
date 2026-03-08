@@ -34,7 +34,14 @@ const productKeys = [
 
 const resourceIcons = [FileText, Newspaper, CalendarDays];
 const resourceKeys = ["caseStudies", "blog", "events"];
-const resourceHrefs = ["#case-studies", "/blog", "#insights"];
+const resourceSections = ["case-studies", "", "insights"];
+
+function scrollTo(id: string) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
 
 export default function Navbar() {
   const t = useTranslations("navbar");
@@ -58,7 +65,7 @@ export default function Navbar() {
     icon: resourceIcons[i],
     title: t(`resourceLinks.${key}.title`),
     desc: t(`resourceLinks.${key}.desc`),
-    href: resourceHrefs[i],
+    section: resourceSections[i],
     isRoute: key === "blog",
   }));
 
@@ -106,10 +113,13 @@ export default function Navbar() {
                   className="absolute top-full left-0 mt-2 w-[480px] glass rounded-xl p-4 grid grid-cols-2 gap-2"
                 >
                   {productLinks.map((link) => (
-                    <a
+                    <button
                       key={link.title}
-                      href="#features"
-                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group"
+                      onClick={() => {
+                        scrollTo("features");
+                        setActiveDropdown(null);
+                      }}
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group text-left cursor-pointer"
                     >
                       <link.icon className="w-5 h-5 text-emerald-400 mt-0.5 shrink-0" />
                       <div>
@@ -120,26 +130,26 @@ export default function Navbar() {
                           {link.desc}
                         </div>
                       </div>
-                    </a>
+                    </button>
                   ))}
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
 
-          <a
-            href="#solutions"
-            className="px-4 py-2 text-sm text-gray-300 hover:text-white transition-colors"
+          <button
+            onClick={() => scrollTo("solutions")}
+            className="px-4 py-2 text-sm text-gray-300 hover:text-white transition-colors cursor-pointer"
           >
             {t("solutions")}
-          </a>
+          </button>
 
-          <a
-            href="#how-it-works"
-            className="px-4 py-2 text-sm text-gray-300 hover:text-white transition-colors"
+          <button
+            onClick={() => scrollTo("how-it-works")}
+            className="px-4 py-2 text-sm text-gray-300 hover:text-white transition-colors cursor-pointer"
           >
             {t("howItWorks")}
-          </a>
+          </button>
 
           {/* Resources Dropdown */}
           <div
@@ -164,8 +174,9 @@ export default function Navbar() {
                     link.isRoute ? (
                       <Link
                         key={link.title}
-                        href={link.href}
+                        href="/blog"
                         className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group"
+                        onClick={() => setActiveDropdown(null)}
                       >
                         <link.icon className="w-5 h-5 text-amber-400 mt-0.5 shrink-0" />
                         <div>
@@ -178,10 +189,13 @@ export default function Navbar() {
                         </div>
                       </Link>
                     ) : (
-                      <a
+                      <button
                         key={link.title}
-                        href={link.href}
-                        className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group"
+                        onClick={() => {
+                          scrollTo(link.section);
+                          setActiveDropdown(null);
+                        }}
+                        className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group w-full text-left cursor-pointer"
                       >
                         <link.icon className="w-5 h-5 text-amber-400 mt-0.5 shrink-0" />
                         <div>
@@ -192,7 +206,7 @@ export default function Navbar() {
                             {link.desc}
                           </div>
                         </div>
-                      </a>
+                      </button>
                     )
                   )}
                 </motion.div>
@@ -236,15 +250,15 @@ export default function Navbar() {
               <div className="flex items-center justify-between pb-2">
                 <LanguageSwitcher />
               </div>
-              <a href="#features" className="block text-gray-300 hover:text-white py-2" onClick={() => setMobileOpen(false)}>
+              <button onClick={() => { scrollTo("features"); setMobileOpen(false); }} className="block text-gray-300 hover:text-white py-2 cursor-pointer">
                 {t("platform")}
-              </a>
-              <a href="#solutions" className="block text-gray-300 hover:text-white py-2" onClick={() => setMobileOpen(false)}>
+              </button>
+              <button onClick={() => { scrollTo("solutions"); setMobileOpen(false); }} className="block text-gray-300 hover:text-white py-2 cursor-pointer">
                 {t("solutions")}
-              </a>
-              <a href="#how-it-works" className="block text-gray-300 hover:text-white py-2" onClick={() => setMobileOpen(false)}>
+              </button>
+              <button onClick={() => { scrollTo("how-it-works"); setMobileOpen(false); }} className="block text-gray-300 hover:text-white py-2 cursor-pointer">
                 {t("howItWorks")}
-              </a>
+              </button>
               <Link href="/blog" className="block text-gray-300 hover:text-white py-2" onClick={() => setMobileOpen(false)}>
                 {t("resources")}
               </Link>

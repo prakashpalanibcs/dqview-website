@@ -10,44 +10,56 @@ import {
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
+type FooterLink =
+  | { label: string; section: string; route?: never; external?: never }
+  | { label: string; route: string; section?: never; external?: never }
+  | { label: string; external: string; section?: never; route?: never };
+
+function scrollToSection(id: string) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
 export default function Footer() {
   const t = useTranslations("footer");
 
-  const footerSections = [
+  const footerSections: { title: string; links: FooterLink[] }[] = [
     {
       title: t("platform"),
       links: [
-        { label: t("platformLinks.dataQualityProfiling"), href: "#features" },
-        { label: t("platformLinks.etlPipeline"), href: "#features" },
-        { label: t("platformLinks.dataScrambling"), href: "#features" },
-        { label: t("platformLinks.agenticAi"), href: "#features" },
-        { label: t("platformLinks.integrations"), href: "#features" },
+        { label: t("platformLinks.dataQualityProfiling"), section: "features" },
+        { label: t("platformLinks.etlPipeline"), section: "features" },
+        { label: t("platformLinks.dataScrambling"), section: "features" },
+        { label: t("platformLinks.agenticAi"), section: "features" },
+        { label: t("platformLinks.integrations"), section: "features" },
       ],
     },
     {
       title: t("solutions"),
       links: [
-        { label: t("solutionLinks.sapMigration"), href: "#solutions" },
-        { label: t("solutionLinks.testDataManagement"), href: "#solutions" },
-        { label: t("solutionLinks.dataGovernance"), href: "#solutions" },
-        { label: t("solutionLinks.compliance"), href: "#solutions" },
+        { label: t("solutionLinks.sapMigration"), section: "use-cases" },
+        { label: t("solutionLinks.testDataManagement"), section: "use-cases" },
+        { label: t("solutionLinks.dataGovernance"), section: "use-cases" },
+        { label: t("solutionLinks.compliance"), section: "features" },
       ],
     },
     {
       title: t("resourcesTitle"),
       links: [
-        { label: t("resourcesLinks.caseStudies"), href: "#case-studies" },
-        { label: t("resourcesLinks.blog"), href: "/blog", isRoute: true },
-        { label: t("resourcesLinks.events"), href: "#insights" },
+        { label: t("resourcesLinks.caseStudies"), section: "case-studies" },
+        { label: t("resourcesLinks.blog"), route: "/blog" },
+        { label: t("resourcesLinks.events"), section: "insights" },
       ],
     },
     {
       title: t("company"),
       links: [
-        { label: t("companyLinks.aboutUs"), href: "#" },
-        { label: t("companyLinks.careers"), href: "#" },
-        { label: t("companyLinks.contact"), href: "#contact" },
-        { label: t("companyLinks.partners"), href: "#" },
+        { label: t("companyLinks.aboutUs"), section: "why-dqview" },
+        { label: t("companyLinks.careers"), external: "mailto:hello@businesscoresolutions.com" },
+        { label: t("companyLinks.contact"), section: "demo" },
+        { label: t("companyLinks.partners"), section: "global-presence" },
       ],
     },
   ];
@@ -89,7 +101,9 @@ export default function Footer() {
                 <ArrowUpRight className="w-3 h-3" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/business-core-solutions"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-gray-400 hover:text-emerald-400 transition-colors"
               >
                 <Linkedin className="w-4 h-4" />
@@ -104,21 +118,28 @@ export default function Footer() {
               <ul className="space-y-2.5">
                 {section.links.map((link) => (
                   <li key={link.label}>
-                    {"isRoute" in link && link.isRoute ? (
+                    {link.route ? (
                       <Link
-                        href={link.href}
+                        href={link.route}
                         className="text-sm text-gray-500 hover:text-gray-300 transition-colors"
                       >
                         {link.label}
                       </Link>
-                    ) : (
+                    ) : link.external ? (
                       <a
-                        href={link.href}
+                        href={link.external}
                         className="text-sm text-gray-500 hover:text-gray-300 transition-colors"
                       >
                         {link.label}
                       </a>
-                    )}
+                    ) : link.section ? (
+                      <button
+                        onClick={() => scrollToSection(link.section)}
+                        className="text-sm text-gray-500 hover:text-gray-300 transition-colors text-left cursor-pointer"
+                      >
+                        {link.label}
+                      </button>
+                    ) : null}
                   </li>
                 ))}
               </ul>
@@ -131,15 +152,15 @@ export default function Footer() {
             {t("copyright", { year: new Date().getFullYear() })}
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-xs text-gray-600 hover:text-gray-400 transition-colors">
+            <span className="text-xs text-gray-600">
               {t("privacyPolicy")}
-            </a>
-            <a href="#" className="text-xs text-gray-600 hover:text-gray-400 transition-colors">
+            </span>
+            <span className="text-xs text-gray-600">
               {t("termsOfService")}
-            </a>
-            <a href="#" className="text-xs text-gray-600 hover:text-gray-400 transition-colors">
+            </span>
+            <span className="text-xs text-gray-600">
               {t("cookiePolicy")}
-            </a>
+            </span>
           </div>
         </div>
       </div>
