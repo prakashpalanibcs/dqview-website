@@ -50,7 +50,7 @@ export default function WhyDQView() {
   }));
 
   return (
-    <section id="why-dqview" className="relative py-24 lg:py-32">
+    <section id="why-dekorvai" className="relative py-24 lg:py-32">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-500/[0.02] to-transparent" />
       <div className="relative max-w-7xl mx-auto px-6">
         <motion.div

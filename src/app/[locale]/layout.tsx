@@ -17,7 +17,7 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "DQ View | Unified Data Quality, ETL & Scrambling Platform",
+  title: "deKorvai | Unified Data Quality, ETL & Scrambling Platform",
   description:
     "One platform for data quality profiling, ETL transformation, and data scrambling. Simplify SAP S/4HANA migrations with AI-powered data intelligence.",
   keywords: [

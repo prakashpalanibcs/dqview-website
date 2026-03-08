@@ -80,14 +80,14 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2.5 group">
           <Image
             src="/dq-icon.webp"
-            alt="DQ View"
+            alt="deKorvai"
             width={64}
             height={64}
             className="h-9 w-9 rounded-lg"
             priority
           />
           <span className="text-xl font-bold text-white">
-            DQview
+            deKorvai
           </span>
         </Link>
 

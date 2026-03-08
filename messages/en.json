@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "DQ View | Unified Data Quality, ETL & Scrambling Platform",
+    "title": "deKorvai | Unified Data Quality, ETL & Scrambling Platform",
     "description": "One platform for data quality profiling, ETL transformation, and data scrambling. Simplify SAP S/4HANA migrations with AI-powered data intelligence."
   },
   "navbar": {
@@ -28,7 +28,7 @@
     "badge": "Now with Agentic AI built-in",
     "headline1": "One Platform.",
     "headline2": "Every Data Stage.",
-    "subheadline": "DQ View unifies data quality profiling, ETL transformation, and data scrambling into a single AI-powered platform. Simplify your SAP S/4HANA migrations and eliminate tool sprawl.",
+    "subheadline": "deKorvai unifies data quality profiling, ETL transformation, and data scrambling into a single AI-powered platform. Simplify your SAP S/4HANA migrations and eliminate tool sprawl.",
     "bookDemo": "Book a Demo",
     "seeHowItWorks": "See How It Works",
     "stats": {
@@ -37,7 +37,7 @@
       "migrationOptimized": { "value": "50%", "label": "Migration Optimized" },
       "auditReady": { "value": "100%", "label": "Audit Ready & Compliant" }
     },
-    "dashboardTitle": "DQ View — Data Migration Pipeline",
+    "dashboardTitle": "deKorvai — Data Migration Pipeline",
     "pipeline": {
       "extract": "Extract",
       "profile": "Profile",
@@ -63,9 +63,9 @@
     "titleHighlight": "the #1 risk",
     "title2": "in S/4HANA programs",
     "subtitle": "Organizations struggle with fragmented tools, manual processes, and poor data quality during greenfield and bluefield implementations.",
-    "withoutTitle": "Without DQ View",
+    "withoutTitle": "Without deKorvai",
     "withoutSubtitle": "The current reality",
-    "withTitle": "With DQ View",
+    "withTitle": "With deKorvai",
     "withSubtitle": "The new standard",
     "problems": {
       "p1": "Multiple disconnected tools for profiling, ETL, and scrambling",
@@ -140,7 +140,7 @@
     "steps": {
       "s1": {
         "title": "Connect & Extract",
-        "description": "Connect to your SAP ECC, Oracle, SQL Server, or any relational database. Define extraction rules with conditions, filters, and incremental options. DQ View handles full and delta loads automatically.",
+        "description": "Connect to your SAP ECC, Oracle, SQL Server, or any relational database. Define extraction rules with conditions, filters, and incremental options. deKorvai handles full and delta loads automatically.",
         "d1": "Rule-based extraction",
         "d2": "Full & incremental loads",
         "d3": "Multi-source support"
@@ -169,10 +169,10 @@
     }
   },
   "whyDqView": {
-    "badge": "WHY DQ VIEW",
+    "badge": "WHY deKorvai",
     "title1": "Built for the programs",
     "title2": "that matter most",
-    "subtitle": "DQ View is purpose-built for enterprise transformation programs where data migration is the most critical and complex workstream.",
+    "subtitle": "deKorvai is purpose-built for enterprise transformation programs where data migration is the most critical and complex workstream.",
     "reasons": {
       "r1": {
         "title": "One Platform, Not Five",
@@ -192,7 +192,7 @@
       },
       "r5": {
         "title": "Faster Time-to-Value",
-        "description": "Reduce migration lead time at every stage and mock cycle. Teams using DQ View consistently meet aggressive timelines that seemed impossible with manual approaches."
+        "description": "Reduce migration lead time at every stage and mock cycle. Teams using deKorvai consistently meet aggressive timelines that seemed impossible with manual approaches."
       },
       "r6": {
         "title": "Flexible Transformation Engine",
@@ -201,7 +201,7 @@
     },
     "programsTitle": "Programs we",
     "programsTitleHighlight": "power",
-    "programsSubtitle": "From greenfield implementations to regional roll-outs, DQ View supports every type of SAP transformation program.",
+    "programsSubtitle": "From greenfield implementations to regional roll-outs, deKorvai supports every type of SAP transformation program.",
     "programs": {
       "p1": {
         "title": "S/4HANA Greenfield",
@@ -233,7 +233,7 @@
     "badge": "USE CASES",
     "title1": "Built for real-world",
     "title2": "enterprise challenges",
-    "subtitle": "From SAP S/4HANA migrations to continuous data governance — DQ View handles the most complex enterprise data scenarios.",
+    "subtitle": "From SAP S/4HANA migrations to continuous data governance — deKorvai handles the most complex enterprise data scenarios.",
     "cases": {
       "c1": {
         "title": "SAP S/4HANA Greenfield Migration",
@@ -257,7 +257,7 @@
     "badge": "SEE IT IN ACTION",
     "title1": "Real-world scenario:",
     "title2": "BP Vendor Migration",
-    "subtitle": "See how DQ View orchestrates the full Business Partner migration from SAP ECC to S/4HANA — the most complex workstream in any transformation program.",
+    "subtitle": "See how deKorvai orchestrates the full Business Partner migration from SAP ECC to S/4HANA — the most complex workstream in any transformation program.",
     "scenarioTag": "Business Partner",
     "scenarioTitle": "Vendor to Business Partner Migration — SAP ECC to S/4HANA",
     "scenarioDescription": "50,000+ vendor records across multiple company codes and purchasing organizations, migrated with automated extraction rules, profiling, transformation, and loading into DMC staging tables.",
@@ -295,7 +295,7 @@
   "comparison": {
     "badge": "COMPARISON",
     "title1": "Why choose",
-    "title2": "DQ View?",
+    "title2": "deKorvai?",
     "subtitle": "The only platform that unifies data quality, ETL, and scrambling — replacing multiple point solutions.",
     "capability": "Capability",
     "features": {
@@ -321,25 +321,25 @@
     },
     "quotes": {
       "q1": {
-        "quote": "We used DQ View in the S/4HANA Roll-out program for US to migrate the master and transaction data along with profiling which helped to reduce significant amount of effort in data migration.",
+        "quote": "We used deKorvai in the S/4HANA Roll-out program for US to migrate the master and transaction data along with profiling which helped to reduce significant amount of effort in data migration.",
         "company": "Evident Scientific",
         "useCase": "S/4HANA Roll-out Program — US Region",
         "tag": "Data Migration & Profiling"
       },
       "q2": {
-        "quote": "We used DQ View in the S/4HANA Grow program to load the data from legacy applications to the GROW applications which helped to not exceed the 3 months target that we had in hand while starting the program.",
+        "quote": "We used deKorvai in the S/4HANA Grow program to load the data from legacy applications to the GROW applications which helped to not exceed the 3 months target that we had in hand while starting the program.",
         "company": "GRT Ethanol",
         "useCase": "S/4HANA GROW Program",
         "tag": "Legacy to S/4HANA Migration"
       },
       "q3": {
-        "quote": "Coromandel International uses DQ View for scrambling their SAP and non-SAP applications, ensuring compliant test environments across their entire enterprise landscape.",
+        "quote": "Coromandel International uses deKorvai for scrambling their SAP and non-SAP applications, ensuring compliant test environments across their entire enterprise landscape.",
         "company": "Coromandel International",
         "useCase": "Enterprise Data Scrambling",
         "tag": "SAP & Non-SAP Scrambling"
       },
       "q4": {
-        "quote": "The world's #2 brewer uses DQ View for scrambling their non-SAP applications, enabling teams to work with production-like data while maintaining full regulatory compliance.",
+        "quote": "The world's #2 brewer uses deKorvai for scrambling their non-SAP applications, enabling teams to work with production-like data while maintaining full regulatory compliance.",
         "company": "World's #2 Brewer",
         "useCase": "Non-SAP Data Scrambling",
         "tag": "Data Scrambling"
@@ -357,10 +357,10 @@
     "viewAllEvents": "View all events"
   },
   "cta": {
-    "badge": "See DQ View in action",
+    "badge": "See deKorvai in action",
     "title1": "Let's shape the future of",
     "title2": "enterprise data together",
-    "subtitle": "Book a personalized demo and see how DQ View can simplify your next data migration, improve data quality, and accelerate your transformation program.",
+    "subtitle": "Book a personalized demo and see how deKorvai can simplify your next data migration, improve data quality, and accelerate your transformation program.",
     "scheduleDemo": "Schedule Your Demo"
   },
   "globalPresence": {
@@ -384,6 +384,7 @@
     }
   },
   "footer": {
+    "nameMeaning": "\"The Perfect Composition\" — from Tamil கோர்வை (Korvai) & Dutch de",
     "description": "Unified data quality, ETL, and scrambling platform powered by Agentic AI. Built for enterprise data transformation programs.",
     "platform": "Platform",
     "platformLinks": {
@@ -426,7 +427,7 @@
     "by": "By",
     "backToBlog": "Back to Blog",
     "readyToTransform": "Ready to transform your data migration?",
-    "readyCta": "See how DQ View can simplify your S/4HANA transformation program.",
+    "readyCta": "See how deKorvai can simplify your S/4HANA transformation program.",
     "bookDemo": "Book a Demo"
   }
 }

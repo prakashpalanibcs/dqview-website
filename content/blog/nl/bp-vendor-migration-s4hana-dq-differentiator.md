@@ -1,6 +1,6 @@
 ---
-title: "Business Partner-migratie in S/4HANA: Hoe DQ View het Verschil Maakt"
-excerpt: "Het migreren van leveranciers als Business Partners in SAP S/4HANA is een van de meest complexe data-uitdagingen. Ontdek hoe DQ View's ETL-intelligentie dit proces transformeert van foutgevoelig naar voorspelbaar."
+title: "Business Partner-migratie in S/4HANA: Hoe deKorvai het Verschil Maakt"
+excerpt: "Het migreren van leveranciers als Business Partners in SAP S/4HANA is een van de meest complexe data-uitdagingen. Ontdek hoe deKorvai's ETL-intelligentie dit proces transformeert van foutgevoelig naar voorspelbaar."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "bp-vendor-migration-s4hana-dq-differentiator"
@@ -12,15 +12,15 @@ In elk SAP S/4HANA-transformatieprogramma is het migreren van leveranciers en kl
 
 De meeste organisaties proberen dit met een lappendeken van handmatige extracties, Excel V-lookups en ad hoc profiling. Het resultaat: herhaalde herwerkcycli, vertraagde mock loads en migratietijdlijnen die weken uitlopen.
 
-DQ View verandert dit volledig.
+deKorvai verandert dit volledig.
 
 ## De End-to-End ETL-stroom
 
-DQ View orkestreert de volledige BP Leverancier-migratie door vijf beheerste fasen: Extractie, Profilering, Transformatie, Validatie en Laden.
+deKorvai orkestreert de volledige BP Leverancier-migratie door vijf beheerste fasen: Extractie, Profilering, Transformatie, Validatie en Laden.
 
 ### Fase 1: Extractie — Regelgebaseerd, Niet Handmatig
 
-In plaats van IT-teams die handmatig data uit meerdere ECC-tabellen halen, extraheert DQ View leveranciersrecords op basis van configureerbare bedrijfsregels:
+In plaats van IT-teams die handmatig data uit meerdere ECC-tabellen halen, extraheert deKorvai leveranciersrecords op basis van configureerbare bedrijfsregels:
 
 - Leveranciersadres, belasting- en bankgegevens uit bron-ECC
 - Bedrijfscode-gegevens op basis van extractiecriteria
@@ -33,7 +33,7 @@ Dit elimineert de uren handmatig extractiewerk die doorgaans door IT- en busines
 
 ## Fase 2: Profilering — Problemen Opvangen Voordat Het Fouten Worden
 
-Na extractie voert DQ View drie kritieke profileringscontroles uit voordat enige transformatie begint:
+Na extractie voert deKorvai drie kritieke profileringscontroles uit voordat enige transformatie begint:
 
 **Bedrijfscode, Inkooporganisatie en Afstemmingsrekening Profilering** — Valideert dat elk leveranciersrecord correct wordt gekoppeld aan de bedrijfscodes, inkooporganisaties en afstemmingsrekeningen van het S/4HANA-doelsysteem. Ongeldige records worden direct gemarkeerd.
 
@@ -45,28 +45,28 @@ Voor elke profileringsfase triggeren ongeldige records een automatische e-mail n
 
 ## Fase 3: Transformatie — Intelligente Mapping
 
-Na goedkeuring door profilering past DQ View transformatieregels toe die de SAP-specifieke complexiteit afhandelen:
+Na goedkeuring door profilering past deKorvai transformatieregels toe die de SAP-specifieke complexiteit afhandelen:
 
 - Bronbedrijfscodes, inkooporganisaties, verkoopgebieden en afstemmingsrekeningen worden gemapt en getransformeerd naar hun equivalenten in het doelsysteem
 - Vereiste BP-rollen worden automatisch uitgebreid op basis van het bronleverancierstype
 - Bronleveranciers-/klantnummers worden gekoppeld aan doel-Business Partner-nummers voor tracking en traceerbaarheid
 - Dubbele masters worden geladen in stagingtabellen met juiste koppeling om migratiefouten te minimaliseren
 
-Deze mappinglaag is waar de meeste handmatige migratie-aanpakken vastlopen. Excel-gebaseerde transformaties missen randgevallen, produceren inconsistente mappings en vereisen volledige heruitvoeringen wanneer regels veranderen. DQ View's regelengine past transformaties consistent toe op elk record.
+Deze mappinglaag is waar de meeste handmatige migratie-aanpakken vastlopen. Excel-gebaseerde transformaties missen randgevallen, produceren inconsistente mappings en vereisen volledige heruitvoeringen wanneer regels veranderen. deKorvai's regelengine past transformaties consistent toe op elk record.
 
 ## Fase 4: Laden — Schone Data in DMC
 
-Alleen gevalideerde en getransformeerde records gaan door naar het S/4HANA-doelsysteem. DQ View laadt data direct in de DMC (Data Migration Cockpit) stagingtabellen, gevolgd door simulatieruns in DMC om recordintegriteit te verifiëren vóór de definitieve migratie-uitvoering.
+Alleen gevalideerde en getransformeerde records gaan door naar het S/4HANA-doelsysteem. deKorvai laadt data direct in de DMC (Data Migration Cockpit) stagingtabellen, gevolgd door simulatieruns in DMC om recordintegriteit te verifiëren vóór de definitieve migratie-uitvoering.
 
 De belangrijkste onderscheidende factor: omdat profilering en transformatie problemen al stroomopwaarts hebben opgepakt en opgelost, is het DMC-simulatie slagingspercentage aanzienlijk hoger — wat de laad-fix-herlaad-cycli vermindert die doorgaans weken projecttijd in beslag nemen.
 
-## Waarom DQ View het Verschil Maakt
+## Waarom deKorvai het Verschil Maakt
 
-Traditionele BP-migratie-aanpakken lijden aan verschillende structurele problemen die DQ View elimineert:
+Traditionele BP-migratie-aanpakken lijden aan verschillende structurele problemen die deKorvai elimineert:
 
 **Geen handmatige extractie meer** — Configureerbare regels vervangen uren IT-werk met het ophalen van data uit verspreide ECC-tabellen. Eén keer extraheren met regels, niet herhaaldelijk met queries.
 
-**Geen Excel V-lookups meer** — Transformatiemapping wordt afgehandeld door DQ View's regelengine, niet door foutgevoelige spreadsheetformules die breken wanneer datavolumes veranderen.
+**Geen Excel V-lookups meer** — Transformatiemapping wordt afgehandeld door deKorvai's regelengine, niet door foutgevoelige spreadsheetformules die breken wanneer datavolumes veranderen.
 
 **100% aanpasbare profileringsregels** — Businessteams definiëren wat "geldig" betekent voor hun specifieke migratiescope. Regels passen zich aan naarmate vereisten evolueren over mockcycli.
 
@@ -78,7 +78,7 @@ Traditionele BP-migratie-aanpakken lijden aan verschillende structurele probleme
 
 ## Impact in de Praktijk
 
-Overweeg een typisch S/4HANA-programma dat 50.000 leveranciersrecords migreert over meerdere bedrijfscodes en inkooporganisaties. Zonder DQ View:
+Overweeg een typisch S/4HANA-programma dat 50.000 leveranciersrecords migreert over meerdere bedrijfscodes en inkooporganisaties. Zonder deKorvai:
 
 - IT extraheert handmatig uit LFA1, LFB1, LFM1, LFBK en adrestabellen
 - Businessteams besteden dagen aan V-lookups voor bedrijfscode- en inkooporganisatiemappings
@@ -87,7 +87,7 @@ Overweeg een typisch S/4HANA-programma dat 50.000 leveranciersrecords migreert o
 - Drie tot vier herwerkcycli voordat acceptabele slagingspercentages worden bereikt
 - Elke mockcyclus duurt 2-3 weken
 
-Met DQ View:
+Met deKorvai:
 
 - Extractie, profilering en transformatie draaien automatisch op basis van geconfigureerde regels
 - Ongeldige records worden dezelfde dag geïdentificeerd en naar eigenaren gerouteerd
@@ -100,6 +100,6 @@ Met DQ View:
 
 Business Partner-migratie is niet slechts een technische exercitie — het is een bedrijfskritische werkstroom die inkoop, financiën en compliance raakt. Wanneer BP-migratie stagneert, kunnen downstream-processen zoals inkoopordermigratie, factuurmigratie en betalingsruns niet doorgaan.
 
-DQ View transformeert BP-migratie van de werkstroom met het hoogste risico naar een voorspelbaar, beheerst proces. De extractieregels garanderen volledigheid, profilering vangt problemen vroegtijdig op, transformatie wordt consistent toegepast en laden levert schone data aan S/4HANA — elke keer weer.
+deKorvai transformeert BP-migratie van de werkstroom met het hoogste risico naar een voorspelbaar, beheerst proces. De extractieregels garanderen volledigheid, profilering vangt problemen vroegtijdig op, transformatie wordt consistent toegepast en laden levert schone data aan S/4HANA — elke keer weer.
 
 Voor organisaties die SAP S/4HANA-transformaties doorlopen, is de vraag niet óf u datakwaliteitstooling nodig heeft voor BP-migratie. De vraag is hoeveel herwerkcycli u bereid bent te absorberen voordat u het adopteert.

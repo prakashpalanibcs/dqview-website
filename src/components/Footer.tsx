@@ -56,7 +56,7 @@ export default function Footer() {
     {
       title: t("company"),
       links: [
-        { label: t("companyLinks.aboutUs"), section: "why-dqview" },
+        { label: t("companyLinks.aboutUs"), section: "why-dekorvai" },
         { label: t("companyLinks.careers"), external: "mailto:hello@businesscoresolutions.com" },
         { label: t("companyLinks.contact"), section: "demo" },
         { label: t("companyLinks.partners"), section: "global-presence" },
@@ -72,13 +72,16 @@ export default function Footer() {
             <div className="flex items-center gap-2.5 mb-4">
               <Image
                 src="/dq-icon.webp"
-                alt="DQ View"
+                alt="deKorvai"
                 width={64}
                 height={64}
                 className="h-9 w-9 rounded-lg"
               />
-              <span className="text-xl font-bold text-white">DQview</span>
+              <span className="text-xl font-bold text-white">deKorvai</span>
             </div>
+            <p className="text-xs text-emerald-400/70 italic mb-3">
+              {t("nameMeaning")}
+            </p>
             <p className="text-sm text-gray-500 leading-relaxed mb-6 max-w-xs">
               {t("description")}
             </p>

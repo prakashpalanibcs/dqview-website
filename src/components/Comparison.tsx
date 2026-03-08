@@ -7,18 +7,18 @@ import { useTranslations } from "next-intl";
 const featureKeys = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8"];
 
 const categoryData = [
-  { dqview: true, sapBods: "partial", ataccama: true, purview: "partial", datprof: false, syniti: "partial" },
-  { dqview: true, sapBods: true, ataccama: false, purview: false, datprof: false, syniti: true },
-  { dqview: true, sapBods: false, ataccama: false, purview: false, datprof: true, syniti: false },
-  { dqview: true, sapBods: true, ataccama: false, purview: false, datprof: false, syniti: true },
-  { dqview: true, sapBods: false, ataccama: "partial", purview: "partial", datprof: false, syniti: false },
-  { dqview: true, sapBods: false, ataccama: true, purview: "partial", datprof: false, syniti: false },
-  { dqview: true, sapBods: "partial", ataccama: true, purview: true, datprof: true, syniti: "partial" },
-  { dqview: true, sapBods: false, ataccama: false, purview: false, datprof: false, syniti: false },
+  { dekorvai: true, sapBods: "partial", ataccama: true, purview: "partial", datprof: false, syniti: "partial" },
+  { dekorvai: true, sapBods: true, ataccama: false, purview: false, datprof: false, syniti: true },
+  { dekorvai: true, sapBods: false, ataccama: false, purview: false, datprof: true, syniti: false },
+  { dekorvai: true, sapBods: true, ataccama: false, purview: false, datprof: false, syniti: true },
+  { dekorvai: true, sapBods: false, ataccama: "partial", purview: "partial", datprof: false, syniti: false },
+  { dekorvai: true, sapBods: false, ataccama: true, purview: "partial", datprof: false, syniti: false },
+  { dekorvai: true, sapBods: "partial", ataccama: true, purview: true, datprof: true, syniti: "partial" },
+  { dekorvai: true, sapBods: false, ataccama: false, purview: false, datprof: false, syniti: false },
 ];
 
 const competitors = [
-  { key: "dqview", name: "DQ View", highlight: true },
+  { key: "dekorvai", name: "deKorvai", highlight: true },
   { key: "sapBods", name: "SAP BODS", highlight: false },
   { key: "ataccama", name: "Ataccama", highlight: false },
   { key: "purview", name: "Purview", highlight: false },

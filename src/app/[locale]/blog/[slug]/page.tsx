@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const post = getBlogBySlug(locale, slug);
   if (!post) return { title: "Not Found" };
   return {
-    title: `${post.title} | DQ View Blog`,
+    title: `${post.title} | deKorvai Blog`,
     description: post.excerpt,
   };
 }

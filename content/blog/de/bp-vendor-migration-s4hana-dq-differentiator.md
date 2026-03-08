@@ -1,6 +1,6 @@
 ---
-title: "Business Partner-Migration in S/4HANA: Wie DQ View zum Differenzierungsfaktor wird"
-excerpt: "Die Migration von Lieferanten als Business Partner in SAP S/4HANA ist eine der komplexesten Datenherausforderungen. Erfahren Sie, wie DQ Views ETL-Intelligenz diesen Prozess von fehleranfällig zu planbar transformiert."
+title: "Business Partner-Migration in S/4HANA: Wie deKorvai zum Differenzierungsfaktor wird"
+excerpt: "Die Migration von Lieferanten als Business Partner in SAP S/4HANA ist eine der komplexesten Datenherausforderungen. Erfahren Sie, wie deKorvais ETL-Intelligenz diesen Prozess von fehleranfällig zu planbar transformiert."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "bp-vendor-migration-s4hana-dq-differentiator"
@@ -12,15 +12,15 @@ In jedem SAP S/4HANA-Transformationsprogramm ist die Migration von Lieferanten u
 
 Die meisten Organisationen versuchen dies mit einem Flickwerk aus manuellen Extraktionen, Excel-V-Lookups und Ad-hoc-Profiling. Das Ergebnis: wiederholte Nacharbeitszyklen, verzögerte Mock-Loads und Migrationszeitpläne, die sich um Wochen verschieben.
 
-DQ View ändert dies grundlegend.
+deKorvai ändert dies grundlegend.
 
 ## Der End-to-End ETL-Fluss
 
-DQ View orchestriert die vollständige BP-Lieferanten-Migration durch fünf gesteuerte Phasen: Extraktion, Profiling, Transformation, Validierung und Laden.
+deKorvai orchestriert die vollständige BP-Lieferanten-Migration durch fünf gesteuerte Phasen: Extraktion, Profiling, Transformation, Validierung und Laden.
 
 ### Phase 1: Extraktion — Regelbasiert, Nicht Manuell
 
-Anstatt dass IT-Teams manuell Daten aus mehreren ECC-Tabellen ziehen, extrahiert DQ View Lieferantendatensätze basierend auf konfigurierbaren Geschäftsregeln:
+Anstatt dass IT-Teams manuell Daten aus mehreren ECC-Tabellen ziehen, extrahiert deKorvai Lieferantendatensätze basierend auf konfigurierbaren Geschäftsregeln:
 
 - Lieferantenadress-, Steuer- und Bankdaten aus dem Quell-ECC
 - Buchungskreis-Daten basierend auf Extraktionskriterien
@@ -33,7 +33,7 @@ Dies eliminiert die stundenlange manuelle Extraktionsarbeit, die typischerweise 
 
 ## Phase 2: Profiling — Probleme Erkennen, Bevor Sie Zu Fehlern Werden
 
-Nach der Extraktion führt DQ View drei kritische Profiling-Prüfungen durch, bevor eine Transformation beginnt:
+Nach der Extraktion führt deKorvai drei kritische Profiling-Prüfungen durch, bevor eine Transformation beginnt:
 
 **Buchungskreis, Einkaufsorganisation und Abstimmkonto-Profiling** — Validiert, dass jeder Lieferantendatensatz korrekt den Buchungskreisen, Einkaufsorganisationen und Abstimmkonten des S/4HANA-Zielsystems zugeordnet wird. Ungültige Datensätze werden sofort markiert.
 
@@ -45,28 +45,28 @@ Für jede Profiling-Phase lösen ungültige Datensätze eine automatische E-Mail
 
 ## Phase 3: Transformation — Intelligentes Mapping
 
-Nach der Profiling-Freigabe wendet DQ View Transformationsregeln an, die die SAP-spezifische Komplexität bewältigen:
+Nach der Profiling-Freigabe wendet deKorvai Transformationsregeln an, die die SAP-spezifische Komplexität bewältigen:
 
 - Quell-Buchungskreise, Einkaufsorganisationen, Verkaufsgebiete und Abstimmkonten werden auf ihre Äquivalente im Zielsystem gemappt und transformiert
 - Erforderliche BP-Rollen werden automatisch basierend auf dem Quell-Lieferantentyp erweitert
 - Quell-Lieferanten-/Kundennummern werden mit Ziel-Business Partner-Nummern für Tracking und Rückverfolgbarkeit verknüpft
 - Duplizierte Stammdaten werden mit korrekter Verknüpfung in Staging-Tabellen geladen, um Migrationsfehler zu minimieren
 
-Diese Mapping-Schicht ist der Punkt, an dem die meisten manuellen Migrationsansätze scheitern. Excel-basierte Transformationen übersehen Randfälle, erzeugen inkonsistente Mappings und erfordern vollständige Neuläufe bei Regeländerungen. DQ Views Regel-Engine wendet Transformationen konsistent auf jeden Datensatz an.
+Diese Mapping-Schicht ist der Punkt, an dem die meisten manuellen Migrationsansätze scheitern. Excel-basierte Transformationen übersehen Randfälle, erzeugen inkonsistente Mappings und erfordern vollständige Neuläufe bei Regeländerungen. deKorvais Regel-Engine wendet Transformationen konsistent auf jeden Datensatz an.
 
 ## Phase 4: Laden — Saubere Daten in DMC
 
-Nur validierte und transformierte Datensätze gelangen in das S/4HANA-Zielsystem. DQ View lädt Daten direkt in die DMC-Staging-Tabellen (Data Migration Cockpit), gefolgt von Simulationsläufen im DMC zur Überprüfung der Datensatzintegrität vor der endgültigen Migrationsausführung.
+Nur validierte und transformierte Datensätze gelangen in das S/4HANA-Zielsystem. deKorvai lädt Daten direkt in die DMC-Staging-Tabellen (Data Migration Cockpit), gefolgt von Simulationsläufen im DMC zur Überprüfung der Datensatzintegrität vor der endgültigen Migrationsausführung.
 
 Der entscheidende Differenzierungsfaktor: Da Profiling und Transformation Probleme bereits im Vorfeld erkannt und gelöst haben, ist die DMC-Simulationserfolgsrate deutlich höher — was die Laden-Korrigieren-Neuladen-Zyklen reduziert, die typischerweise Wochen an Projektzeit verbrauchen.
 
-## Warum DQ View den Unterschied Macht
+## Warum deKorvai den Unterschied Macht
 
-Traditionelle BP-Migrationsansätze leiden unter mehreren strukturellen Problemen, die DQ View beseitigt:
+Traditionelle BP-Migrationsansätze leiden unter mehreren strukturellen Problemen, die deKorvai beseitigt:
 
 **Keine manuelle Extraktion mehr** — Konfigurierbare Regeln ersetzen stundenlange IT-Arbeit beim Abrufen von Daten aus verteilten ECC-Tabellen. Einmal mit Regeln extrahieren, nicht wiederholt mit Queries.
 
-**Keine Excel-V-Lookups mehr** — Transformations-Mapping wird von DQ Views Regel-Engine übernommen, nicht von fehleranfälligen Tabellenformeln, die bei sich ändernden Datenvolumen versagen.
+**Keine Excel-V-Lookups mehr** — Transformations-Mapping wird von deKorvais Regel-Engine übernommen, nicht von fehleranfälligen Tabellenformeln, die bei sich ändernden Datenvolumen versagen.
 
 **100% anpassbare Profiling-Regeln** — Fachteams definieren, was "gültig" für ihren spezifischen Migrationsumfang bedeutet. Regeln passen sich an, wenn sich Anforderungen über Mock-Zyklen weiterentwickeln.
 
@@ -78,7 +78,7 @@ Traditionelle BP-Migrationsansätze leiden unter mehreren strukturellen Probleme
 
 ## Auswirkungen in der Praxis
 
-Betrachten Sie ein typisches S/4HANA-Programm, das 50.000 Lieferantendatensätze über mehrere Buchungskreise und Einkaufsorganisationen migriert. Ohne DQ View:
+Betrachten Sie ein typisches S/4HANA-Programm, das 50.000 Lieferantendatensätze über mehrere Buchungskreise und Einkaufsorganisationen migriert. Ohne deKorvai:
 
 - IT extrahiert manuell aus LFA1, LFB1, LFM1, LFBK und Adresstabellen
 - Fachteams verbringen Tage mit V-Lookups für Buchungskreis- und Einkaufsorganisations-Mappings
@@ -87,7 +87,7 @@ Betrachten Sie ein typisches S/4HANA-Programm, das 50.000 Lieferantendatensätze
 - Drei bis vier Nacharbeitszyklen bis akzeptable Erfolgsraten erreicht werden
 - Jeder Mock-Zyklus dauert 2-3 Wochen
 
-Mit DQ View:
+Mit deKorvai:
 
 - Extraktion, Profiling und Transformation laufen automatisch basierend auf konfigurierten Regeln
 - Ungültige Datensätze werden am selben Tag identifiziert und an Verantwortliche weitergeleitet
@@ -100,6 +100,6 @@ Mit DQ View:
 
 Business Partner-Migration ist nicht nur eine technische Übung — es ist ein geschäftskritischer Arbeitsstrom, der Beschaffung, Finanzen und Compliance berührt. Wenn die BP-Migration ins Stocken gerät, können nachgelagerte Prozesse wie Bestellungsmigration, Rechnungsmigration und Zahlungsläufe nicht fortgesetzt werden.
 
-DQ View verwandelt die BP-Migration vom Arbeitsstrom mit dem höchsten Risiko in einen planbaren, gesteuerten Prozess. Die Extraktionsregeln gewährleisten Vollständigkeit, Profiling erkennt Probleme frühzeitig, Transformation wird konsistent angewandt und das Laden liefert saubere Daten an S/4HANA — jedes Mal.
+deKorvai verwandelt die BP-Migration vom Arbeitsstrom mit dem höchsten Risiko in einen planbaren, gesteuerten Prozess. Die Extraktionsregeln gewährleisten Vollständigkeit, Profiling erkennt Probleme frühzeitig, Transformation wird konsistent angewandt und das Laden liefert saubere Daten an S/4HANA — jedes Mal.
 
 Für Organisationen, die SAP S/4HANA-Transformationen durchlaufen, ist die Frage nicht, ob Sie Datenqualitäts-Tooling für die BP-Migration benötigen. Die Frage ist, wie viele Nacharbeitszyklen Sie bereit sind zu absorbieren, bevor Sie es einführen.

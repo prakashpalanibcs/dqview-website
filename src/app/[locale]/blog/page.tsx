@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "blog" });
   return {
-    title: `${t("title1")} ${t("title2")} | DQ View`,
+    title: `${t("title1")} ${t("title2")} | deKorvai`,
     description: t("subtitle"),
   };
 }

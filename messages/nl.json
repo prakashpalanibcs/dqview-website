@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "DQ View | Uniform platform voor datakwaliteit, ETL & scrambling",
+    "title": "deKorvai | Uniform platform voor datakwaliteit, ETL & scrambling",
     "description": "Eén platform voor datakwaliteitsprofiling, ETL-transformatie en data-scrambling. Vereenvoudig SAP S/4HANA-migraties met AI-gestuurde data-intelligentie."
   },
   "navbar": {
@@ -28,7 +28,7 @@
     "badge": "Nu met ingebouwde Agentic AI",
     "headline1": "Eén platform.",
     "headline2": "Elke datafase.",
-    "subheadline": "DQ View verenigt datakwaliteitsprofiling, ETL-transformatie en data-scrambling in één AI-gestuurd platform. Vereenvoudig uw SAP S/4HANA-migraties en elimineer gereedschapswildgroei.",
+    "subheadline": "deKorvai verenigt datakwaliteitsprofiling, ETL-transformatie en data-scrambling in één AI-gestuurd platform. Vereenvoudig uw SAP S/4HANA-migraties en elimineer gereedschapswildgroei.",
     "bookDemo": "Demo aanvragen",
     "seeHowItWorks": "Bekijk hoe het werkt",
     "stats": {
@@ -37,7 +37,7 @@
       "migrationOptimized": { "value": "50%", "label": "Migratie geoptimaliseerd" },
       "auditReady": { "value": "100%", "label": "Auditgereed & compliant" }
     },
-    "dashboardTitle": "DQ View — Datamigratie-pipeline",
+    "dashboardTitle": "deKorvai — Datamigratie-pipeline",
     "pipeline": {
       "extract": "Extraheren",
       "profile": "Profileren",
@@ -63,9 +63,9 @@
     "titleHighlight": "het #1 risico",
     "title2": "in S/4HANA-programma's",
     "subtitle": "Organisaties worstelen met gefragmenteerde tools, handmatige processen en slechte datakwaliteit tijdens greenfield- en bluefield-implementaties.",
-    "withoutTitle": "Zonder DQ View",
+    "withoutTitle": "Zonder deKorvai",
     "withoutSubtitle": "De huidige realiteit",
-    "withTitle": "Met DQ View",
+    "withTitle": "Met deKorvai",
     "withSubtitle": "De nieuwe standaard",
     "problems": {
       "p1": "Meerdere losgekoppelde tools voor profiling, ETL en scrambling",
@@ -140,7 +140,7 @@
     "steps": {
       "s1": {
         "title": "Verbinden & extraheren",
-        "description": "Maak verbinding met uw SAP ECC, Oracle, SQL Server of een andere relationele database. Definieer extractieregels met voorwaarden, filters en incrementele opties. DQ View verwerkt volledige en delta-ladingen automatisch.",
+        "description": "Maak verbinding met uw SAP ECC, Oracle, SQL Server of een andere relationele database. Definieer extractieregels met voorwaarden, filters en incrementele opties. deKorvai verwerkt volledige en delta-ladingen automatisch.",
         "d1": "Regelgebaseerde extractie",
         "d2": "Volledige & incrementele ladingen",
         "d3": "Ondersteuning van meerdere bronnen"
@@ -169,10 +169,10 @@
     }
   },
   "whyDqView": {
-    "badge": "WAAROM DQ VIEW",
+    "badge": "WAAROM deKorvai",
     "title1": "Gebouwd voor de programma's",
     "title2": "die er het meest toe doen",
-    "subtitle": "DQ View is speciaal ontwikkeld voor enterprise-transformatieprogramma's waarin datamigratie de meest kritieke en complexe werkstroom is.",
+    "subtitle": "deKorvai is speciaal ontwikkeld voor enterprise-transformatieprogramma's waarin datamigratie de meest kritieke en complexe werkstroom is.",
     "reasons": {
       "r1": {
         "title": "Eén platform, geen vijf",
@@ -192,7 +192,7 @@
       },
       "r5": {
         "title": "Sneller waarde realiseren",
-        "description": "Verkort de migratiedoorlooptijd in elke fase en bij elke proefronde. Teams die DQ View gebruiken, halen consequent ambitieuze deadlines die met handmatige aanpakken onmogelijk leken."
+        "description": "Verkort de migratiedoorlooptijd in elke fase en bij elke proefronde. Teams die deKorvai gebruiken, halen consequent ambitieuze deadlines die met handmatige aanpakken onmogelijk leken."
       },
       "r6": {
         "title": "Flexibele transformatie-engine",
@@ -201,7 +201,7 @@
     },
     "programsTitle": "Programma's die wij",
     "programsTitleHighlight": "aandrijven",
-    "programsSubtitle": "Van greenfield-implementaties tot regionale uitrolprogramma's: DQ View ondersteunt elk type SAP-transformatieprogramma.",
+    "programsSubtitle": "Van greenfield-implementaties tot regionale uitrolprogramma's: deKorvai ondersteunt elk type SAP-transformatieprogramma.",
     "programs": {
       "p1": {
         "title": "S/4HANA Greenfield",
@@ -233,7 +233,7 @@
     "badge": "TOEPASSINGEN",
     "title1": "Gebouwd voor echte",
     "title2": "enterprise-uitdagingen",
-    "subtitle": "Van SAP S/4HANA-migraties tot continue datagovernance — DQ View verwerkt de meest complexe enterprise-datascenario's.",
+    "subtitle": "Van SAP S/4HANA-migraties tot continue datagovernance — deKorvai verwerkt de meest complexe enterprise-datascenario's.",
     "cases": {
       "c1": {
         "title": "SAP S/4HANA Greenfield-migratie",
@@ -257,7 +257,7 @@
     "badge": "BEKIJK HET IN ACTIE",
     "title1": "Praktijkscenario:",
     "title2": "BP Leveranciersmigratie",
-    "subtitle": "Ontdek hoe DQ View de volledige Business Partner-migratie van SAP ECC naar S/4HANA orkestreert — de meest complexe werkstroom in elk transformatieprogramma.",
+    "subtitle": "Ontdek hoe deKorvai de volledige Business Partner-migratie van SAP ECC naar S/4HANA orkestreert — de meest complexe werkstroom in elk transformatieprogramma.",
     "scenarioTag": "Business Partner",
     "scenarioTitle": "Leverancier naar Business Partner-migratie — SAP ECC naar S/4HANA",
     "scenarioDescription": "50.000+ leveranciersrecords over meerdere bedrijfscodes en inkooporganisaties, gemigreerd met geautomatiseerde extractieregels, profilering, transformatie en laden in DMC-stagingtabellen.",
@@ -295,7 +295,7 @@
   "comparison": {
     "badge": "VERGELIJKING",
     "title1": "Waarom kiezen voor",
-    "title2": "DQ View?",
+    "title2": "deKorvai?",
     "subtitle": "Het enige platform dat datakwaliteit, ETL en scrambling verenigt — ter vervanging van meerdere puntoplossingen.",
     "capability": "Functionaliteit",
     "features": {
@@ -321,25 +321,25 @@
     },
     "quotes": {
       "q1": {
-        "quote": "Wij hebben DQ View gebruikt in het S/4HANA Roll-out-programma voor de VS om master- en transactiedata te migreren, inclusief profiling, wat heeft bijgedragen aan een aanzienlijke vermindering van de inspanning voor datamigratie.",
+        "quote": "Wij hebben deKorvai gebruikt in het S/4HANA Roll-out-programma voor de VS om master- en transactiedata te migreren, inclusief profiling, wat heeft bijgedragen aan een aanzienlijke vermindering van de inspanning voor datamigratie.",
         "company": "Evident Scientific",
         "useCase": "S/4HANA Roll-out-programma — regio VS",
         "tag": "Datamigratie & profiling"
       },
       "q2": {
-        "quote": "Wij hebben DQ View gebruikt in het S/4HANA GROW-programma om data vanuit legacy-applicaties in de GROW-applicaties te laden, waardoor we het gestelde doel van 3 maanden niet hebben overschreden.",
+        "quote": "Wij hebben deKorvai gebruikt in het S/4HANA GROW-programma om data vanuit legacy-applicaties in de GROW-applicaties te laden, waardoor we het gestelde doel van 3 maanden niet hebben overschreden.",
         "company": "GRT Ethanol",
         "useCase": "S/4HANA GROW-programma",
         "tag": "Legacy naar S/4HANA-migratie"
       },
       "q3": {
-        "quote": "Coromandel International gebruikt DQ View voor het scramblen van hun SAP- en niet-SAP-applicaties, waardoor conforme testomgevingen in het gehele enterprise-landschap worden gewaarborgd.",
+        "quote": "Coromandel International gebruikt deKorvai voor het scramblen van hun SAP- en niet-SAP-applicaties, waardoor conforme testomgevingen in het gehele enterprise-landschap worden gewaarborgd.",
         "company": "Coromandel International",
         "useCase": "Enterprise Data Scrambling",
         "tag": "SAP & niet-SAP-scrambling"
       },
       "q4": {
-        "quote": "'s Werelds #2 brouwer gebruikt DQ View voor het scramblen van hun niet-SAP-applicaties, waardoor teams met productieachtige data kunnen werken met volledige naleving van regelgeving.",
+        "quote": "'s Werelds #2 brouwer gebruikt deKorvai voor het scramblen van hun niet-SAP-applicaties, waardoor teams met productieachtige data kunnen werken met volledige naleving van regelgeving.",
         "company": "'s Werelds #2 brouwer",
         "useCase": "Niet-SAP Data Scrambling",
         "tag": "Data Scrambling"
@@ -357,10 +357,10 @@
     "viewAllEvents": "Alle evenementen bekijken"
   },
   "cta": {
-    "badge": "Bekijk DQ View in actie",
+    "badge": "Bekijk deKorvai in actie",
     "title1": "Laten we samen de toekomst van",
     "title2": "enterprise data vormgeven",
-    "subtitle": "Vraag een persoonlijke demo aan en ontdek hoe DQ View uw volgende datamigratie kan vereenvoudigen, de datakwaliteit kan verbeteren en uw transformatieprogramma kan versnellen.",
+    "subtitle": "Vraag een persoonlijke demo aan en ontdek hoe deKorvai uw volgende datamigratie kan vereenvoudigen, de datakwaliteit kan verbeteren en uw transformatieprogramma kan versnellen.",
     "scheduleDemo": "Plan uw demo"
   },
   "globalPresence": {
@@ -384,6 +384,7 @@
     }
   },
   "footer": {
+    "nameMeaning": "\"De Perfecte Compositie\" — van Tamil கோர்வை (Korvai) & Nederlands de",
     "description": "Uniform platform voor datakwaliteit, ETL en scrambling, aangedreven door Agentic AI. Gebouwd voor enterprise-datatransformatieprogramma's.",
     "platform": "Platform",
     "platformLinks": {
@@ -426,7 +427,7 @@
     "by": "Door",
     "backToBlog": "Terug naar blog",
     "readyToTransform": "Klaar om uw datamigratie te transformeren?",
-    "readyCta": "Ontdek hoe DQ View uw S/4HANA-transformatieprogramma kan vereenvoudigen.",
+    "readyCta": "Ontdek hoe deKorvai uw S/4HANA-transformatieprogramma kan vereenvoudigen.",
     "bookDemo": "Demo aanvragen"
   }
 }
