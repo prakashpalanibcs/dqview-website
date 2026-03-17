@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" fill="none">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1000" y2="580" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0f1a"/>
+      <stop offset="100%" stop-color="#0d1520"/>
+    </linearGradient>
+    <filter id="shadow4">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#10b981"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="580" fill="url(#bg4)" rx="16"/>
+  <rect width="1000" height="580" fill="none" stroke="#1e293b" stroke-width="1" rx="16"/>
+
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" fill="#f1f5f9" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700">Duplicate Cluster Resolution — Material Master Example</text>
+  <text x="500" y="62" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12">From detection to golden record selection, transactional correction, and master data cleansing</text>
+
+  <!-- CLUSTER: 3 duplicate records -->
+  <text x="170" y="100" text-anchor="middle" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">DUPLICATE CLUSTER DETECTED</text>
+
+  <!-- Record 1: Golden -->
+  <g filter="url(#shadow4)">
+    <rect x="30" y="116" width="280" height="100" rx="10" fill="#111827" stroke="#10b981" stroke-width="2"/>
+  </g>
+  <rect x="30" y="116" width="280" height="28" rx="10" fill="#052e16"/>
+  <rect x="30" y="134" width="280" height="10" fill="#052e16"/>
+  <text x="46" y="137" fill="#a7f3d0" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700">MAT-10201</text>
+  <rect x="230" y="123" width="66" height="18" rx="9" fill="#059669"/>
+  <text x="263" y="136" text-anchor="middle" fill="white" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="700">GOLDEN</text>
+  <text x="46" y="162" fill="#e2e8f0" font-family="monospace" font-size="11">Ball Bearing 6205-2RS SKF</text>
+  <text x="46" y="180" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="10">Plant: DE01 | UoM: EA | Group: BEAR-001</text>
+  <text x="46" y="198" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="10">MPN: 6205-2RS</text>
+
+  <!-- Record 2: Duplicate -->
+  <g filter="url(#shadow4)">
+    <rect x="30" y="228" width="280" height="100" rx="10" fill="#111827" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6,3"/>
+  </g>
+  <rect x="30" y="228" width="280" height="28" rx="10" fill="#1c1917"/>
+  <rect x="30" y="246" width="280" height="10" fill="#1c1917"/>
+  <text x="46" y="249" fill="#fcd34d" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700">MAT-10202</text>
+  <rect x="214" y="235" width="82" height="18" rx="9" fill="#78350f"/>
+  <text x="255" y="248" text-anchor="middle" fill="#fcd34d" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="700">92% MATCH</text>
+  <text x="46" y="274" fill="#e2e8f0" font-family="monospace" font-size="11">Bearing, Ball 6205 2RS (SKF)</text>
+  <text x="46" y="292" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="10">Plant: DE02 | UoM: EA | Group: BEAR-001</text>
+  <text x="46" y="310" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="10">MPN: 6205-2RS</text>
+
+  <!-- Record 3: Duplicate -->
+  <g filter="url(#shadow4)">
+    <rect x="30" y="340" width="280" height="100" rx="10" fill="#111827" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6,3"/>
+  </g>
+  <rect x="30" y="340" width="280" height="28" rx="10" fill="#1c1917"/>
+  <rect x="30" y="358" width="280" height="10" fill="#1c1917"/>
+  <text x="46" y="361" fill="#fcd34d" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700">MAT-10203</text>
+  <rect x="214" y="347" width="82" height="18" rx="9" fill="#78350f"/>
+  <text x="255" y="360" text-anchor="middle" fill="#fcd34d" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="700">88% MATCH</text>
+  <text x="46" y="386" fill="#e2e8f0" font-family="monospace" font-size="11">SKF 6205-2RS Ball Bearing</text>
+  <text x="46" y="404" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="10">Plant: DE03 | UoM: PC | Group: BEAR-001</text>
+  <text x="46" y="422" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="10">MPN: SKF-6205-2RS</text>
+
+  <!-- Similarity lines between records -->
+  <line x1="170" y1="216" x2="170" y2="228" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="170" y1="328" x2="170" y2="340" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4,2"/>
+
+  <!-- MIDDLE: Action arrows -->
+  <!-- Arrow from cluster to PO correction -->
+  <line x1="310" y1="166" x2="420" y2="166" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="310" y1="278" x2="376" y2="200" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrowGreen)" stroke-dasharray="4,2"/>
+  <line x1="310" y1="390" x2="376" y2="228" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrowGreen)" stroke-dasharray="4,2"/>
+
+  <!-- Middle label -->
+  <rect x="340" y="270" width="120" height="50" rx="8" fill="#052e16" stroke="#10b981" stroke-width="1"/>
+  <text x="400" y="292" text-anchor="middle" fill="#6ee7b7" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700">REVIEW &amp;</text>
+  <text x="400" y="306" text-anchor="middle" fill="#6ee7b7" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700">APPROVE</text>
+
+  <!-- RIGHT TOP: Purchase Orders corrected -->
+  <text x="660" y="100" text-anchor="middle" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">TRANSACTIONAL DATA CORRECTED</text>
+
+  <g filter="url(#shadow4)">
+    <rect x="430" y="116" width="290" height="162" rx="10" fill="#111827" stroke="#3b82f6" stroke-width="1.5"/>
+  </g>
+  <rect x="430" y="116" width="290" height="28" rx="10" fill="#172554"/>
+  <rect x="430" y="134" width="290" height="10" fill="#172554"/>
+  <text x="446" y="137" fill="#93c5fd" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700">PURCHASE ORDERS REMAPPED</text>
+
+  <!-- PO rows -->
+  <text x="446" y="166" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="600">PO #</text>
+  <text x="514" y="166" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="600">ORIGINAL</text>
+  <text x="600" y="166" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="600">CORRECTED</text>
+  <text x="688" y="166" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="600">STATUS</text>
+
+  <line x1="446" y1="172" x2="706" y2="172" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="446" y="188" fill="#e2e8f0" font-family="monospace" font-size="10">PO-440012</text>
+  <text x="514" y="188" fill="#6b7280" font-family="monospace" font-size="10">MAT-10201</text>
+  <text x="600" y="188" fill="#10b981" font-family="monospace" font-size="10">MAT-10201</text>
+  <text x="688" y="188" fill="#6b7280" font-family="Inter, system-ui, sans-serif" font-size="9">No change</text>
+
+  <text x="446" y="208" fill="#e2e8f0" font-family="monospace" font-size="10">PO-440078</text>
+  <text x="514" y="208" fill="#ef4444" font-family="monospace" font-size="10" text-decoration="line-through">MAT-10202</text>
+  <text x="600" y="208" fill="#10b981" font-family="monospace" font-size="10">MAT-10201</text>
+  <text x="688" y="208" fill="#10b981" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="600">Remapped</text>
+
+  <text x="446" y="228" fill="#e2e8f0" font-family="monospace" font-size="10">PO-440091</text>
+  <text x="514" y="228" fill="#ef4444" font-family="monospace" font-size="10" text-decoration="line-through">MAT-10203</text>
+  <text x="600" y="228" fill="#10b981" font-family="monospace" font-size="10">MAT-10201</text>
+  <text x="688" y="228" fill="#10b981" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="600">Remapped</text>
+
+  <!-- Volume consolidation callout -->
+  <rect x="446" y="244" width="260" height="24" rx="6" fill="#052e16"/>
+  <text x="576" y="260" text-anchor="middle" fill="#34d399" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600">Total consolidated: 10,000 units under MAT-10201</text>
+
+  <!-- RIGHT BOTTOM: Master Data Result -->
+  <text x="660" y="310" text-anchor="middle" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">MASTER DATA CLEANSED</text>
+
+  <g filter="url(#shadow4)">
+    <rect x="430" y="326" width="290" height="150" rx="10" fill="#111827" stroke="#8b5cf6" stroke-width="1.5"/>
+  </g>
+  <rect x="430" y="326" width="290" height="28" rx="10" fill="#2e1065"/>
+  <rect x="430" y="344" width="290" height="10" fill="#2e1065"/>
+  <text x="446" y="347" fill="#c4b5fd" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700">MATERIAL MASTER RESULT</text>
+
+  <!-- Result rows -->
+  <rect x="446" y="366" width="260" height="30" rx="6" fill="#052e16" stroke="#10b981" stroke-width="1"/>
+  <text x="456" y="385" fill="#10b981" font-family="monospace" font-size="10" font-weight="700">MAT-10201</text>
+  <text x="544" y="385" fill="#a7f3d0" font-family="Inter, system-ui, sans-serif" font-size="10">Active — Golden Record</text>
+
+  <rect x="446" y="404" width="260" height="26" rx="6" fill="#1c1917" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="456" y="421" fill="#ef4444" font-family="monospace" font-size="10" text-decoration="line-through">MAT-10202</text>
+  <text x="544" y="421" fill="#fca5a5" font-family="Inter, system-ui, sans-serif" font-size="10">Marked for Deletion</text>
+
+  <rect x="446" y="438" width="260" height="26" rx="6" fill="#1c1917" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="456" y="455" fill="#ef4444" font-family="monospace" font-size="10" text-decoration="line-through">MAT-10203</text>
+  <text x="544" y="455" fill="#fca5a5" font-family="Inter, system-ui, sans-serif" font-size="10">Marked for Deletion</text>
+
+  <!-- Bottom: Outcome banner -->
+  <rect x="40" y="490" width="920" height="56" rx="10" fill="#052e16" stroke="#059669" stroke-width="1.5"/>
+  <text x="500" y="514" text-anchor="middle" fill="#6ee7b7" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700">OUTCOME: 3 records → 1 golden record | 3 POs corrected | Consolidated volume: 10,000 units | Full audit trail preserved</text>
+  <text x="500" y="534" text-anchor="middle" fill="#4ade80" font-family="Inter, system-ui, sans-serif" font-size="11">UoM inconsistency (EA vs PC) resolved | Manufacturer part number standardized | Plants extended to golden record</text>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04">
+    <pattern id="dots4" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="white"/>
+    </pattern>
+    <rect width="1000" height="580" fill="url(#dots4)"/>
+  </g>
+</svg>
