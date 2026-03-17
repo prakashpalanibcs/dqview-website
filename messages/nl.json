@@ -292,6 +292,53 @@
     "ctaText": "Lees de volledige technische uitleg van dit BP-migratiescenario.",
     "readFullStory": "Lees het volledige verhaal"
   },
+  "fuzzyDuplicateShowcase": {
+    "scenarioTag": "Fuzzy duplicaatdetectie",
+    "scenarioTitle": "Fuzzy duplicaatdetectie & opschoning — SAP-stamgegevens",
+    "scenarioDescription": "120.000+ materiaalstamrecords over meerdere vestigingen en opslaglocaties, gescand met AI-gestuurde fuzzy matching om bijna-duplicaten te detecteren — geclusterd, beoordeeld en opgeschoond over zowel stam- als transactiedata.",
+    "beforeTitle": "Vóór — Fuzzy duplicaten in stamgegevens",
+    "afterTitle": "Na — Opgeschoonde golden records",
+    "beforeCaption": "Dezelfde materialen aangemaakt met kleine variaties in omschrijving, afkorting en opmaak — met dubbele inkooporders, opgeblazen voorraad en niet-kloppende prijzen als gevolg.",
+    "afterCaption": "Golden records behouden, duplicaten samengevoegd. Alle gekoppelde verkooporders & inkooporders automatisch doorverwezen naar het overgebleven record.",
+    "table": {
+      "material": "Materiaal #",
+      "description": "Omschrijving",
+      "plant": "Vestiging",
+      "golden": "Golden ID",
+      "merged": "Samengevoegd van",
+      "confidence": "Match %"
+    },
+    "stages": {
+      "scan": {
+        "title": "Scannen",
+        "description": "Materiaalstamrecords extraheren uit SAP-tabellen (MARA, MAKT, MARC). Omschrijvingen normaliseren, ruis verwijderen en tokeniseren voor vergelijking."
+      },
+      "match": {
+        "title": "Matchen",
+        "description": "Fuzzy algoritmen toepassen — Levenshtein-afstand, Jaro-Winkler en fonetische codering — om gelijkenis te scoren op omschrijving, materiaalgroep en maateenheid."
+      },
+      "cluster": {
+        "title": "Clusteren",
+        "description": "Gematchte records groeperen in duplicaatclusters met betrouwbaarheidsscores. Kandidaten met hoge betrouwbaarheid markeren voor automatisch samenvoegen en twijfelgevallen doorsturen ter beoordeling."
+      },
+      "review": {
+        "title": "Beoordelen",
+        "description": "Data-stewards beoordelen clusters via een goedkeuringsworkflow. Samenvoegbeslissingen accepteren, afwijzen of overschrijven. Volledige audittrail voor elke uitgevoerde actie."
+      },
+      "cleanse": {
+        "title": "Opschonen",
+        "description": "Duplicaten samenvoegen tot golden records. Verkooporders, inkooporders en voorraaddocumenten automatisch bijwerken naar het overgebleven stamrecord."
+      }
+    },
+    "metrics": {
+      "detection": "Duplicaatdetectie",
+      "effort": "Minder handmatig werk",
+      "integrity": "Transactie-integriteit",
+      "speed": "Snellere opschoning"
+    },
+    "ctaText": "Lees de volledige technische verdieping over fuzzy duplicaatdetectie in SAP-stamgegevens.",
+    "readFullStory": "Lees het volledige verhaal"
+  },
   "comparison": {
     "badge": "VERGELIJKING",
     "title1": "Waarom kiezen voor",

@@ -292,6 +292,53 @@
     "ctaText": "Lesen Sie die vollständige technische Beschreibung dieses BP-Migrationsszenarios.",
     "readFullStory": "Vollständigen Bericht lesen"
   },
+  "fuzzyDuplicateShowcase": {
+    "scenarioTag": "Fuzzy-Duplikaterkennung",
+    "scenarioTitle": "Fuzzy-Duplikaterkennung & Bereinigung — SAP-Stammdaten",
+    "scenarioDescription": "120.000+ Materialstammdatensätze über mehrere Werke und Lagerorte, gescannt mit KI-gestütztem Fuzzy-Matching zur Erkennung von Beinahe-Duplikaten — geclustert, überprüft und bereinigt über Stamm- und Bewegungsdaten hinweg.",
+    "beforeTitle": "Vorher — Fuzzy-Duplikate in Stammdaten",
+    "afterTitle": "Nachher — Bereinigte Golden Records",
+    "beforeCaption": "Dieselben Materialien mit leichten Abweichungen in Beschreibung, Abkürzung und Formatierung angelegt — mit doppelten Bestellungen, aufgeblähten Beständen und abweichenden Preisen als Folge.",
+    "afterCaption": "Golden Records beibehalten, Duplikate zusammengeführt. Alle verknüpften Kundenaufträge & Bestellungen automatisch auf den verbleibenden Datensatz umgeleitet.",
+    "table": {
+      "material": "Material-Nr.",
+      "description": "Beschreibung",
+      "plant": "Werk",
+      "golden": "Golden ID",
+      "merged": "Zusammengeführt von",
+      "confidence": "Übereinstimmung %"
+    },
+    "stages": {
+      "scan": {
+        "title": "Scannen",
+        "description": "Materialstammdatensätze aus SAP-Tabellen (MARA, MAKT, MARC) extrahieren. Beschreibungen normalisieren, Störzeichen entfernen und für den Vergleich tokenisieren."
+      },
+      "match": {
+        "title": "Abgleichen",
+        "description": "Fuzzy-Algorithmen anwenden — Levenshtein-Distanz, Jaro-Winkler und phonetische Kodierung — um Ähnlichkeit über Beschreibung, Materialgruppe und Mengeneinheit zu bewerten."
+      },
+      "cluster": {
+        "title": "Clustern",
+        "description": "Abgeglichene Datensätze in Duplikat-Cluster mit Konfidenzwerten gruppieren. Kandidaten mit hoher Konfidenz für automatische Zusammenführung markieren und Grenzfälle zur Überprüfung weiterleiten."
+      },
+      "review": {
+        "title": "Überprüfen",
+        "description": "Datenverantwortliche überprüfen Cluster über einen Genehmigungsworkflow. Zusammenführungsentscheidungen akzeptieren, ablehnen oder überschreiben. Vollständiger Audit-Trail für jede durchgeführte Aktion."
+      },
+      "cleanse": {
+        "title": "Bereinigen",
+        "description": "Duplikate zu Golden Records zusammenführen. Kundenaufträge, Bestellungen und Bestandsbelege automatisch auf den verbleibenden Stammdatensatz aktualisieren."
+      }
+    },
+    "metrics": {
+      "detection": "Duplikaterkennung",
+      "effort": "Weniger manueller Aufwand",
+      "integrity": "Transaktionsintegrität",
+      "speed": "Schnellere Bereinigung"
+    },
+    "ctaText": "Lesen Sie den vollständigen technischen Tiefgang zur Fuzzy-Duplikaterkennung in SAP-Stammdaten.",
+    "readFullStory": "Vollständigen Bericht lesen"
+  },
   "comparison": {
     "badge": "VERGLEICH",
     "title1": "Warum",

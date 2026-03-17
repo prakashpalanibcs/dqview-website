@@ -13,6 +13,7 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import GlobalPresence from "@/components/GlobalPresence";
 import UseCaseShowcase from "@/components/UseCaseShowcase";
+import FuzzyDuplicateShowcase from "@/components/FuzzyDuplicateShowcase";
 import { getBlogPosts, getEvents } from "@/lib/content";
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
@@ -37,6 +38,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <WhyDQView />
       <UseCases />
       <UseCaseShowcase />
+      <FuzzyDuplicateShowcase />
       <Testimonials />
       <Insights blogs={blogs} events={getEvents()} />
       <CTA />

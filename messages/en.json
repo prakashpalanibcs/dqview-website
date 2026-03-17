@@ -292,6 +292,53 @@
     "ctaText": "Read the full technical walkthrough of this BP migration scenario.",
     "readFullStory": "Read Full Story"
   },
+  "fuzzyDuplicateShowcase": {
+    "scenarioTag": "Fuzzy Duplicate Detection",
+    "scenarioTitle": "Fuzzy Duplicate Detection & Cleansing — SAP Master Data",
+    "scenarioDescription": "120,000+ material master records across multiple plants and storage locations, scanned with AI-powered fuzzy matching to detect near-duplicates — clustered, reviewed, and cleansed across both master and transactional data.",
+    "beforeTitle": "Before — Fuzzy Duplicates in Master Data",
+    "afterTitle": "After — Cleansed Golden Records",
+    "beforeCaption": "Same materials created with slight variations in description, abbreviation, and formatting — causing duplicate POs, inflated stock, and mismatched pricing.",
+    "afterCaption": "Golden records retained, duplicates merged. All linked sales orders & purchase orders automatically re-pointed to the surviving record.",
+    "table": {
+      "material": "Material #",
+      "description": "Description",
+      "plant": "Plant",
+      "golden": "Golden ID",
+      "merged": "Merged From",
+      "confidence": "Match %"
+    },
+    "stages": {
+      "scan": {
+        "title": "Scan",
+        "description": "Extract material master records from SAP tables (MARA, MAKT, MARC). Normalize descriptions, remove noise characters, and tokenize for comparison."
+      },
+      "match": {
+        "title": "Match",
+        "description": "Apply fuzzy algorithms — Levenshtein distance, Jaro-Winkler, and phonetic encoding — to score similarity across description, material group, and UoM."
+      },
+      "cluster": {
+        "title": "Cluster",
+        "description": "Group matched records into duplicate clusters with confidence scores. Flag high-confidence auto-merge candidates and route borderline cases for review."
+      },
+      "review": {
+        "title": "Review",
+        "description": "Data stewards review clusters via approval workflow. Accept, reject, or override merge decisions. Full audit trail for every action taken."
+      },
+      "cleanse": {
+        "title": "Cleanse",
+        "description": "Merge duplicates into golden records. Auto-update sales orders, purchase orders, and inventory docs to reference the surviving master record."
+      }
+    },
+    "metrics": {
+      "detection": "Duplicate Detection",
+      "effort": "Less Manual Effort",
+      "integrity": "Transaction Integrity",
+      "speed": "Faster Cleansing"
+    },
+    "ctaText": "Read the full technical deep-dive on fuzzy duplicate detection in SAP master data.",
+    "readFullStory": "Read Full Story"
+  },
   "comparison": {
     "badge": "COMPARISON",
     "title1": "Why choose",
