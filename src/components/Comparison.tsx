@@ -27,8 +27,8 @@ const competitors = [
 ];
 
 function StatusIcon({ status }: { status: boolean | string }) {
-  if (status === true) return <Check className="w-5 h-5 text-emerald-400" />;
-  if (status === "partial") return <Minus className="w-5 h-5 text-amber-400" />;
+  if (status === true) return <Check className="w-5 h-5 text-blue-400" />;
+  if (status === "partial") return <Minus className="w-5 h-5 text-violet-400" />;
   return <X className="w-5 h-5 text-gray-600" />;
 }
 

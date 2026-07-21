@@ -32,7 +32,7 @@ export default function GlobalPresence() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-medium mb-4 border border-emerald-500/20">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-medium mb-4 border border-blue-500/20">
             <Globe className="w-3.5 h-3.5" />
             {t("badge")}
           </div>
@@ -52,7 +52,7 @@ export default function GlobalPresence() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}
-              className="group rounded-xl bg-surface border border-white/5 p-5 text-center hover:border-emerald-500/20 hover:bg-white/[0.03] transition-all"
+              className="group rounded-xl bg-surface border border-white/5 p-5 text-center hover:border-blue-500/20 hover:bg-white/[0.03] transition-all"
             >
               <span className="text-3xl mb-3 block">{office.flag}</span>
               <h3 className="text-sm font-semibold text-white mb-1">
@@ -62,7 +62,7 @@ export default function GlobalPresence() {
                 {t(`offices.${office.key}.country`)}
               </p>
               {office.hq ? (
-                <span className="inline-block px-2 py-0.5 text-[10px] font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                <span className="inline-block px-2 py-0.5 text-[10px] font-medium rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
                   {t("hqLabel")}
                 </span>
               ) : (
@@ -83,8 +83,8 @@ export default function GlobalPresence() {
         >
           {stats.map((stat) => (
             <div key={stat.key} className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center">
-                <stat.icon className="w-5 h-5 text-emerald-400" />
+              <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center">
+                <stat.icon className="w-5 h-5 text-blue-400" />
               </div>
               <div>
                 <div className="text-xl font-bold text-white">{stat.value}</div>

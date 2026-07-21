@@ -16,7 +16,7 @@ export default function CTA() {
           viewport={{ once: true }}
           className="relative rounded-3xl overflow-hidden"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-600 via-teal-600 to-amber-600 opacity-90" />
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-violet-600 to-blue-500 opacity-90" />
           <div
             className="absolute inset-0 opacity-10"
             style={{
@@ -25,7 +25,7 @@ export default function CTA() {
             }}
           />
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-violet-400/10 rounded-full blur-3xl" />
 
           <div className="relative px-8 py-16 lg:px-16 lg:py-24 text-center">
             <motion.div
@@ -51,7 +51,7 @@ export default function CTA() {
                   href="https://calendly.com/symphonydemo/bcs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-xl bg-white text-emerald-700 hover:bg-gray-100 transition-all shadow-2xl"
+                  className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-xl bg-white text-blue-700 hover:bg-gray-100 transition-all shadow-2xl"
                 >
                   <Calendar className="w-5 h-5" />
                   {t("scheduleDemo")}

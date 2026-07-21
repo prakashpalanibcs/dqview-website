@@ -13,11 +13,11 @@ import {
 import { useTranslations } from "next-intl";
 
 const featureKeys = [
-  { key: "dataQualityProfiling", icon: BarChart3, color: "from-emerald-500 to-teal-500", iconColor: "text-emerald-400", large: true, hCount: 4 },
-  { key: "etlPipeline", icon: Workflow, color: "from-amber-500 to-orange-500", iconColor: "text-amber-400", large: true, hCount: 4 },
-  { key: "dataScrambling", icon: Shield, color: "from-teal-500 to-cyan-500", iconColor: "text-teal-400", large: false, hCount: 3 },
+  { key: "dataQualityProfiling", icon: BarChart3, color: "from-blue-500 to-violet-500", iconColor: "text-blue-400", large: true, hCount: 4 },
+  { key: "etlPipeline", icon: Workflow, color: "from-violet-500 to-blue-500", iconColor: "text-violet-400", large: true, hCount: 4 },
+  { key: "dataScrambling", icon: Shield, color: "from-blue-400 to-blue-600", iconColor: "text-blue-400", large: false, hCount: 3 },
   { key: "agenticAi", icon: Cpu, color: "from-violet-500 to-purple-500", iconColor: "text-violet-400", large: false, hCount: 3 },
-  { key: "realTimeMonitoring", icon: Gauge, color: "from-amber-500 to-yellow-500", iconColor: "text-amber-400", large: false, hCount: 3 },
+  { key: "realTimeMonitoring", icon: Gauge, color: "from-violet-400 to-violet-600", iconColor: "text-violet-400", large: false, hCount: 3 },
   { key: "complianceAudit", icon: FileCheck2, color: "from-rose-500 to-red-500", iconColor: "text-rose-400", large: false, hCount: 3 },
 ];
 
@@ -40,7 +40,7 @@ export default function Features() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-medium mb-4 border border-emerald-500/20">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-medium mb-4 border border-blue-500/20">
             <Layers className="w-3.5 h-3.5" />
             {t("badge")}
           </div>
@@ -68,7 +68,7 @@ export default function Features() {
               />
               <div
                 className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br bg-opacity-10 mb-5"
-                style={{ background: `linear-gradient(135deg, rgba(5,150,105,0.1), rgba(217,119,6,0.1))` }}
+                style={{ background: `linear-gradient(135deg, rgba(59,130,246,0.1), rgba(139,92,246,0.1))` }}
               >
                 <feature.icon className={`w-6 h-6 ${feature.iconColor}`} />
               </div>

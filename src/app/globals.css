@@ -2,14 +2,14 @@
 @plugin "@tailwindcss/typography";
 
 @theme inline {
-  --color-background: #0a0a0a;
+  --color-background: #08061a;
   --color-foreground: #ededed;
-  --color-primary: #059669;
-  --color-primary-light: #34D399;
-  --color-accent: #D97706;
-  --color-accent-light: #FBBF24;
-  --color-surface: #111827;
-  --color-surface-light: #1f2937;
+  --color-primary: #3b82f6;
+  --color-primary-light: #60A5FA;
+  --color-accent: #8b5cf6;
+  --color-accent-light: #A78BFA;
+  --color-surface: #13112b;
+  --color-surface-light: #1e1b3f;
   --color-muted: #9ca3af;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -20,7 +20,12 @@ html {
 }
 
 body {
-  background: var(--color-background);
+  background-color: var(--color-background);
+  background-image:
+    radial-gradient(ellipse 900px 700px at 85% 0%, rgba(139, 92, 246, 0.20) 0%, transparent 60%),
+    radial-gradient(ellipse 700px 600px at 0% 100%, rgba(59, 130, 246, 0.14) 0%, transparent 55%),
+    linear-gradient(180deg, #05040f 0%, #08061a 35%, #0d0a24 100%);
+  background-attachment: fixed;
   color: var(--color-foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
@@ -73,9 +78,9 @@ body {
 }
 
 .glass {
-  background: rgba(17, 24, 39, 0.7);
+  background: rgba(19, 17, 43, 0.7);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(5, 150, 105, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.15);
 }
 
 .glass-light {
@@ -85,7 +90,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #34D399, #FBBF24);
+  background: linear-gradient(135deg, #60A5FA, #A78BFA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -101,7 +106,7 @@ body {
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(5, 150, 105, 0.5), rgba(217, 119, 6, 0.5));
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.5), rgba(139, 92, 246, 0.5));
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: xor;
@@ -120,9 +125,9 @@ body {
 
 .mesh-gradient {
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(5, 150, 105, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(217, 119, 6, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at 40% 80%, rgba(13, 148, 136, 0.08) 0%, transparent 50%);
+    radial-gradient(ellipse at 20% 50%, rgba(59, 130, 246, 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(139, 92, 246, 0.14) 0%, transparent 50%),
+    radial-gradient(ellipse at 40% 80%, rgba(99, 102, 241, 0.10) 0%, transparent 50%);
 }
 
 .card-hover {
@@ -131,11 +136,11 @@ body {
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(5, 150, 105, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(59, 130, 246, 0.12);
 }
 
 .nav-blur {
-  background: rgba(10, 10, 10, 0.8);
+  background: rgba(8, 6, 26, 0.8);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }

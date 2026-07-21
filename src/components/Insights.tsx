@@ -31,7 +31,7 @@ export default function Insights({ blogs: blogData, events = [] }: InsightsProps
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-medium mb-4 border border-emerald-500/20">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-medium mb-4 border border-blue-500/20">
             <BookOpen className="w-3.5 h-3.5" />
             {t("badge")}
           </div>
@@ -45,7 +45,7 @@ export default function Insights({ blogs: blogData, events = [] }: InsightsProps
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="lg:col-span-3">
             <div className="flex items-center gap-2 mb-6">
-              <Newspaper className="w-4 h-4 text-emerald-400" />
+              <Newspaper className="w-4 h-4 text-blue-400" />
               <h3 className="text-lg font-semibold text-white">{t("fromBlog")}</h3>
             </div>
             <div className="space-y-4">
@@ -59,14 +59,14 @@ export default function Insights({ blogs: blogData, events = [] }: InsightsProps
                 >
                   <Link
                     href={`/blog/${blog.slug}`}
-                    className="group block rounded-xl bg-surface border border-white/5 p-5 hover:border-emerald-500/20 hover:bg-white/[0.03] transition-all"
+                    className="group block rounded-xl bg-surface border border-white/5 p-5 hover:border-blue-500/20 hover:bg-white/[0.03] transition-all"
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex-1">
-                        <span className="inline-block px-2 py-0.5 text-[10px] font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-2">
+                        <span className="inline-block px-2 py-0.5 text-[10px] font-medium rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-2">
                           {blog.tag}
                         </span>
-                        <h4 className="text-sm font-semibold text-white group-hover:text-emerald-300 transition-colors mb-1.5 leading-snug">
+                        <h4 className="text-sm font-semibold text-white group-hover:text-blue-300 transition-colors mb-1.5 leading-snug">
                           {blog.title}
                         </h4>
                         {blog.excerpt && (
@@ -75,14 +75,14 @@ export default function Insights({ blogs: blogData, events = [] }: InsightsProps
                           </p>
                         )}
                       </div>
-                      <ArrowUpRight className="w-4 h-4 text-gray-600 group-hover:text-emerald-400 transition-colors shrink-0 mt-1" />
+                      <ArrowUpRight className="w-4 h-4 text-gray-600 group-hover:text-blue-400 transition-colors shrink-0 mt-1" />
                     </div>
                   </Link>
                 </motion.div>
               ))}
               <Link
                 href="/blog"
-                className="inline-flex items-center gap-1.5 text-sm text-emerald-400 hover:text-emerald-300 transition-colors mt-2"
+                className="inline-flex items-center gap-1.5 text-sm text-blue-400 hover:text-blue-300 transition-colors mt-2"
               >
                 {t("viewAllPosts")}
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -92,7 +92,7 @@ export default function Insights({ blogs: blogData, events = [] }: InsightsProps
 
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <CalendarDays className="w-4 h-4 text-amber-400" />
+              <CalendarDays className="w-4 h-4 text-violet-400" />
               <h3 className="text-lg font-semibold text-white">{t("upcomingEvents")}</h3>
             </div>
             <div className="space-y-4">
@@ -106,9 +106,9 @@ export default function Insights({ blogs: blogData, events = [] }: InsightsProps
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.08 }}
-                  className="group block rounded-xl bg-surface border border-white/5 p-5 hover:border-amber-500/20 hover:bg-white/[0.03] transition-all"
+                  className="group block rounded-xl bg-surface border border-white/5 p-5 hover:border-violet-500/20 hover:bg-white/[0.03] transition-all"
                 >
-                  <h4 className="text-sm font-semibold text-white group-hover:text-amber-300 transition-colors mb-1.5">
+                  <h4 className="text-sm font-semibold text-white group-hover:text-violet-300 transition-colors mb-1.5">
                     {event.title}
                   </h4>
                   <div className="flex items-center gap-1.5 text-xs text-gray-500 mb-2">
@@ -122,7 +122,7 @@ export default function Insights({ blogs: blogData, events = [] }: InsightsProps
                 href="https://boisterous-starburst-5ef9b7.netlify.app/insights/events"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-sm text-amber-400 hover:text-amber-300 transition-colors mt-2"
+                className="inline-flex items-center gap-1.5 text-sm text-violet-400 hover:text-violet-300 transition-colors mt-2"
               >
                 {t("viewAllEvents")}
                 <ArrowUpRight className="w-3.5 h-3.5" />

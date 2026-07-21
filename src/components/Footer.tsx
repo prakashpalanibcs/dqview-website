@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import {
   Linkedin,
   Mail,
@@ -9,6 +8,7 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import LogoMark from "./LogoMark";
 
 type FooterLink =
   | { label: string; section: string; route?: never; external?: never }
@@ -70,16 +70,10 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-12">
           <div className="col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
-              <Image
-                src="/dq-icon.webp"
-                alt="deKorvai"
-                width={64}
-                height={64}
-                className="h-9 w-9 rounded-lg"
-              />
+              <LogoMark className="h-9 w-9" />
               <span className="text-xl font-bold text-white">deKorvai</span>
             </div>
-            <p className="text-xs text-emerald-400/70 italic mb-3">
+            <p className="text-xs text-blue-400/70 italic mb-3">
               {t("nameMeaning")}
             </p>
             <p className="text-sm text-gray-500 leading-relaxed mb-6 max-w-xs">
@@ -88,7 +82,7 @@ export default function Footer() {
             <div className="space-y-3">
               <a
                 href="mailto:hello@businesscoresolutions.com"
-                className="flex items-center gap-2 text-sm text-gray-400 hover:text-emerald-400 transition-colors"
+                className="flex items-center gap-2 text-sm text-gray-400 hover:text-blue-400 transition-colors"
               >
                 <Mail className="w-4 h-4" />
                 hello@businesscoresolutions.com
@@ -97,7 +91,7 @@ export default function Footer() {
                 href="https://www.businesscoresolutions.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-gray-400 hover:text-emerald-400 transition-colors"
+                className="flex items-center gap-2 text-sm text-gray-400 hover:text-blue-400 transition-colors"
               >
                 <Globe className="w-4 h-4" />
                 businesscoresolutions.com
@@ -107,7 +101,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/business-core-solutions"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-gray-400 hover:text-emerald-400 transition-colors"
+                className="flex items-center gap-2 text-sm text-gray-400 hover:text-blue-400 transition-colors"
               >
                 <Linkedin className="w-4 h-4" />
                 Business Core Solutions

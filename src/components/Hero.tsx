@@ -32,11 +32,11 @@ export default function Hero() {
   ];
 
   const pipelineSteps = [
-    { label: t("pipeline.extract"), color: "bg-emerald-500", status: "done" },
-    { label: t("pipeline.profile"), color: "bg-teal-500", status: "done" },
-    { label: t("pipeline.validate"), color: "bg-amber-500", status: "done" },
-    { label: t("pipeline.transform"), color: "bg-emerald-600", status: "active" },
-    { label: t("pipeline.load"), color: "bg-amber-600", status: "pending" },
+    { label: t("pipeline.extract"), color: "bg-blue-500", status: "done" },
+    { label: t("pipeline.profile"), color: "bg-violet-500", status: "done" },
+    { label: t("pipeline.validate"), color: "bg-violet-400", status: "done" },
+    { label: t("pipeline.transform"), color: "bg-blue-600", status: "active" },
+    { label: t("pipeline.load"), color: "bg-violet-600", status: "pending" },
   ];
 
   const metrics = [
@@ -49,8 +49,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 mesh-gradient" />
-      <div className="hero-glow bg-emerald-600 top-1/4 left-1/4 animate-pulse-glow" />
-      <div className="hero-glow bg-amber-600 bottom-1/4 right-1/4 animate-pulse-glow" style={{ animationDelay: "2s" }} />
+      <div className="hero-glow bg-blue-600 top-1/4 left-1/4 animate-pulse-glow" />
+      <div className="hero-glow bg-violet-600 bottom-1/4 right-1/4 animate-pulse-glow" style={{ animationDelay: "2s" }} />
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
@@ -71,7 +71,7 @@ export default function Hero() {
             y: { delay, duration: 4 + i, repeat: Infinity, ease: "easeInOut" },
           }}
         >
-          <Icon className="w-8 h-8 text-emerald-400" />
+          <Icon className="w-8 h-8 text-blue-400" />
         </motion.div>
       ))}
 
@@ -82,7 +82,7 @@ export default function Hero() {
           transition={{ delay: 0.2 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-light text-sm text-gray-300 mb-8"
         >
-          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
           <span>{t("badge")}</span>
           <ArrowRight className="w-3.5 h-3.5" />
         </motion.div>
@@ -117,7 +117,7 @@ export default function Hero() {
             href="https://calendly.com/symphonydemo/bcs"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:from-emerald-400 hover:to-teal-400 transition-all shadow-2xl shadow-emerald-500/25 hover:shadow-emerald-500/40"
+            className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-xl bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-2xl shadow-blue-500/25 hover:shadow-blue-500/40"
           >
             {t("bookDemo")}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -173,7 +173,7 @@ export default function Hero() {
                             step.status === "active"
                               ? `${step.color} text-white`
                               : step.status === "done"
-                              ? "bg-white/5 text-emerald-400"
+                              ? "bg-white/5 text-blue-400"
                               : "bg-white/5 text-gray-500"
                           }`}
                         >
@@ -197,7 +197,7 @@ export default function Hero() {
                       >
                         <div className="text-xs text-gray-500">{m.label}</div>
                         <div className="text-lg font-bold text-white mt-1">{m.value}</div>
-                        <div className="text-xs text-emerald-400 mt-0.5">{m.change}</div>
+                        <div className="text-xs text-blue-400 mt-0.5">{m.change}</div>
                       </div>
                     ))}
                   </div>
@@ -205,7 +205,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-3/4 h-20 bg-emerald-500/20 blur-3xl rounded-full" />
+          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-3/4 h-20 bg-blue-500/20 blur-3xl rounded-full" />
         </motion.div>
       </div>
     </section>

@@ -18,17 +18,17 @@ import { Link } from "@/i18n/navigation";
 
 const stages = [
   { key: "scan", icon: ScanSearch, color: "from-cyan-500 to-blue-500" },
-  { key: "match", icon: GitMerge, color: "from-orange-500 to-amber-500" },
+  { key: "match", icon: GitMerge, color: "from-orange-500 to-fuchsia-500" },
   { key: "cluster", icon: Layers, color: "from-violet-500 to-purple-500" },
-  { key: "review", icon: ClipboardCheck, color: "from-emerald-500 to-teal-500" },
+  { key: "review", icon: ClipboardCheck, color: "from-blue-500 to-violet-500" },
   { key: "cleanse", icon: Sparkles, color: "from-rose-500 to-pink-500" },
 ];
 
 const metrics = [
   { key: "detection", icon: ScanSearch, value: "92%+", color: "text-cyan-400" },
-  { key: "effort", icon: TrendingUp, value: "60%", color: "text-amber-400" },
+  { key: "effort", icon: TrendingUp, value: "60%", color: "text-fuchsia-400" },
   { key: "integrity", icon: ShieldCheck, value: "99%+", color: "text-violet-400" },
-  { key: "speed", icon: Clock, value: "4x", color: "text-emerald-400" },
+  { key: "speed", icon: Clock, value: "4x", color: "text-blue-400" },
 ];
 
 export default function FuzzyDuplicateShowcase() {
@@ -56,7 +56,7 @@ export default function FuzzyDuplicateShowcase() {
               <span className="px-2.5 py-0.5 text-[10px] font-medium rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
                 {t("scenarioTag")}
               </span>
-              <span className="px-2.5 py-0.5 text-[10px] font-medium rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">
+              <span className="px-2.5 py-0.5 text-[10px] font-medium rounded-full bg-fuchsia-500/10 text-fuchsia-400 border border-fuchsia-500/20">
                 S/4HANA Readiness
               </span>
             </div>
@@ -123,10 +123,10 @@ export default function FuzzyDuplicateShowcase() {
               </div>
 
               {/* After - Cleansed records */}
-              <div className="rounded-xl bg-emerald-500/[0.04] border border-emerald-500/10 p-5">
+              <div className="rounded-xl bg-blue-500/[0.04] border border-blue-500/10 p-5">
                 <div className="flex items-center gap-2 mb-4">
-                  <div className="w-2 h-2 rounded-full bg-emerald-400" />
-                  <span className="text-xs font-semibold text-emerald-400 uppercase tracking-wider">
+                  <div className="w-2 h-2 rounded-full bg-blue-400" />
+                  <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider">
                     {t("afterTitle")}
                   </span>
                 </div>
@@ -142,25 +142,25 @@ export default function FuzzyDuplicateShowcase() {
                     </thead>
                     <tbody className="text-gray-300">
                       <tr className="border-b border-white/[0.03]">
-                        <td className="py-1.5 pr-3 font-mono text-[10px] text-emerald-400">100001</td>
+                        <td className="py-1.5 pr-3 font-mono text-[10px] text-blue-400">100001</td>
                         <td className="py-1.5 pr-3">Hexagonal Bolt M10x50 SS304</td>
                         <td className="py-1.5 pr-3 font-mono text-[10px] text-gray-500">100247, 100512</td>
                         <td className="py-1.5">
-                          <span className="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-medium">94.2%</span>
+                          <span className="px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-medium">94.2%</span>
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-1.5 pr-3 font-mono text-[10px] text-emerald-400">100089</td>
+                        <td className="py-1.5 pr-3 font-mono text-[10px] text-blue-400">100089</td>
                         <td className="py-1.5 pr-3">Bearing Ball 6205-2RS SKF</td>
                         <td className="py-1.5 pr-3 font-mono text-[10px] text-gray-500">100634</td>
                         <td className="py-1.5">
-                          <span className="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-medium">91.7%</span>
+                          <span className="px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-medium">91.7%</span>
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <p className="text-[10px] text-emerald-400/60 mt-3">
+                <p className="text-[10px] text-blue-400/60 mt-3">
                   {t("afterCaption")}
                 </p>
               </div>

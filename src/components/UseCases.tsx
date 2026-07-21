@@ -11,9 +11,9 @@ import {
 import { useTranslations } from "next-intl";
 
 const caseMeta = [
-  { key: "c1", icon: RefreshCw, color: "from-emerald-500 to-teal-500", tags: ["SAP ECC", "S/4HANA", "Business Partner", "BP Roles"] },
-  { key: "c2", icon: Server, color: "from-amber-500 to-orange-500", tags: ["Selective Migration", "Deduplication", "Master Data"] },
-  { key: "c3", icon: TestTubes, color: "from-teal-500 to-cyan-500", tags: ["SIT/UAT", "Scrambling", "GDPR", "HIPAA"] },
+  { key: "c1", icon: RefreshCw, color: "from-blue-500 to-violet-500", tags: ["SAP ECC", "S/4HANA", "Business Partner", "BP Roles"] },
+  { key: "c2", icon: Server, color: "from-fuchsia-500 to-orange-500", tags: ["Selective Migration", "Deduplication", "Master Data"] },
+  { key: "c3", icon: TestTubes, color: "from-violet-500 to-cyan-500", tags: ["SIT/UAT", "Scrambling", "GDPR", "HIPAA"] },
   { key: "c4", icon: ShieldCheck, color: "from-violet-500 to-purple-500", tags: ["Real-Time", "Scorecards", "Anomaly Detection"] },
 ];
 
@@ -35,7 +35,7 @@ export default function UseCases() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-medium mb-4 border border-emerald-500/20">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-medium mb-4 border border-blue-500/20">
             <Building2 className="w-3.5 h-3.5" />
             {t("badge")}
           </div>

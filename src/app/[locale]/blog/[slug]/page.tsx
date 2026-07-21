@@ -47,7 +47,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
           {/* Back link */}
           <Link
             href="/blog"
-            className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-emerald-400 transition-colors mb-8"
+            className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-blue-400 transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
             {t("backToBlog")}
@@ -55,7 +55,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
 
           {/* Header */}
           <div className="mb-12">
-            <span className="inline-block px-2.5 py-0.5 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
+            <span className="inline-block px-2.5 py-0.5 text-xs font-medium rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-4">
               {post.tag}
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
@@ -77,7 +77,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
 
           {/* Content */}
           <div
-            className="prose prose-invert prose-emerald max-w-none prose-headings:text-white prose-headings:font-bold prose-p:text-gray-300 prose-p:leading-relaxed prose-li:text-gray-300 prose-a:text-emerald-400 prose-strong:text-white"
+            className="prose prose-invert prose-blue max-w-none prose-headings:text-white prose-headings:font-bold prose-p:text-gray-300 prose-p:leading-relaxed prose-li:text-gray-300 prose-a:text-blue-400 prose-strong:text-white"
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           />
 
@@ -93,7 +93,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
               href="https://calendly.com/symphonydemo/bcs"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:from-emerald-400 hover:to-teal-400 transition-all shadow-lg shadow-emerald-500/25"
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-lg shadow-blue-500/25"
             >
               {t("bookDemo")}
             </a>

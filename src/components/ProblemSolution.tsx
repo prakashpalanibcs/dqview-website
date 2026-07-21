@@ -44,7 +44,7 @@ export default function ProblemSolution() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-medium mb-4 border border-amber-500/20">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 text-violet-400 text-xs font-medium mb-4 border border-violet-500/20">
             <AlertTriangle className="w-3.5 h-3.5" />
             {t("badge")}
           </div>
@@ -85,11 +85,11 @@ export default function ProblemSolution() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="rounded-2xl border border-emerald-500/10 bg-emerald-500/[0.02] p-8"
+            className="rounded-2xl border border-blue-500/10 bg-blue-500/[0.02] p-8"
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center">
-                <Smile className="w-5 h-5 text-emerald-400" />
+              <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                <Smile className="w-5 h-5 text-blue-400" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-white">{t("withTitle")}</h3>
@@ -99,7 +99,7 @@ export default function ProblemSolution() {
             <ul className="space-y-4">
               {solutions.map((solution, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-emerald-400 mt-0.5 shrink-0" />
+                  <Check className="w-5 h-5 text-blue-400 mt-0.5 shrink-0" />
                   <span className="text-sm text-gray-400">{solution}</span>
                 </li>
               ))}

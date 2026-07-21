@@ -24,7 +24,7 @@ export default function Testimonials() {
 
   return (
     <section id="case-studies" className="relative py-24 lg:py-32">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber-500/[0.02] to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-violet-500/[0.02] to-transparent" />
       <div className="relative max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-medium mb-4 border border-amber-500/20">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 text-violet-400 text-xs font-medium mb-4 border border-violet-500/20">
             <Users className="w-3.5 h-3.5" />
             {t("badge")}
           </div>
@@ -69,16 +69,16 @@ export default function Testimonials() {
               transition={{ delay: index * 0.1 }}
               className="rounded-2xl bg-surface border border-white/5 p-8 card-hover relative"
             >
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-medium mb-5 border border-emerald-500/20">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-medium mb-5 border border-blue-500/20">
                 {item.tag}
               </span>
-              <Quote className="w-7 h-7 text-emerald-500/20 mb-3" />
+              <Quote className="w-7 h-7 text-blue-500/20 mb-3" />
               <p className="text-sm text-gray-300 leading-relaxed mb-6">
                 &ldquo;{item.quote}&rdquo;
               </p>
               <div className="border-t border-white/5 pt-4 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500/20 to-amber-500/20 flex items-center justify-center border border-white/5">
-                  <Building2 className="w-5 h-5 text-emerald-400" />
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500/20 to-violet-500/20 flex items-center justify-center border border-white/5">
+                  <Building2 className="w-5 h-5 text-blue-400" />
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-white">{item.company}</div>

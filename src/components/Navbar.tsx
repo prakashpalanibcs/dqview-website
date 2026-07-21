@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import {
   Menu,
   X,
@@ -21,6 +20,7 @@ import {
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
+import LogoMark from "./LogoMark";
 
 const productIcons = [BarChart3, Workflow, Shield, Cpu, Database, Layers];
 const productKeys = [
@@ -78,14 +78,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <Image
-            src="/dq-icon.webp"
-            alt="deKorvai"
-            width={64}
-            height={64}
-            className="h-9 w-9 rounded-lg"
-            priority
-          />
+          <LogoMark className="h-9 w-9" />
           <span className="text-xl font-bold text-white">
             deKorvai
           </span>
@@ -121,9 +114,9 @@ export default function Navbar() {
                       }}
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group text-left cursor-pointer"
                     >
-                      <link.icon className="w-5 h-5 text-emerald-400 mt-0.5 shrink-0" />
+                      <link.icon className="w-5 h-5 text-blue-400 mt-0.5 shrink-0" />
                       <div>
-                        <div className="text-sm font-medium text-white group-hover:text-emerald-300 transition-colors">
+                        <div className="text-sm font-medium text-white group-hover:text-blue-300 transition-colors">
                           {link.title}
                         </div>
                         <div className="text-xs text-gray-400 mt-0.5">
@@ -178,9 +171,9 @@ export default function Navbar() {
                         className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group"
                         onClick={() => setActiveDropdown(null)}
                       >
-                        <link.icon className="w-5 h-5 text-amber-400 mt-0.5 shrink-0" />
+                        <link.icon className="w-5 h-5 text-violet-400 mt-0.5 shrink-0" />
                         <div>
-                          <div className="text-sm font-medium text-white group-hover:text-amber-300 transition-colors">
+                          <div className="text-sm font-medium text-white group-hover:text-violet-300 transition-colors">
                             {link.title}
                           </div>
                           <div className="text-xs text-gray-400 mt-0.5">
@@ -197,9 +190,9 @@ export default function Navbar() {
                         }}
                         className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group w-full text-left cursor-pointer"
                       >
-                        <link.icon className="w-5 h-5 text-amber-400 mt-0.5 shrink-0" />
+                        <link.icon className="w-5 h-5 text-violet-400 mt-0.5 shrink-0" />
                         <div>
-                          <div className="text-sm font-medium text-white group-hover:text-amber-300 transition-colors">
+                          <div className="text-sm font-medium text-white group-hover:text-violet-300 transition-colors">
                             {link.title}
                           </div>
                           <div className="text-xs text-gray-400 mt-0.5">
@@ -222,7 +215,7 @@ export default function Navbar() {
             href="https://calendly.com/symphonydemo/bcs"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2.5 text-sm font-medium rounded-lg bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:from-emerald-400 hover:to-teal-400 transition-all shadow-lg shadow-emerald-500/25"
+            className="px-5 py-2.5 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-lg shadow-blue-500/25"
           >
             {t("bookDemo")}
           </a>
@@ -267,7 +260,7 @@ export default function Navbar() {
                   href="https://calendly.com/symphonydemo/bcs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center py-2.5 text-sm font-medium rounded-lg bg-gradient-to-r from-emerald-500 to-teal-500 text-white"
+                  className="block text-center py-2.5 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-500 to-violet-500 text-white"
                 >
                   {t("bookDemo")}
                 </a>

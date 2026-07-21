@@ -18,15 +18,15 @@ import { Link } from "@/i18n/navigation";
 
 const stages = [
   { key: "extract", icon: Database, color: "from-blue-500 to-cyan-500" },
-  { key: "profile", icon: SearchCheck, color: "from-emerald-500 to-teal-500" },
-  { key: "transform", icon: Shuffle, color: "from-amber-500 to-orange-500" },
+  { key: "profile", icon: SearchCheck, color: "from-blue-500 to-violet-500" },
+  { key: "transform", icon: Shuffle, color: "from-fuchsia-500 to-orange-500" },
   { key: "validate", icon: ShieldCheck, color: "from-violet-500 to-purple-500" },
   { key: "load", icon: Upload, color: "from-rose-500 to-pink-500" },
 ];
 
 const metrics = [
-  { key: "accuracy", icon: Target, value: "100%", color: "text-emerald-400" },
-  { key: "efficiency", icon: TrendingUp, value: "70%", color: "text-amber-400" },
+  { key: "accuracy", icon: Target, value: "100%", color: "text-blue-400" },
+  { key: "efficiency", icon: TrendingUp, value: "70%", color: "text-fuchsia-400" },
   { key: "firstPass", icon: Zap, value: "95%+", color: "text-violet-400" },
   { key: "leadTime", icon: Clock, value: "3x", color: "text-cyan-400" },
 ];
@@ -37,7 +37,7 @@ export default function UseCaseShowcase() {
   return (
     <section className="relative py-24 lg:py-32 overflow-hidden">
       {/* Background accent */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-500/[0.02] to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/[0.02] to-transparent" />
 
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Header */}
@@ -47,7 +47,7 @@ export default function UseCaseShowcase() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-medium mb-4 border border-amber-500/20">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-fuchsia-500/10 text-fuchsia-400 text-xs font-medium mb-4 border border-fuchsia-500/20">
             <Zap className="w-3.5 h-3.5" />
             {t("badge")}
           </div>
@@ -68,10 +68,10 @@ export default function UseCaseShowcase() {
           {/* Scenario header */}
           <div className="px-8 py-6 border-b border-white/5 bg-white/[0.02]">
             <div className="flex items-center gap-3 mb-2">
-              <span className="px-2.5 py-0.5 text-[10px] font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              <span className="px-2.5 py-0.5 text-[10px] font-medium rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
                 SAP S/4HANA
               </span>
-              <span className="px-2.5 py-0.5 text-[10px] font-medium rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">
+              <span className="px-2.5 py-0.5 text-[10px] font-medium rounded-full bg-fuchsia-500/10 text-fuchsia-400 border border-fuchsia-500/20">
                 {t("scenarioTag")}
               </span>
             </div>
@@ -146,7 +146,7 @@ export default function UseCaseShowcase() {
             </p>
             <Link
               href="/blog/bp-vendor-migration-s4hana-dq-differentiator"
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:from-emerald-400 hover:to-teal-400 transition-all shadow-lg shadow-emerald-500/25 whitespace-nowrap"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-lg shadow-blue-500/25 whitespace-nowrap"
             >
               {t("readFullStory")}
               <ArrowRight className="w-4 h-4" />

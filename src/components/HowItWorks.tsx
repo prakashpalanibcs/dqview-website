@@ -12,10 +12,10 @@ import {
 import { useTranslations } from "next-intl";
 
 const stepMeta = [
-  { number: "01", icon: Database, color: "from-emerald-500 to-teal-500", key: "s1" },
-  { number: "02", icon: Search, color: "from-amber-500 to-orange-500", key: "s2" },
-  { number: "03", icon: Workflow, color: "from-teal-500 to-cyan-500", key: "s3" },
-  { number: "04", icon: Upload, color: "from-emerald-600 to-emerald-500", key: "s4" },
+  { number: "01", icon: Database, color: "from-blue-500 to-violet-500", key: "s1" },
+  { number: "02", icon: Search, color: "from-fuchsia-500 to-violet-500", key: "s2" },
+  { number: "03", icon: Workflow, color: "from-cyan-500 to-blue-500", key: "s3" },
+  { number: "04", icon: Upload, color: "from-blue-600 to-blue-500", key: "s4" },
 ];
 
 export default function HowItWorks() {
@@ -34,7 +34,7 @@ export default function HowItWorks() {
 
   return (
     <section id="how-it-works" className="relative py-24 lg:py-32">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-500/[0.02] to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/[0.02] to-transparent" />
       <div className="relative max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-20"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-medium mb-4 border border-amber-500/20">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 text-violet-400 text-xs font-medium mb-4 border border-violet-500/20">
             <Workflow className="w-3.5 h-3.5" />
             {t("badge")}
           </div>
@@ -85,7 +85,7 @@ export default function HowItWorks() {
                 <ul className="space-y-2">
                   {step.details.map((d, i) => (
                     <li key={i} className="flex items-center gap-2 text-xs text-gray-500">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500/60" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-blue-500/60" />
                       {d}
                     </li>
                   ))}
