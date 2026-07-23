@@ -11,10 +11,10 @@ import {
 import { useTranslations } from "next-intl";
 
 const caseMeta = [
-  { key: "c1", icon: RefreshCw, color: "from-blue-500 to-violet-500", tags: ["SAP ECC", "S/4HANA", "Business Partner", "BP Roles"] },
-  { key: "c2", icon: Server, color: "from-fuchsia-500 to-orange-500", tags: ["Selective Migration", "Deduplication", "Master Data"] },
-  { key: "c3", icon: TestTubes, color: "from-violet-500 to-cyan-500", tags: ["SIT/UAT", "Scrambling", "GDPR", "HIPAA"] },
-  { key: "c4", icon: ShieldCheck, color: "from-violet-500 to-purple-500", tags: ["Real-Time", "Scorecards", "Anomaly Detection"] },
+  { key: "c1", icon: ShieldCheck, color: "from-violet-500 to-purple-500", tags: ["Real-Time", "Scorecards", "Anomaly Detection"] },
+  { key: "c2", icon: TestTubes, color: "from-violet-500 to-cyan-500", tags: ["SIT/UAT", "Masking", "GDPR", "HIPAA"] },
+  { key: "c3", icon: Building2, color: "from-fuchsia-500 to-orange-500", tags: ["M&A", "Deduplication", "Multi-system"] },
+  { key: "c4", icon: RefreshCw, color: "from-blue-500 to-violet-500", tags: ["SAP ECC", "S/4HANA", "Greenfield/Bluefield"] },
 ];
 
 export default function UseCases() {

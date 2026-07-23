@@ -8,7 +8,6 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import LogoMark from "./LogoMark";
 
 type FooterLink =
   | { label: string; section: string; route?: never; external?: never }
@@ -29,20 +28,21 @@ export default function Footer() {
     {
       title: t("platform"),
       links: [
-        { label: t("platformLinks.dataQualityProfiling"), section: "features" },
-        { label: t("platformLinks.etlPipeline"), section: "features" },
-        { label: t("platformLinks.dataScrambling"), section: "features" },
-        { label: t("platformLinks.agenticAi"), section: "features" },
-        { label: t("platformLinks.integrations"), section: "features" },
+        { label: t("platformLinks.dataQualityProfiling"), route: "/platform/data-quality-profiling" },
+        { label: t("platformLinks.etlPipeline"), route: "/platform/etl-pipeline" },
+        { label: t("platformLinks.dataScrambling"), route: "/platform/data-scrambling" },
+        { label: t("platformLinks.agenticAi"), route: "/platform/agentic-ai" },
+        { label: t("platformLinks.integrations"), route: "/platform/integrations" },
       ],
     },
     {
       title: t("solutions"),
       links: [
-        { label: t("solutionLinks.sapMigration"), section: "use-cases" },
-        { label: t("solutionLinks.testDataManagement"), section: "use-cases" },
         { label: t("solutionLinks.dataGovernance"), section: "use-cases" },
-        { label: t("solutionLinks.compliance"), section: "features" },
+        { label: t("solutionLinks.testDataManagement"), section: "use-cases" },
+        { label: t("solutionLinks.consolidation"), section: "use-cases" },
+        { label: t("solutionLinks.sapMigration"), section: "use-cases" },
+        { label: t("solutionLinks.compliance"), section: "use-cases" },
       ],
     },
     {
@@ -57,7 +57,6 @@ export default function Footer() {
       title: t("company"),
       links: [
         { label: t("companyLinks.aboutUs"), section: "why-dekorvai" },
-        { label: t("companyLinks.careers"), external: "mailto:hello@businesscoresolutions.com" },
         { label: t("companyLinks.contact"), section: "demo" },
         { label: t("companyLinks.partners"), section: "global-presence" },
       ],
@@ -69,9 +68,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16 lg:py-20">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-12">
           <div className="col-span-2">
-            <div className="flex items-center gap-2.5 mb-4">
-              <LogoMark className="h-9 w-9" />
-              <span className="text-xl font-bold text-white">deKorvai</span>
+            <div className="flex items-center mb-4">
+              <img
+                src="/logo-horizontal.svg"
+                alt="deKorvai"
+                className="h-9 w-auto"
+              />
             </div>
             <p className="text-xs text-blue-400/70 italic mb-3">
               {t("nameMeaning")}

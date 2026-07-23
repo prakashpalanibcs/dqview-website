@@ -12,7 +12,7 @@
     "productLinks": {
       "dataQualityProfiling": { "title": "Datakwaliteitsprofiling", "desc": "Geautomatiseerde controles op volledigheid, nauwkeurigheid & consistentie" },
       "etlPipeline": { "title": "ETL Pipeline", "desc": "Extraheren, transformeren & laden met slimme regels" },
-      "dataScrambling": { "title": "Data Scrambling", "desc": "GDPR- & HIPAA-conforme datamaskering" },
+      "dataScrambling": { "title": "Datamaskering (Scrambling)", "desc": "GDPR- & HIPAA-conforme datamaskering" },
       "agenticAi": { "title": "Agentic AI", "desc": "Ingebouwde AI die automatisch problemen detecteert & oplost" },
       "integrations": { "title": "Integraties", "desc": "SAP, Oracle, SQL Server & platte bestanden" },
       "dataStaging": { "title": "Data Staging", "desc": "Ingebouwde staging met validatie vóór het laden" }
@@ -26,18 +26,18 @@
   },
   "hero": {
     "badge": "Nu met ingebouwde Agentic AI",
-    "headline1": "Eén platform.",
-    "headline2": "Elke datafase.",
-    "subheadline": "deKorvai verenigt datakwaliteitsprofiling, ETL-transformatie en data-scrambling in één AI-gestuurd platform. Vereenvoudig uw SAP S/4HANA-migraties en elimineer gereedschapswildgroei.",
+    "headline1": "Eén platform voor",
+    "headline2": "Enterprise Data Integriteit",
+    "subheadline": "deKorvai verenigt datakwaliteitsprofiling, ETL-transformatie en datamaskering (scrambling) in één AI-gestuurd platform — zodat uw data accuraat, compliant en migratieklaar blijft in elk systeem. Geen gereedschapswildgroei.",
     "bookDemo": "Demo aanvragen",
     "seeHowItWorks": "Bekijk hoe het werkt",
     "stats": {
       "fasterResolution": { "value": "3x", "label": "Snellere probleemoplossing" },
       "dataErrors": { "value": "70%", "label": "Minder datafouten" },
-      "migrationOptimized": { "value": "50%", "label": "Migratie geoptimaliseerd" },
+      "migrationOptimized": { "value": "50%", "label": "Migratie doorlooptijd verkort" },
       "auditReady": { "value": "100%", "label": "Auditgereed & compliant" }
     },
-    "dashboardTitle": "deKorvai — Datamigratie-pipeline",
+    "dashboardTitle": "deKorvai — Data Integriteit Pipeline",
     "pipeline": {
       "extract": "Extraheren",
       "profile": "Profileren",
@@ -52,41 +52,45 @@
       "fieldsScrambled": { "label": "Velden gescrambled", "value": "89", "change": "100%" }
     }
   },
+  "answerFirst": {
+    "brand": "deKorvai",
+    "definition": "is een uniform platform voor data-integriteit en -orchestratie van Business Core Solutions dat datakwaliteitsprofiling, ETL, datamaskering (scrambling) en agentic AI combineert in één product. Bedrijven gebruiken het voor testdatabeheer, continue datakwaliteitsgovernance, systeemconsolidatie en SAP S/4HANA-migratie — ter vervanging van vier losse tools."
+  },
   "trustBar": {
-    "trustedBy": "Vertrouwd door ondernemingen wereldwijd",
+    "trustedBy": "Vertrouwd in live SAP S/4HANA programma's",
     "worldsBrewer": "'s Werelds #2 brouwer",
-    "integratesWith": "Integreert met uw data-ecosysteem"
+    "integratesWith": "Verbindt met uw data-ecosysteem"
   },
   "problemSolution": {
     "badge": "DE UITDAGING",
-    "title1": "Datamigratie is",
-    "titleHighlight": "het #1 risico",
-    "title2": "in S/4HANA-programma's",
-    "subtitle": "Organisaties worstelen met gefragmenteerde tools, handmatige processen en slechte datakwaliteit tijdens greenfield- en bluefield-implementaties.",
+    "title1": "Slechte data is",
+    "titleHighlight": "het verborgen risico",
+    "title2": "in elk bedrijfssysteem",
+    "subtitle": "Organisaties worstelen met gefragmenteerde tools, handmatige processen en slechte datakwaliteit — in testomgevingen, migraties en dagelijks beheer. Migraties zoals S/4HANA maken het onmogelijk om te negeren.",
     "withoutTitle": "Zonder deKorvai",
     "withoutSubtitle": "De huidige realiteit",
     "withTitle": "Met deKorvai",
     "withSubtitle": "De nieuwe standaard",
     "problems": {
-      "p1": "Meerdere losgekoppelde tools voor profiling, ETL en scrambling",
-      "p2": "Handmatige Excel-gebaseerde profiling die kritieke dataproblemen mist",
-      "p3": "Maanden vertraging tijdens datamigratie door slechte kwaliteit",
-      "p4": "Productiedata niet bruikbaar in testomgevingen zonder scrambling",
-      "p5": "Datafouten die pas tijdens de go-live van de migratie worden ontdekt, met storingen tot gevolg"
+      "p1": "Meerdere losgekoppelde tools voor profiling, ETL en maskering",
+      "p2": "Handmatige Excel-gebaseerde profiling die kritieke problemen mist",
+      "p3": "Maanden vertraging door slechte datakwaliteit",
+      "p4": "Productiedata niet bruikbaar in test zonder maskering",
+      "p5": "Fouten pas bij go-live ontdekt, met storingen tot gevolg"
     },
     "solutions": {
-      "s1": "Eén uniform platform vervangt 4+ afzonderlijke tools",
+      "s1": "Eén platform vervangt 4+ afzonderlijke tools",
       "s2": "Geautomatiseerde profiling met aanpasbare regels",
-      "s3": "Verkort de migratiedoorlooptijd met 50%+",
-      "s4": "Conforme data-scrambling voor testomgevingen",
-      "s5": "Detecteer en los dataproblemen op voordat ze storingen veroorzaken"
+      "s3": "Migratiedoorlooptijd 50%+ verkort",
+      "s4": "Conforme datamaskering voor testomgevingen",
+      "s5": "Detecteer & los problemen op voordat ze storingen veroorzaken"
     }
   },
   "features": {
     "badge": "UNIFORM PLATFORM",
     "title1": "Alles wat u nodig heeft.",
     "title2": "Eén platform.",
-    "subtitle": "Vervang uw gefragmenteerde gereedschapsketen door één intelligent platform dat datakwaliteit, ETL en scrambling afhandelt.",
+    "subtitle": "Vervang uw gefragmenteerde gereedschapsketen door één intelligent platform voor datakwaliteit, ETL en datamaskering.",
     "dataQualityProfiling": {
       "title": "Datakwaliteitsprofiling",
       "description": "Kant-en-klare profiling met aanpasbare regels voor volledigheid, nauwkeurigheid en consistentie. Detecteer afwijkingen en drift automatisch.",
@@ -104,15 +108,15 @@
       "h4": "Overschrijf- & toevoegopties"
     },
     "dataScrambling": {
-      "title": "Data Scrambling",
-      "description": "Scramble productiedata voor niet-productieomgevingen. GDPR-, HIPAA- en SOX-conform met controle op veldniveau.",
-      "h1": "Voorgedefinieerde scramblingprofielen",
+      "title": "Datamaskering (Scrambling)",
+      "description": "Maskeer productiedata voor niet-prod. GDPR, HIPAA, SOX-conform met controle op veldniveau & referentiële integriteit.",
+      "h1": "Voorgedefinieerde maskeringsprofielen",
       "h2": "Controle op veldniveau",
       "h3": "Uitvoering in testmodus"
     },
     "agenticAi": {
       "title": "Agentic AI",
-      "description": "Ingebouwde AI-agents die automatisch dataproblemen detecteren, transformaties voorstellen en slimme beslissingen nemen in de gehele pipeline.",
+      "description": "AI-agents detecteren automatisch problemen, stellen transformaties voor en genereren DQ-regels vanuit natuurlijke taal.",
       "h1": "Automatische probleemdetectie",
       "h2": "Slimme beslissingen",
       "h3": "Continu leren"
@@ -135,7 +139,7 @@
   "howItWorks": {
     "badge": "VEREENVOUDIGDE PIPELINE",
     "title1": "Van bron naar doel.",
-    "title2": "Vereenvoudigd.",
+    "title2": "Dataverplaatsing, vereenvoudigd.",
     "subtitle": "Wat voorheen 4 verschillende tools en maanden handmatig werk kostte, gebeurt nu in één gestroomlijnde workflow.",
     "steps": {
       "s1": {
@@ -153,10 +157,10 @@
         "d3": "Afwijkingsdetectie"
       },
       "s3": {
-        "title": "Transformeren & scramblen",
-        "description": "Pas transformatie-mappings toe voor bedrijfscodes, organisatiestructuren en rekeningen. Scramble gevoelige data voor testomgevingen met behoud van referentiële integriteit.",
+        "title": "Transformeren & maskeren",
+        "description": "Veldmapping + datamaskering met behoud van referentiële integriteit.",
         "d1": "Slimme veldmapping",
-        "d2": "Data-scrambling",
+        "d2": "Datamaskering",
         "d3": "Referentiële integriteit"
       },
       "s4": {
@@ -230,26 +234,26 @@
     }
   },
   "useCases": {
-    "badge": "TOEPASSINGEN",
+    "badge": "OPLOSSINGEN",
     "title1": "Gebouwd voor echte",
-    "title2": "enterprise-uitdagingen",
-    "subtitle": "Van SAP S/4HANA-migraties tot continue datagovernance — deKorvai verwerkt de meest complexe enterprise-datascenario's.",
+    "title2": "enterprise data-uitdagingen",
+    "subtitle": "Van continue governance tot SAP-migraties — deKorvai verwerkt de meest complexe enterprise-datascenario's.",
     "cases": {
       "c1": {
-        "title": "SAP S/4HANA Greenfield-migratie",
-        "description": "Migreer leveranciers- en klantenstamgegevens van SAP ECC naar S/4HANA Business Partner met geautomatiseerde extractieregels, transformatie-mappings en kwaliteitsvalidatie."
-      },
-      "c2": {
-        "title": "Bluefield / Selectieve datatransitie",
-        "description": "Migreer selectief master- en transactiedata met complexe filtering, deduplicatie en transformatie op veldniveau — alles in één platform."
-      },
-      "c3": {
-        "title": "Testdatabeheer",
-        "description": "Scramble productiedata voor SIT/UAT-omgevingen, zodat teams met realistische data kunnen testen met behoud van GDPR- en HIPAA-compliance."
-      },
-      "c4": {
         "title": "Continue datakwaliteitsgovernance",
         "description": "Bewaak de datakwaliteit binnen uw onderneming met realtime scorecards, afwijkingsdetectie en geautomatiseerde profiling die problemen signaleert voordat ze escaleren."
+      },
+      "c2": {
+        "title": "Testdatabeheer & maskering",
+        "description": "Maskeer productiedata voor SIT/UAT-omgevingen, zodat teams met realistische data kunnen testen met behoud van GDPR- en HIPAA-compliance."
+      },
+      "c3": {
+        "title": "Systeemconsolidatie & carve-outs",
+        "description": "Voeg data samen uit meerdere SAP- en niet-SAP-systemen tot één doel met geautomatiseerde deduplicatie, profiling en conflictoplossing — voor M&A, carve-outs en multi-systeemconsolidatie."
+      },
+      "c4": {
+        "title": "SAP S/4HANA datamigratie",
+        "description": "Migreer master- en transactiedata van SAP ECC naar S/4HANA met geautomatiseerde extractie, transformatie, kwaliteitsvalidatie en DMC-staging — voor Greenfield, Bluefield en GROW-programma's."
       }
     }
   },
@@ -403,6 +407,37 @@
     "viewAllPosts": "Alle artikelen bekijken",
     "viewAllEvents": "Alle evenementen bekijken"
   },
+  "faq": {
+    "badge": "FAQ",
+    "title1": "Veelgestelde",
+    "title2": "vragen",
+    "items": {
+      "q1": {
+        "question": "Wat is deKorvai?",
+        "answer": "deKorvai is een uniform platform voor data-integriteit en -orchestratie dat datakwaliteitsprofiling, ETL, datamaskering (scrambling) en agentic AI combineert. Het wordt gebruikt voor testdatabeheer, datakwaliteitsgovernance, systeemconsolidatie en SAP S/4HANA-migratie."
+      },
+      "q2": {
+        "question": "Wat is datamaskering (scrambling)?",
+        "answer": "Datamaskering vervangt gevoelige productiewaarden door realistische substituten, zodat data bruikbaar blijft voor testen terwijl de originelen niet kunnen worden hersteld. deKorvai behoudt formaat en referentiële integriteit over systemen heen."
+      },
+      "q3": {
+        "question": "Vervangt deKorvai de SAP Migration Cockpit (DMC)?",
+        "answer": "Nee — deKorvai voedt DMC. Het extraheert, profileert, transformeert en maskeert data, en laadt vervolgens schone records in DMC-stagingtabellen met hoge first-pass rates."
+      },
+      "q4": {
+        "question": "Welke SAP-migratiebenaderingen ondersteunt deKorvai?",
+        "answer": "Greenfield, Brownfield en Bluefield (selectieve datatransitie), plus GROW, regionale roll-outs en systeemconsolidatie."
+      },
+      "q5": {
+        "question": "Is deKorvai compliant voor testomgevingen?",
+        "answer": "Ja. Maskering op veldniveau met voorgedefinieerde profielen ondersteunt GDPR, HIPAA en SOX, waardoor niet-productiedata realistisch maar niet-identificeerbaar blijft."
+      },
+      "q6": {
+        "question": "Hoe verschilt deKorvai van afzonderlijke DQ-, ETL- en maskeringstools?",
+        "answer": "Het verenigt alle drie plus agentic AI in één platform — waardoor overdrachten tussen tools worden geëlimineerd die de meeste migratiedatafouten veroorzaken."
+      }
+    }
+  },
   "cta": {
     "badge": "Bekijk deKorvai in actie",
     "title1": "Laten we samen de toekomst van",
@@ -432,20 +467,21 @@
   },
   "footer": {
     "nameMeaning": "\"De Perfecte Compositie\" — van Tamil கோர்வை (Korvai) & Nederlands de",
-    "description": "Uniform platform voor datakwaliteit, ETL en scrambling, aangedreven door Agentic AI. Gebouwd voor enterprise-datatransformatieprogramma's.",
+    "description": "Uniform platform voor data-integriteit: datakwaliteitsprofiling, ETL, datamaskering en agentic AI. Gebouwd voor enterprise-dataprogramma's.",
     "platform": "Platform",
     "platformLinks": {
       "dataQualityProfiling": "Datakwaliteitsprofiling",
       "etlPipeline": "ETL Pipeline",
-      "dataScrambling": "Data Scrambling",
+      "dataScrambling": "Datamaskering",
       "agenticAi": "Agentic AI",
       "integrations": "Integraties"
     },
     "solutions": "Oplossingen",
     "solutionLinks": {
-      "sapMigration": "SAP S/4HANA-migratie",
+      "dataGovernance": "Datakwaliteitsgovernance",
       "testDataManagement": "Testdatabeheer",
-      "dataGovernance": "Datagovernance",
+      "consolidation": "Systeemconsolidatie",
+      "sapMigration": "S/4HANA-migratie",
       "compliance": "Compliance"
     },
     "resourcesTitle": "Kenniscentrum",
@@ -457,7 +493,6 @@
     "company": "Bedrijf",
     "companyLinks": {
       "aboutUs": "Over ons",
-      "careers": "Vacatures",
       "contact": "Contact",
       "partners": "Partners"
     },

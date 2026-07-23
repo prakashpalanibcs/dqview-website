@@ -34,7 +34,7 @@ const programMeta = [
   { key: "p6", icon: ShieldCheck },
 ];
 
-export default function WhyDQView() {
+export default function WhyDeKorvai() {
   const t = useTranslations("whyDqView");
 
   const reasons = reasonMeta.map((r) => ({

@@ -114,7 +114,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
         >
           <a
-            href="https://calendly.com/symphonydemo/bcs"
+            href="https://calendly.com/gokulprasad-s-businesscoresolutions/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-xl bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-2xl shadow-blue-500/25 hover:shadow-blue-500/40"

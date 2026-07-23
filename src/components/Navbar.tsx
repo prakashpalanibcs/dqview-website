@@ -20,7 +20,6 @@ import {
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
-import LogoMark from "./LogoMark";
 
 const productIcons = [BarChart3, Workflow, Shield, Cpu, Database, Layers];
 const productKeys = [
@@ -30,6 +29,14 @@ const productKeys = [
   "agenticAi",
   "integrations",
   "dataStaging",
+];
+const productSlugs = [
+  "data-quality-profiling",
+  "etl-pipeline",
+  "data-scrambling",
+  "agentic-ai",
+  "integrations",
+  "data-staging",
 ];
 
 const resourceIcons = [FileText, Newspaper, CalendarDays];
@@ -59,6 +66,7 @@ export default function Navbar() {
     icon: productIcons[i],
     title: t(`productLinks.${key}.title`),
     desc: t(`productLinks.${key}.desc`),
+    slug: productSlugs[i],
   }));
 
   const resourceLinks = resourceKeys.map((key, i) => ({
@@ -77,11 +85,12 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group">
-          <LogoMark className="h-9 w-9" />
-          <span className="text-xl font-bold text-white">
-            deKorvai
-          </span>
+        <Link href="/" className="flex items-center group">
+          <img
+            src="/logo-horizontal.svg"
+            alt="deKorvai"
+            className="h-9 w-auto"
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -106,13 +115,11 @@ export default function Navbar() {
                   className="absolute top-full left-0 mt-2 w-[480px] glass rounded-xl p-4 grid grid-cols-2 gap-2"
                 >
                   {productLinks.map((link) => (
-                    <button
+                    <Link
                       key={link.title}
-                      onClick={() => {
-                        scrollTo("features");
-                        setActiveDropdown(null);
-                      }}
-                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group text-left cursor-pointer"
+                      href={`/platform/${link.slug}`}
+                      onClick={() => setActiveDropdown(null)}
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group text-left"
                     >
                       <link.icon className="w-5 h-5 text-blue-400 mt-0.5 shrink-0" />
                       <div>
@@ -123,7 +130,7 @@ export default function Navbar() {
                           {link.desc}
                         </div>
                       </div>
-                    </button>
+                    </Link>
                   ))}
                 </motion.div>
               )}
@@ -212,7 +219,7 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-3">
           <LanguageSwitcher />
           <a
-            href="https://calendly.com/symphonydemo/bcs"
+            href="https://calendly.com/gokulprasad-s-businesscoresolutions/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2.5 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-lg shadow-blue-500/25"
@@ -257,7 +264,7 @@ export default function Navbar() {
               </Link>
               <div className="pt-4 border-t border-white/10 space-y-3">
                 <a
-                  href="https://calendly.com/symphonydemo/bcs"
+                  href="https://calendly.com/gokulprasad-s-businesscoresolutions/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-center py-2.5 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-500 to-violet-500 text-white"

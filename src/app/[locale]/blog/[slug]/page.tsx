@@ -90,7 +90,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
               {t("readyCta")}
             </p>
             <a
-              href="https://calendly.com/symphonydemo/bcs"
+              href="https://calendly.com/gokulprasad-s-businesscoresolutions/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-lg shadow-blue-500/25"

@@ -119,9 +119,7 @@ export default function Insights({ blogs: blogData, events = [] }: InsightsProps
                 </motion.a>
               ))}
               <a
-                href="https://boisterous-starburst-5ef9b7.netlify.app/insights/events"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#insights"
                 className="inline-flex items-center gap-1.5 text-sm text-violet-400 hover:text-violet-300 transition-colors mt-2"
               >
                 {t("viewAllEvents")}

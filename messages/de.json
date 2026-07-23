@@ -12,7 +12,7 @@
     "productLinks": {
       "dataQualityProfiling": { "title": "Datenqualitätsprofiling", "desc": "Automatisierte Prüfungen auf Vollständigkeit, Genauigkeit & Konsistenz" },
       "etlPipeline": { "title": "ETL Pipeline", "desc": "Extrahieren, transformieren & laden mit intelligenten Regeln" },
-      "dataScrambling": { "title": "Data Scrambling", "desc": "GDPR- & HIPAA-konforme Datenmaskierung" },
+      "dataScrambling": { "title": "Datenmaskierung (Scrambling)", "desc": "GDPR- & HIPAA-konforme Datenmaskierung" },
       "agenticAi": { "title": "Agentic AI", "desc": "Integrierte KI, die Probleme automatisch erkennt & behebt" },
       "integrations": { "title": "Integrationen", "desc": "SAP, Oracle, SQL Server & Flat Files" },
       "dataStaging": { "title": "Data Staging", "desc": "Integriertes Staging mit Validierung vor dem Laden" }
@@ -26,18 +26,18 @@
   },
   "hero": {
     "badge": "Jetzt mit integrierter Agentic AI",
-    "headline1": "Eine Plattform.",
-    "headline2": "Jede Datenphase.",
-    "subheadline": "deKorvai vereint Datenqualitätsprofiling, ETL-Transformation und Data Scrambling in einer einzigen KI-gestützten Plattform. Vereinfachen Sie Ihre SAP S/4HANA-Migrationen und beseitigen Sie Tool-Wildwuchs.",
+    "headline1": "Eine Plattform für",
+    "headline2": "Enterprise-Datenintegrität",
+    "subheadline": "deKorvai vereint Datenqualitätsprofiling, ETL-Transformation und Datenmaskierung (Scrambling) in einer einzigen KI-gestützten Plattform — damit Ihre Daten in jedem System korrekt, konform und migrationsbereit bleiben. Kein Tool-Wildwuchs.",
     "bookDemo": "Demo buchen",
     "seeHowItWorks": "So funktioniert es",
     "stats": {
       "fasterResolution": { "value": "3x", "label": "Schnellere Problembehebung" },
       "dataErrors": { "value": "70%", "label": "Reduzierung von Datenfehlern" },
-      "migrationOptimized": { "value": "50%", "label": "Migration optimiert" },
+      "migrationOptimized": { "value": "50%", "label": "Migrations-Durchlaufzeit verkürzt" },
       "auditReady": { "value": "100%", "label": "Auditbereit & konform" }
     },
-    "dashboardTitle": "deKorvai — Datenmigrations-Pipeline",
+    "dashboardTitle": "deKorvai — Datenintegritäts-Pipeline",
     "pipeline": {
       "extract": "Extrahieren",
       "profile": "Profilieren",
@@ -52,41 +52,45 @@
       "fieldsScrambled": { "label": "Verschlüsselte Felder", "value": "89", "change": "100%" }
     }
   },
+  "answerFirst": {
+    "brand": "deKorvai",
+    "definition": "ist eine einheitliche Plattform für Datenintegrität und -orchestrierung von Business Core Solutions, die Datenqualitätsprofiling, ETL, Datenmaskierung (Scrambling) und Agentic AI in einem Produkt vereint. Unternehmen nutzen sie für Testdatenmanagement, kontinuierliche Datenqualitäts-Governance, Systemkonsolidierung und SAP S/4HANA-Migration — als Ersatz für vier separate Tools."
+  },
   "trustBar": {
-    "trustedBy": "Vertraut von Unternehmen weltweit",
+    "trustedBy": "Vertraut in live SAP S/4HANA Programmen",
     "worldsBrewer": "Weltweit #2 Brauerei",
-    "integratesWith": "Integriert sich in Ihr Daten-Ökosystem"
+    "integratesWith": "Verbindet sich mit Ihrem Daten-Ökosystem"
   },
   "problemSolution": {
     "badge": "DIE HERAUSFORDERUNG",
-    "title1": "Datenmigration ist",
-    "titleHighlight": "das Risiko Nr. 1",
-    "title2": "in S/4HANA-Programmen",
-    "subtitle": "Unternehmen kämpfen mit fragmentierten Tools, manuellen Prozessen und mangelnder Datenqualität bei Greenfield- und Bluefield-Implementierungen.",
+    "title1": "Schlechte Daten sind",
+    "titleHighlight": "das versteckte Risiko",
+    "title2": "in jedem Unternehmenssystem",
+    "subtitle": "Unternehmen kämpfen mit fragmentierten Tools, manuellen Prozessen und mangelnder Datenqualität — in Testumgebungen, Migrationen und der täglichen Governance. Migrationen wie S/4HANA machen es unmöglich, das zu ignorieren.",
     "withoutTitle": "Ohne deKorvai",
     "withoutSubtitle": "Die aktuelle Realität",
     "withTitle": "Mit deKorvai",
     "withSubtitle": "Der neue Standard",
     "problems": {
-      "p1": "Mehrere unverbundene Tools für Profiling, ETL und Scrambling",
-      "p2": "Manuelles Excel-basiertes Profiling, das kritische Datenprobleme übersieht",
-      "p3": "Monatelange Verzögerungen bei der Datenmigration aufgrund schlechter Qualität",
-      "p4": "Produktionsdaten können ohne Scrambling nicht in Testumgebungen verwendet werden",
-      "p5": "Datenfehler werden erst beim Go-Live der Migration entdeckt und verursachen Ausfälle"
+      "p1": "Mehrere unverbundene Tools für Profiling, ETL und Maskierung",
+      "p2": "Manuelles Excel-basiertes Profiling, das kritische Probleme übersieht",
+      "p3": "Monatelange Verzögerungen durch schlechte Datenqualität",
+      "p4": "Produktionsdaten ohne Maskierung nicht in Test nutzbar",
+      "p5": "Fehler erst beim Go-Live entdeckt, verursachen Ausfälle"
     },
     "solutions": {
-      "s1": "Einheitliche Plattform ersetzt 4+ separate Tools",
+      "s1": "Eine Plattform ersetzt 4+ separate Tools",
       "s2": "Automatisiertes Profiling mit anpassbaren Regeln",
-      "s3": "Migrationsdurchlaufzeit um 50%+ reduzieren",
-      "s4": "Konformes Data Scrambling für Testumgebungen",
-      "s5": "Datenprobleme erkennen und beheben, bevor sie Ausfälle verursachen"
+      "s3": "Migrationsdurchlaufzeit um 50%+ verkürzt",
+      "s4": "Konforme Datenmaskierung für Testumgebungen",
+      "s5": "Probleme erkennen & beheben, bevor sie Ausfälle verursachen"
     }
   },
   "features": {
     "badge": "EINHEITLICHE PLATTFORM",
     "title1": "Alles, was Sie brauchen.",
     "title2": "Eine Plattform.",
-    "subtitle": "Ersetzen Sie Ihre fragmentierte Toollandschaft durch eine einzige, intelligente Plattform, die Datenqualität, ETL und Scrambling abdeckt.",
+    "subtitle": "Ersetzen Sie Ihre fragmentierte Toollandschaft durch eine einzige intelligente Plattform für Datenqualität, ETL und Datenmaskierung.",
     "dataQualityProfiling": {
       "title": "Datenqualitätsprofiling",
       "description": "Sofort einsatzbereites Profiling mit anpassbaren Regeln für Vollständigkeit, Genauigkeit und Konsistenz. Automatische Erkennung von Anomalien und Abweichungen.",
@@ -104,15 +108,15 @@
       "h4": "Überschreib- & Anhängeoptionen"
     },
     "dataScrambling": {
-      "title": "Data Scrambling",
-      "description": "Produktionsdaten für Nicht-Produktionsumgebungen verschlüsseln. GDPR-, HIPAA- und SOX-konform mit Kontrolle auf Feldebene.",
-      "h1": "Vordefinierte Scrambling-Profile",
+      "title": "Datenmaskierung (Scrambling)",
+      "description": "Produktionsdaten für Nicht-Prod maskieren. GDPR, HIPAA, SOX-konform mit Kontrolle auf Feldebene & referentieller Integrität.",
+      "h1": "Vordefinierte Maskierungsprofile",
       "h2": "Kontrolle auf Feldebene",
       "h3": "Testmodus-Ausführung"
     },
     "agenticAi": {
       "title": "Agentic AI",
-      "description": "Integrierte KI-Agenten, die Datenprobleme automatisch erkennen, Transformationen vorschlagen und intelligente Entscheidungen entlang der gesamten Pipeline treffen.",
+      "description": "KI-Agenten erkennen automatisch Probleme, schlagen Transformationen vor und generieren DQ-Regeln aus natürlicher Sprache.",
       "h1": "Automatische Problemerkennung",
       "h2": "Intelligente Entscheidungen",
       "h3": "Kontinuierliches Lernen"
@@ -135,7 +139,7 @@
   "howItWorks": {
     "badge": "VEREINFACHTE PIPELINE",
     "title1": "Von der Quelle zum Ziel.",
-    "title2": "Vereinfacht.",
+    "title2": "Datenbewegung, vereinfacht.",
     "subtitle": "Was früher 4 verschiedene Tools und monatelangen manuellen Aufwand erforderte, geschieht jetzt in einem einzigen, optimierten Workflow.",
     "steps": {
       "s1": {
@@ -153,10 +157,10 @@
         "d3": "Anomalieerkennung"
       },
       "s3": {
-        "title": "Transformieren & Verschlüsseln",
-        "description": "Wenden Sie Transformationszuordnungen für Buchungskreise, Organisationsstrukturen und Konten an. Verschlüsseln Sie sensible Daten für Testumgebungen unter Wahrung der referenziellen Integrität.",
+        "title": "Transformieren & Maskieren",
+        "description": "Feldzuordnung + Datenmaskierung unter Wahrung der referenziellen Integrität.",
         "d1": "Intelligente Feldzuordnung",
-        "d2": "Data Scrambling",
+        "d2": "Datenmaskierung",
         "d3": "Referenzielle Integrität"
       },
       "s4": {
@@ -230,26 +234,26 @@
     }
   },
   "useCases": {
-    "badge": "ANWENDUNGSFÄLLE",
+    "badge": "LÖSUNGEN",
     "title1": "Entwickelt für reale",
-    "title2": "Enterprise-Herausforderungen",
-    "subtitle": "Von SAP S/4HANA-Migrationen bis hin zu kontinuierlicher Daten-Governance — deKorvai bewältigt die komplexesten Enterprise-Datenszenarien.",
+    "title2": "Enterprise-Datenherausforderungen",
+    "subtitle": "Von kontinuierlicher Governance bis SAP-Migrationen — deKorvai bewältigt die komplexesten Enterprise-Datenszenarien.",
     "cases": {
       "c1": {
-        "title": "SAP S/4HANA Greenfield-Migration",
-        "description": "Migrieren Sie Lieferanten- und Kundenstammdaten von SAP ECC zu S/4HANA Business Partner mit automatisierten Extraktionsregeln, Transformationszuordnungen und Qualitätsvalidierung."
-      },
-      "c2": {
-        "title": "Bluefield / Selektive Datentransition",
-        "description": "Selektive Migration von Stamm- und Bewegungsdaten mit komplexer Filterung, Deduplizierung und Transformation auf Feldebene — alles in einer Plattform."
-      },
-      "c3": {
-        "title": "Testdatenmanagement",
-        "description": "Verschlüsseln Sie Produktionsdaten für SIT/UAT-Umgebungen und ermöglichen Sie Teams das Testen mit realistischen Daten unter Einhaltung von GDPR- und HIPAA-Konformität."
-      },
-      "c4": {
         "title": "Kontinuierliche Datenqualitäts-Governance",
         "description": "Überwachen Sie die Datenqualität in Ihrem gesamten Unternehmen mit Echtzeit-Scorecards, Anomalieerkennung und automatisiertem Profiling, das Probleme erkennt, bevor sie eskalieren."
+      },
+      "c2": {
+        "title": "Testdatenmanagement & Maskierung",
+        "description": "Maskieren Sie Produktionsdaten für SIT/UAT-Umgebungen und ermöglichen Sie Teams das Testen mit realistischen Daten unter Einhaltung von GDPR- und HIPAA-Konformität."
+      },
+      "c3": {
+        "title": "Systemkonsolidierung & Carve-Outs",
+        "description": "Führen Sie Daten aus mehreren SAP- und Nicht-SAP-Systemen in ein einziges Ziel zusammen — mit automatisierter Deduplizierung, Profiling und Konfliktlösung für M&A, Carve-Outs und Multi-System-Konsolidierung."
+      },
+      "c4": {
+        "title": "SAP S/4HANA Datenmigration",
+        "description": "Migrieren Sie Stamm- und Bewegungsdaten von SAP ECC zu S/4HANA mit automatisierter Extraktion, Transformation, Qualitätsvalidierung und DMC-Staging — für Greenfield-, Bluefield- und GROW-Programme."
       }
     }
   },
@@ -403,6 +407,37 @@
     "viewAllPosts": "Alle Beiträge ansehen",
     "viewAllEvents": "Alle Veranstaltungen ansehen"
   },
+  "faq": {
+    "badge": "FAQ",
+    "title1": "Häufig gestellte",
+    "title2": "Fragen",
+    "items": {
+      "q1": {
+        "question": "Was ist deKorvai?",
+        "answer": "deKorvai ist eine einheitliche Plattform für Datenintegrität und -orchestrierung, die Datenqualitätsprofiling, ETL, Datenmaskierung (Scrambling) und Agentic AI vereint. Sie wird für Testdatenmanagement, Datenqualitäts-Governance, Systemkonsolidierung und SAP S/4HANA-Migration eingesetzt."
+      },
+      "q2": {
+        "question": "Was ist Datenmaskierung (Scrambling)?",
+        "answer": "Datenmaskierung ersetzt sensible Produktionswerte durch realistische Substitute, sodass Daten für Tests nutzbar bleiben, ohne dass die Originalwerte wiederhergestellt werden können. deKorvai bewahrt Format und referenzielle Integrität über Systeme hinweg."
+      },
+      "q3": {
+        "question": "Ersetzt deKorvai das SAP Migration Cockpit (DMC)?",
+        "answer": "Nein — deKorvai speist DMC. Es extrahiert, profiliert, transformiert und maskiert Daten und lädt dann saubere Datensätze in DMC-Staging-Tabellen mit hohen First-Pass-Raten."
+      },
+      "q4": {
+        "question": "Welche SAP-Migrationsansätze unterstützt deKorvai?",
+        "answer": "Greenfield, Brownfield und Bluefield (selektive Datentransition), plus GROW, regionale Roll-outs und Systemkonsolidierung."
+      },
+      "q5": {
+        "question": "Ist deKorvai konform für Testumgebungen?",
+        "answer": "Ja. Maskierung auf Feldebene mit vordefinierten Profilen unterstützt GDPR, HIPAA und SOX und hält Nicht-Produktionsdaten realistisch, aber nicht identifizierbar."
+      },
+      "q6": {
+        "question": "Wie unterscheidet sich deKorvai von separaten DQ-, ETL- und Maskierungstools?",
+        "answer": "Es vereint alle drei plus Agentic AI in einer Plattform — und eliminiert die Übergaben zwischen Tools, die die meisten Migrationsdatenfehler verursachen."
+      }
+    }
+  },
   "cta": {
     "badge": "deKorvai in Aktion erleben",
     "title1": "Lassen Sie uns gemeinsam die Zukunft der",
@@ -432,20 +467,21 @@
   },
   "footer": {
     "nameMeaning": "\"Die Perfekte Komposition\" — aus Tamil கோர்வை (Korvai) & Niederländisch de",
-    "description": "Einheitliche Plattform für Datenqualität, ETL und Scrambling, angetrieben von Agentic AI. Entwickelt für Enterprise-Datentransformationsprogramme.",
+    "description": "Einheitliche Plattform für Datenintegrität: Datenqualitätsprofiling, ETL, Datenmaskierung und Agentic AI. Entwickelt für Enterprise-Datenprogramme.",
     "platform": "Plattform",
     "platformLinks": {
       "dataQualityProfiling": "Datenqualitätsprofiling",
       "etlPipeline": "ETL Pipeline",
-      "dataScrambling": "Data Scrambling",
+      "dataScrambling": "Datenmaskierung",
       "agenticAi": "Agentic AI",
       "integrations": "Integrationen"
     },
     "solutions": "Lösungen",
     "solutionLinks": {
-      "sapMigration": "SAP S/4HANA-Migration",
+      "dataGovernance": "Datenqualitäts-Governance",
       "testDataManagement": "Testdatenmanagement",
-      "dataGovernance": "Daten-Governance",
+      "consolidation": "Systemkonsolidierung",
+      "sapMigration": "S/4HANA-Migration",
       "compliance": "Compliance"
     },
     "resourcesTitle": "Ressourcen",
@@ -457,7 +493,6 @@
     "company": "Unternehmen",
     "companyLinks": {
       "aboutUs": "Über uns",
-      "careers": "Karriere",
       "contact": "Kontakt",
       "partners": "Partner"
     },
