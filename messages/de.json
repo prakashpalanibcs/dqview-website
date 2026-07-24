@@ -14,13 +14,31 @@
       "etlPipeline": { "title": "ETL Pipeline", "desc": "Extrahieren, transformieren & laden mit intelligenten Regeln" },
       "dataScrambling": { "title": "Datenmaskierung (Scrambling)", "desc": "GDPR- & HIPAA-konforme Datenmaskierung" },
       "agenticAi": { "title": "Agentic AI", "desc": "Integrierte KI, die Probleme automatisch erkennt & behebt" },
-      "integrations": { "title": "Integrationen", "desc": "SAP, Oracle, SQL Server & Flat Files" },
-      "dataStaging": { "title": "Data Staging", "desc": "Integriertes Staging mit Validierung vor dem Laden" }
+      "integrations": { "title": "Integrationen", "desc": "SAP, Oracle, SQL Server & Flat Files" }
     },
     "resourceLinks": {
       "caseStudies": { "title": "Fallstudien", "desc": "Erfolgsgeschichten unserer Kunden" },
       "blog": { "title": "Blog", "desc": "Einblicke & Artikel" },
       "events": { "title": "Veranstaltungen", "desc": "Treffen Sie uns bei kommenden Veranstaltungen" }
+    },
+    "solutionLenses": {
+      "byUseCase": { "title": "Nach Anwendungsfall", "desc": "Ein bestimmtes Datenproblem lösen" },
+      "byIndustry": { "title": "Nach Branche", "desc": "Bewährt in Ihrer Branche" },
+      "byRegulation": { "title": "Nach Vorschrift", "desc": "Compliance-Anforderungen erfüllen" }
+    },
+    "solutionCards": {
+      "masterDataManagement": { "title": "Master Data Management", "desc": "Fuzzy-Duplikate finden, Golden Records für Materialien und mehr erstellen." },
+      "dataQualityGovernance": { "title": "Data Quality Governance", "desc": "Kontinuierliche, bewertete Qualitätsüberwachung über Systeme hinweg." },
+      "compliance": { "title": "Compliance", "desc": "Sensible Daten für DSGVO, HIPAA & SOX maskieren." },
+      "testDataManagement": { "title": "Testdatenmanagement", "desc": "Realistische, maskierte Testdaten bereitstellen." },
+      "systemConsolidation": { "title": "Systemkonsolidierung", "desc": "Zusammenführen & deduplizieren nach M&A oder Ausgliederung." },
+      "s4hanaMigration": { "title": "SAP S/4HANA Migration", "desc": "Daten extrahieren, validieren & in S/4HANA laden." },
+      "manufacturing": { "title": "Fertigung & Chemie", "desc": "Stammdatenbereinigung, Migration & konforme Testdaten." },
+      "cpgBeverage": { "title": "FMCG & Getränke", "desc": "Konforme Scrambling & Qualität im großen Maßstab." },
+      "lifeSciences": { "title": "Life Sciences", "desc": "Stamm- & Bewegungsdatenmigration mit Profiling." },
+      "gdpr": { "title": "DSGVO", "desc": "Personenbezogene Daten in Nicht-Produktionsumgebungen maskieren." },
+      "hipaa": { "title": "HIPAA", "desc": "PHI mit Feldebenen-Maskierung in niedrigeren Umgebungen schützen." },
+      "sox": { "title": "SOX", "desc": "Maskierte Testdaten & auditbereite Datenqualitätsnachweise." }
     },
     "mobileResources": "Ressourcen"
   },

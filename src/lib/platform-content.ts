@@ -4,7 +4,6 @@ import {
   Shield,
   Cpu,
   Database,
-  Layers,
   CheckCircle2,
   Zap,
   FileSearch,
@@ -198,7 +197,7 @@ export const PLATFORM_PAGES: PlatformPageContent[] = [
   },
 
   {
-    slug: "etl-pipeline",
+    slug: "etl",
     icon: Workflow,
     badge: "ETL Pipeline Engine",
     title: "Extract, Transform, Load — ",
@@ -335,7 +334,7 @@ export const PLATFORM_PAGES: PlatformPageContent[] = [
   },
 
   {
-    slug: "data-scrambling",
+    slug: "data-masking",
     icon: Shield,
     badge: "Data Scrambling",
     title: "Protect Sensitive Data ",
@@ -719,142 +718,6 @@ export const PLATFORM_PAGES: PlatformPageContent[] = [
       "Book a demo and see how deKorvai connects to your entire data ecosystem — from SAP to cloud, from databases to spreadsheets.",
   },
 
-  {
-    slug: "data-staging",
-    icon: Layers,
-    badge: "Data Staging",
-    title: "Stage, Validate, Load — ",
-    titleHighlight: "With Confidence",
-    subtitle:
-      "Intermediate staging tables with pre-load validation, human review workflows, and wave-sequenced loading for SAP DMC migrations. Never load bad data again.",
-    overviewTitle: "The Safety Net Between Source and Target",
-    overviewDescription:
-      "deKorvai's Data Staging module provides a controlled intermediate layer between data extraction and final loading. Staging tables are dynamically created, populated with source data, validated against business rules, and presented for human review before committing to target systems. Purpose-built for SAP Data Migration Cockpit (DMC) workflows, it supports 212 migration objects with wave-sequenced dependency management.",
-    features: [
-      {
-        title: "Dynamic Staging Table Creation",
-        description:
-          "Staging tables are auto-generated with unique names (timestamp + random ID) in configurable schemas. Tables are created based on source data structure with automatic column inference.",
-      },
-      {
-        title: "SAP DMC Template Parsing",
-        description:
-          "Parse SAP Migration Cockpit Excel and XML templates with intelligent metadata row detection. Automatically filter help rows, validate header patterns, and extract business data.",
-      },
-      {
-        title: "212 Migration Objects",
-        description:
-          "Full catalog of S/4HANA 2022 migration objects with predecessor dependencies. Wave-sequenced loading (1-10+) ensures referential integrity and FK constraints are satisfied.",
-      },
-      {
-        title: "Multi-Layer Pre-Load Validation",
-        description:
-          "Format validation at parse time, content validation before staging, schema validation during staging, and post-staging business rule checks — four layers of protection.",
-      },
-      {
-        title: "Human Review & Approval",
-        description:
-          "Staged data enters an approval workflow (draft → pending → approved/rejected → published). Data stewards review before execution, with full audit trail for every status transition.",
-      },
-      {
-        title: "Batch Processing",
-        description:
-          "Read and process staged data in configurable batch sizes. Paginated access for review UIs. Support for large datasets without memory constraints.",
-      },
-      {
-        title: "Automatic Cleanup",
-        description:
-          "Staging tables are explicitly dropped after processing. No orphaned tables accumulate in the database. Clean execution lifecycle from creation to cleanup.",
-      },
-      {
-        title: "Wave-Sequenced Loading",
-        description:
-          "SAP migration objects loaded in dependency order using longest-path algorithm. Wave 1 objects (no predecessors) load first, dependent objects follow in sequence.",
-      },
-    ],
-    benefits: [
-      {
-        title: "Never Load Bad Data",
-        description:
-          "Four layers of validation plus human review ensure only clean, validated data reaches your target system.",
-      },
-      {
-        title: "95%+ DMC First-Pass Rate",
-        description:
-          "Pre-validated staging data means fewer DMC errors, fewer correction cycles, and dramatically faster migration execution.",
-      },
-      {
-        title: "SAP-Native Workflow",
-        description:
-          "Built for SAP DMC with template parsing, migration object cataloging, and wave-sequenced loading. Speaks SAP's language natively.",
-      },
-      {
-        title: "Full Traceability",
-        description:
-          "Every staging operation is logged. Approval workflows create an audit trail from data arrival to final load.",
-      },
-      {
-        title: "Zero Orphaned Tables",
-        description:
-          "Automatic cleanup ensures staging tables don't accumulate. Clean database state maintained across execution cycles.",
-      },
-    ],
-    useCases: [
-      {
-        title: "SAP S/4HANA DMC Migration",
-        description:
-          "Parse DMC migration templates, stage data with validation, review in approval workflow, and load to SAP staging tables in wave-sequenced order.",
-        tags: ["SAP DMC", "S/4HANA", "Wave Loading", "Migration"],
-      },
-      {
-        title: "Business Partner Staging",
-        description:
-          "Stage BP create/update data from CSV or catalogue sources. Batch-read staged records, validate against S/4HANA rules, and push via OData API.",
-        tags: ["Business Partner", "OData", "Validation"],
-      },
-      {
-        title: "Pre-Migration Data Review",
-        description:
-          "Stage extracted data for stakeholder review before committing to target systems. Approval workflows ensure sign-off from data owners.",
-        tags: ["Review", "Approval", "Stakeholders"],
-      },
-      {
-        title: "Flat File to Staging Pipeline",
-        description:
-          "Upload CSV/Excel files, parse into staging tables, validate structure and content, then promote to target database after review.",
-        tags: ["CSV", "Excel", "Upload", "Validation"],
-      },
-    ],
-    architecture: [
-      {
-        step: "01",
-        title: "Parse",
-        description:
-          "Source data (CSV, Excel, DMC templates, database extracts) is parsed, validated for structure, and metadata rows are filtered out.",
-      },
-      {
-        step: "02",
-        title: "Stage",
-        description:
-          "Dynamic staging tables are created in the configured schema. Data is bulk-inserted with record count verification.",
-      },
-      {
-        step: "03",
-        title: "Validate & Review",
-        description:
-          "Multi-layer validation checks schema, data types, required fields, and business rules. Approval workflow routes to data stewards.",
-      },
-      {
-        step: "04",
-        title: "Load & Cleanup",
-        description:
-          "Approved data is loaded to target in wave sequence. Staging tables are dropped after successful completion.",
-      },
-    ],
-    ctaTitle: "See Data Staging in Action",
-    ctaDescription:
-      "Book a demo and discover how deKorvai's staging workflow can give your team confidence in every data load.",
-  },
 ];
 
 export function getPlatformPageBySlug(

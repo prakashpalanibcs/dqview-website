@@ -14,13 +14,31 @@
       "etlPipeline": { "title": "ETL Pipeline", "desc": "Extract, transform & load with smart rules" },
       "dataScrambling": { "title": "Data Masking (Scrambling)", "desc": "GDPR & HIPAA compliant data masking" },
       "agenticAi": { "title": "Agentic AI", "desc": "Built-in AI that auto-detects & resolves issues" },
-      "integrations": { "title": "Integrations", "desc": "SAP, Oracle, SQL Server & flat files" },
-      "dataStaging": { "title": "Data Staging", "desc": "In-built staging with validation before load" }
+      "integrations": { "title": "Integrations", "desc": "SAP, Oracle, SQL Server & flat files" }
     },
     "resourceLinks": {
       "caseStudies": { "title": "Case Studies", "desc": "Customer success stories" },
       "blog": { "title": "Blog", "desc": "Insights & articles" },
       "events": { "title": "Events", "desc": "Meet us at upcoming events" }
+    },
+    "solutionLenses": {
+      "byUseCase": { "title": "By Use Case", "desc": "Solve a specific data problem" },
+      "byIndustry": { "title": "By Industry", "desc": "Proven in your sector" },
+      "byRegulation": { "title": "By Regulation", "desc": "Meet a compliance mandate" }
+    },
+    "solutionCards": {
+      "masterDataManagement": { "title": "Master Data Management", "desc": "Find fuzzy duplicates, build golden records for materials & more." },
+      "dataQualityGovernance": { "title": "Data Quality Governance", "desc": "Continuous, scored quality monitoring across systems." },
+      "compliance": { "title": "Compliance", "desc": "Mask sensitive data for GDPR, HIPAA & SOX." },
+      "testDataManagement": { "title": "Test Data Management", "desc": "Provision realistic, masked test data." },
+      "systemConsolidation": { "title": "System Consolidation", "desc": "Merge & de-duplicate after M&A or carve-out." },
+      "s4hanaMigration": { "title": "SAP S/4HANA Migration", "desc": "Extract, validate & load data into S/4HANA." },
+      "manufacturing": { "title": "Manufacturing & Chemicals", "desc": "Master-data cleansing, migration & compliant test data." },
+      "cpgBeverage": { "title": "CPG & Beverage", "desc": "Compliant scrambling & quality at scale." },
+      "lifeSciences": { "title": "Life Sciences", "desc": "Master & transaction data migration with profiling." },
+      "gdpr": { "title": "GDPR", "desc": "Mask personal data in non-production; prove data integrity." },
+      "hipaa": { "title": "HIPAA", "desc": "Protect PHI with field-level masking in lower environments." },
+      "sox": { "title": "SOX", "desc": "Masked test data & audit-ready data-quality evidence." }
     },
     "mobileResources": "Resources"
   },

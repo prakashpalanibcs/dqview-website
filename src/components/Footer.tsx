@@ -29,8 +29,8 @@ export default function Footer() {
       title: t("platform"),
       links: [
         { label: t("platformLinks.dataQualityProfiling"), route: "/platform/data-quality-profiling" },
-        { label: t("platformLinks.etlPipeline"), route: "/platform/etl-pipeline" },
-        { label: t("platformLinks.dataScrambling"), route: "/platform/data-scrambling" },
+        { label: t("platformLinks.etlPipeline"), route: "/platform/etl" },
+        { label: t("platformLinks.dataScrambling"), route: "/platform/data-masking" },
         { label: t("platformLinks.agenticAi"), route: "/platform/agentic-ai" },
         { label: t("platformLinks.integrations"), route: "/platform/integrations" },
       ],

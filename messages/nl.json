@@ -14,13 +14,31 @@
       "etlPipeline": { "title": "ETL Pipeline", "desc": "Extraheren, transformeren & laden met slimme regels" },
       "dataScrambling": { "title": "Datamaskering (Scrambling)", "desc": "GDPR- & HIPAA-conforme datamaskering" },
       "agenticAi": { "title": "Agentic AI", "desc": "Ingebouwde AI die automatisch problemen detecteert & oplost" },
-      "integrations": { "title": "Integraties", "desc": "SAP, Oracle, SQL Server & platte bestanden" },
-      "dataStaging": { "title": "Data Staging", "desc": "Ingebouwde staging met validatie vóór het laden" }
+      "integrations": { "title": "Integraties", "desc": "SAP, Oracle, SQL Server & platte bestanden" }
     },
     "resourceLinks": {
       "caseStudies": { "title": "Klantverhalen", "desc": "Succesverhalen van klanten" },
       "blog": { "title": "Blog", "desc": "Inzichten & artikelen" },
       "events": { "title": "Evenementen", "desc": "Ontmoet ons op aankomende evenementen" }
+    },
+    "solutionLenses": {
+      "byUseCase": { "title": "Op Toepassing", "desc": "Los een specifiek dataprobleem op" },
+      "byIndustry": { "title": "Op Sector", "desc": "Bewezen in uw sector" },
+      "byRegulation": { "title": "Op Regelgeving", "desc": "Voldoe aan compliance-eisen" }
+    },
+    "solutionCards": {
+      "masterDataManagement": { "title": "Master Data Management", "desc": "Vind fuzzy duplicaten, bouw golden records voor materialen en meer." },
+      "dataQualityGovernance": { "title": "Data Quality Governance", "desc": "Continue, gescoorde kwaliteitsmonitoring over systemen." },
+      "compliance": { "title": "Compliance", "desc": "Maskeer gevoelige gegevens voor AVG, HIPAA & SOX." },
+      "testDataManagement": { "title": "Test Data Management", "desc": "Voorzie realistische, gemaskeerde testdata." },
+      "systemConsolidation": { "title": "Systeemconsolidatie", "desc": "Samenvoegen & dedupliceren na M&A of afsplitsing." },
+      "s4hanaMigration": { "title": "SAP S/4HANA Migratie", "desc": "Extraheer, valideer & laad data in S/4HANA." },
+      "manufacturing": { "title": "Productie & Chemie", "desc": "Master data opschoning, migratie & conforme testdata." },
+      "cpgBeverage": { "title": "FMCG & Dranken", "desc": "Conforme scrambling & kwaliteit op schaal." },
+      "lifeSciences": { "title": "Life Sciences", "desc": "Master- & transactiedatamigratie met profiling." },
+      "gdpr": { "title": "AVG", "desc": "Maskeer persoonsgegevens in niet-productieomgevingen; bewijs data-integriteit." },
+      "hipaa": { "title": "HIPAA", "desc": "Bescherm PHI met veldniveau-maskering in lagere omgevingen." },
+      "sox": { "title": "SOX", "desc": "Gemaskeerde testdata & audit-klaar datakwaliteitsbewijs." }
     },
     "mobileResources": "Kenniscentrum"
   },

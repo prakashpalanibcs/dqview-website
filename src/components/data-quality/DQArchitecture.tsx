@@ -55,14 +55,14 @@ export default function DQArchitecture() {
           <p className="text-sm text-gray-400">
             {DQ_ARCHITECTURE.integrations}. Explore{" "}
             <Link
-              href="/platform/etl-pipeline"
+              href="/platform/etl"
               className="text-violet-400 hover:text-violet-300"
             >
               ETL
             </Link>
             ,{" "}
             <Link
-              href="/platform/data-scrambling"
+              href="/platform/data-masking"
               className="text-violet-400 hover:text-violet-300"
             >
               Data Masking

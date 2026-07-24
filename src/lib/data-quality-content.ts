@@ -463,12 +463,12 @@ export const DQ_FAQS = [
 /* -- Related Pages ------------------------------------------------- */
 export const DQ_RELATED_PLATFORM = [
   {
-    href: "/platform/etl-pipeline",
+    href: "/platform/etl",
     title: "ETL Pipeline Engine",
     description: "Extract, transform & validate before load",
   },
   {
-    href: "/platform/data-scrambling",
+    href: "/platform/data-masking",
     title: "Data Masking (Scrambling)",
     description: "Compliant test data by design",
   },
