@@ -78,8 +78,8 @@ body {
 }
 
 .glass {
-  background: rgba(19, 17, 43, 0.7);
-  backdrop-filter: blur(16px);
+  background: rgba(19, 17, 43, 0.95);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(139, 92, 246, 0.15);
 }
 

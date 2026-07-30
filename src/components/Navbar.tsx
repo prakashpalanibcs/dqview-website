@@ -37,6 +37,12 @@ const productSlugs = [
   "integrations",
 ];
 
+const INDUSTRY_LINKS = [
+  { key: "manufacturing", slug: "chemical-manufacturing" },
+  { key: "cpgBeverage", slug: "cpg-beverage" },
+  { key: "lifeSciences", slug: "life-sciences" },
+] as const;
+
 const resourceIcons = [FileText, Newspaper, CalendarDays];
 const resourceKeys = ["caseStudies", "blog", "events"];
 const resourceSections = ["case-studies", "", "insights"];
@@ -60,9 +66,9 @@ const SOLUTIONS_LENSES = [
   {
     key: "byIndustry" as const,
     cards: [
-      { key: "manufacturing", href: "/solutions/master-data-management" },
-      { key: "cpgBeverage", href: "/solutions/compliance" },
-      { key: "lifeSciences", href: "/solutions/s4hana-data-migration" },
+      { key: "manufacturing", href: "/industries/chemical-manufacturing" },
+      { key: "cpgBeverage", href: "/industries/cpg-beverage" },
+      { key: "lifeSciences", href: "/industries/life-sciences" },
     ],
   },
   {
@@ -174,6 +180,47 @@ export default function Navbar() {
             activeDropdown={activeDropdown}
             setActiveDropdown={setActiveDropdown}
           />
+
+          {/* Industries Dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setActiveDropdown("industries")}
+            onMouseLeave={() => setActiveDropdown(null)}
+          >
+            <button className="flex items-center gap-1 px-4 py-2 text-sm text-gray-300 hover:text-white transition-colors">
+              {t("industries")}
+              <ChevronDown className="w-3.5 h-3.5" />
+            </button>
+            <AnimatePresence>
+              {activeDropdown === "industries" && (
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 8 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute top-full left-0 mt-2 w-[300px] glass rounded-xl p-3"
+                >
+                  {INDUSTRY_LINKS.map((industry) => (
+                    <Link
+                      key={industry.key}
+                      href={`/industries/${industry.slug}`}
+                      onClick={() => setActiveDropdown(null)}
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group text-left"
+                    >
+                      <div>
+                        <div className="text-sm font-medium text-white group-hover:text-blue-300 transition-colors">
+                          {t(`solutionCards.${industry.key}.title`)}
+                        </div>
+                        <div className="text-xs text-gray-400 mt-0.5">
+                          {t(`solutionCards.${industry.key}.desc`)}
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
 
           <button
             onClick={() => scrollTo("how-it-works")}
@@ -287,6 +334,21 @@ export default function Navbar() {
               <Link href="/solutions/master-data-management" className="block text-gray-300 hover:text-white py-2" onClick={() => setMobileOpen(false)}>
                 {t("solutions")}
               </Link>
+              <div className="py-2">
+                <span className="block text-gray-300 font-medium">{t("industries")}</span>
+                <div className="pl-4 mt-1 space-y-1">
+                  {INDUSTRY_LINKS.map((industry) => (
+                    <Link
+                      key={industry.key}
+                      href={`/industries/${industry.slug}`}
+                      className="block text-sm text-gray-400 hover:text-white py-1"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      {t(`solutionCards.${industry.key}.title`)}
+                    </Link>
+                  ))}
+                </div>
+              </div>
               <button onClick={() => { scrollTo("how-it-works"); setMobileOpen(false); }} className="block text-gray-300 hover:text-white py-2 cursor-pointer">
                 {t("howItWorks")}
               </button>
@@ -456,14 +518,7 @@ function SolutionsMegaMenu({
                 </AnimatePresence>
 
                 {/* Footer */}
-                <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
-                  <Link
-                    href="/solutions/master-data-management"
-                    onClick={handleClose}
-                    className="text-sm font-semibold text-violet-400 hover:text-violet-300 transition-colors"
-                  >
-                    View all solutions →
-                  </Link>
+                <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-end">
                   <span className="text-xs text-gray-500">
                     Not sure which fits?{" "}
                     <a
