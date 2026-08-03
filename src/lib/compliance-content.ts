@@ -28,7 +28,7 @@ import type { CustomerProofContent } from "@/lib/dqg-content";
 export const COMPLIANCE_META = {
   title: "Data Compliance — GDPR, HIPAA & SOX Data Masking | deKorvai",
   description:
-    "deKorvai helps meet GDPR, HIPAA, and SOX obligations — field-level data masking for non-production, protection of PII and PHI, and audit-ready data quality. Compliance by design. Book a demo.",
+    "deKorvai helps meet GDPR, HIPAA, and SOX obligations — field-level data scrambling for non-production, protection of PII and PHI, and audit-ready data quality. Compliance by design. Book a demo.",
 };
 
 /* ------------------------------------------------------------------ */
@@ -41,13 +41,13 @@ export const COMPLIANCE_HERO: PlatformHeroProps = {
   title: "Compliance — Protect Sensitive Data for ",
   titleHighlight: "GDPR, HIPAA & SOX",
   subtitle:
-    "Regulations require sensitive data to be protected — including in the test and development environments most controls forget. deKorvai masks PII, PHI, and confidential data so it stays safe wherever it's used, and keeps data quality audit-ready.",
+    "Regulations require sensitive data to be protected — including in the test and development environments most controls forget. deKorvai scrambles PII, PHI, and confidential data so it stays safe wherever it's used, and keeps data quality audit-ready.",
   rating:
     "Trusted for compliant data protection across SAP & non-SAP systems",
   ledgerTitle: "sensitive data · protected",
   ledgerRows: [
     {
-      label: "PII / PHI masked",
+      label: "PII / PHI scrambled",
       detail: "",
       tag: "PROTECTED",
       tagStyle: "bg-emerald-500/20 text-emerald-300",
@@ -75,7 +75,7 @@ export const COMPLIANCE_ANSWER_FIRST: AnswerFirstProps = {
   label: "In short",
   paragraphs: [
     "Data compliance means handling sensitive data — personal, health, and financial — in line with regulations like GDPR, HIPAA, and SOX, across every environment where that data lives, including non-production.",
-    "deKorvai supports compliance by masking (scrambling) sensitive data at the field level so it's protected in lower environments, while keeping it realistic and usable — and by keeping data quality audit-ready.",
+    "deKorvai supports compliance through data masking (scrambling) — protecting sensitive data at the field level so it's safe in lower environments, while keeping it realistic and usable, and by keeping data quality audit-ready.",
   ],
 };
 
@@ -129,9 +129,9 @@ export const COMPLIANCE_FEATURES: FeaturesProps = {
   items: [
     {
       number: "01",
-      title: "Field-level masking",
+      title: "Field-level scrambling",
       description:
-        "Mask exactly the sensitive fields — PII, PHI, financial data — leaving the rest intact.",
+        "Scramble exactly the sensitive fields — PII, PHI, financial data — leaving the rest intact.",
     },
     {
       number: "02",
@@ -143,19 +143,19 @@ export const COMPLIANCE_FEATURES: FeaturesProps = {
       number: "03",
       title: "Predefined profiles",
       description:
-        "Reusable masking profiles for common sensitive data types.",
+        "Reusable scrambling profiles for common sensitive data types.",
     },
     {
       number: "04",
       title: "Integrity preserved",
       description:
-        "Referential and functional integrity keep masked data realistic and usable.",
+        "Referential and functional integrity keep scrambled data realistic and usable.",
     },
     {
       number: "05",
       title: "Test-mode execution",
       description:
-        "Validate masking before committing it.",
+        "Validate scrambling before committing it.",
     },
     {
       number: "06",
@@ -175,6 +175,8 @@ export interface RegulationCard {
   regulation: string;
   title: string;
   description: string;
+  requiresText?: string;
+  helpsText?: string;
 }
 
 export interface ByRegulationContent {
@@ -186,29 +188,41 @@ export interface ByRegulationContent {
 
 export const COMPLIANCE_BY_REGULATION: ByRegulationContent = {
   badge: "By Regulation",
-  title: "How masking supports ",
+  title: "How deKorvai supports ",
   titleHighlight: "each mandate",
   cards: [
     {
       id: "gdpr",
       regulation: "GDPR",
-      title: "EU data protection",
+      title: "General Data Protection Regulation — EU personal data",
       description:
-        "GDPR requires personal data to be protected wherever it's processed. deKorvai masks personal data in non-production so it isn't exposed in lower environments.",
+        "GDPR requires personal data to be protected wherever it's processed. deKorvai scrambles personal data in non-production so it isn't exposed in lower environments.",
+      requiresText:
+        "GDPR requires personal data of EU individuals to be protected wherever it is processed — including development, test, and analytics environments, not only production.",
+      helpsText:
+        "deKorvai scrambles personal data at the field level so it isn't exposed in non-production, while keeping the data realistic and usable. Referential integrity is preserved so scrambled data still works across systems. deKorvai's scrambling is documented as GDPR compliant.",
     },
     {
       id: "hipaa",
       regulation: "HIPAA",
-      title: "Protected health information",
+      title: "Health Insurance Portability and Accountability Act — PHI",
       description:
-        "HIPAA governs how PHI is handled. deKorvai masks health-related data at the field level for safe use outside production.",
+        "HIPAA governs how PHI is handled. deKorvai scrambles health-related data at the field level for safe use outside production.",
+      requiresText:
+        "HIPAA governs how protected health information (PHI) is handled and requires safeguards wherever PHI is used or stored.",
+      helpsText:
+        "deKorvai scrambles health-related data at the field level for safe use in non-production environments, with predefined profiles for sensitive data types and integrity preserved so the data stays usable. deKorvai's scrambling is documented as HIPAA compliant.",
     },
     {
       id: "sox",
       regulation: "SOX",
-      title: "Financial controls",
+      title: "Sarbanes-Oxley Act — financial controls",
       description:
-        "SOX requires controls over financial data and systems. deKorvai supports masked test data and audit-ready data-quality evidence.",
+        "SOX requires controls over financial data and systems. deKorvai supports scrambled test data and audit-ready data-quality evidence.",
+      requiresText:
+        "SOX requires controls over financial data and the systems that produce financial reporting, including evidence that data is managed and protected.",
+      helpsText:
+        "deKorvai supports SOX with scrambled test data for non-production and audit-ready data-quality evidence through continuous monitoring and reporting. deKorvai's scrambling is documented as SOX compliant.",
     },
   ],
 };
@@ -219,12 +233,12 @@ export const COMPLIANCE_BY_REGULATION: ByRegulationContent = {
 
 export const COMPLIANCE_HOW_IT_WORKS: HowItWorksContent = {
   badge: "How It Works",
-  title: "Identify → Configure → Mask → ",
+  title: "Identify → Configure → Scramble → ",
   titleHighlight: "Validate → Use",
   steps: [
     { step: "1", title: "Identify", description: "Locate sensitive fields to protect." },
-    { step: "2", title: "Configure", description: "Apply predefined masking profiles." },
-    { step: "3", title: "Mask", description: "Scramble sensitive values, keeping integrity." },
+    { step: "2", title: "Configure", description: "Apply predefined scrambling profiles." },
+    { step: "3", title: "Scramble", description: "Scramble sensitive values, keeping integrity." },
     { step: "4", title: "Validate", description: "Confirm in test mode." },
     { step: "5", title: "Use", description: "Safe, compliant data in lower environments." },
   ],
@@ -242,7 +256,7 @@ export const COMPLIANCE_BENEFITS: BenefitsProps = {
     {
       icon: "🛡",
       title: "Sensitive data protected",
-      description: "PII, PHI, and financial data masked wherever it's used.",
+      description: "PII, PHI, and financial data scrambled wherever it's used.",
     },
     {
       icon: "⚖",
@@ -337,24 +351,29 @@ export const COMPLIANCE_FAQ: FAQProps = {
   titleHighlight: "answered",
   items: [
     {
+      question: "Does deKorvai do data masking or data scrambling?",
+      answer:
+        "deKorvai's capability is data scrambling — a form of data masking that replaces sensitive values with rearranged or randomized ones while keeping the data realistic and usable. Where you see \"masking\" here, it refers to that broader category; what deKorvai does specifically is scrambling.",
+    },
+    {
       question: "How does deKorvai help with compliance?",
       answer:
-        "It masks sensitive data — PII, PHI, and financial data — so it's protected in non-production environments, while keeping it usable, and provides audit-ready data-quality reporting. deKorvai's masking is documented as GDPR, HIPAA, and SOX compliant.",
+        "It scrambles sensitive data — PII, PHI, and financial data — so it's protected in non-production environments, while keeping it usable, and provides audit-ready data-quality reporting. deKorvai's scrambling is documented as GDPR, HIPAA, and SOX compliant.",
     },
     {
       question: "Does compliance apply to test environments?",
       answer:
-        "Yes. Regulatory obligations follow the data into dev, QA, and sandbox systems, which is exactly where masking protects it.",
+        "Yes. Regulatory obligations follow the data into dev, QA, and sandbox systems, which is exactly where scrambling protects it.",
     },
     {
-      question: "Will masking make the data unusable?",
+      question: "Will scrambling make the data unusable?",
       answer:
-        "No. Field-level control and preserved integrity keep the data realistic and usable after masking.",
+        "No. Field-level control and preserved integrity keep the data realistic and usable after scrambling.",
     },
     {
       question: "Which regulations are supported?",
       answer:
-        "deKorvai's masking supports GDPR, HIPAA, and SOX requirements for handling sensitive data.",
+        "deKorvai's scrambling supports GDPR, HIPAA, and SOX requirements for handling sensitive data.",
     },
     {
       question: "Can I prove compliance for an audit?",
@@ -398,7 +417,7 @@ export const COMPLIANCE_RELATED_SOLUTIONS: RelatedSolutionsContent = {
 export const COMPLIANCE_CTA: CTAProps = {
   title: "Protect sensitive data everywhere it lives",
   description:
-    "See how deKorvai masks PII, PHI, and financial data for GDPR, HIPAA, and SOX — without breaking usability.",
+    "See how deKorvai scrambles PII, PHI, and financial data for GDPR, HIPAA, and SOX — without breaking usability.",
   buttonText: "Book a Demo",
   subtext: "A working session on your compliance needs",
 };

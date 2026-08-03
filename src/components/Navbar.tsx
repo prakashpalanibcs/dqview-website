@@ -63,20 +63,12 @@ const SOLUTIONS_LENSES = [
       { key: "s4hanaMigration", href: "/solutions/s4hana-data-migration" },
     ],
   },
-  {
-    key: "byIndustry" as const,
-    cards: [
-      { key: "manufacturing", href: "/industries/chemical-manufacturing" },
-      { key: "cpgBeverage", href: "/industries/cpg-beverage" },
-      { key: "lifeSciences", href: "/industries/life-sciences" },
-    ],
-  },
-  {
+{
     key: "byRegulation" as const,
     cards: [
-      { key: "gdpr", href: "/solutions/compliance" },
-      { key: "hipaa", href: "/solutions/compliance" },
-      { key: "sox", href: "/solutions/compliance" },
+      { key: "gdpr", href: "/solutions/compliance#gdpr" },
+      { key: "hipaa", href: "/solutions/compliance#hipaa" },
+      { key: "sox", href: "/solutions/compliance#sox" },
     ],
   },
 ];

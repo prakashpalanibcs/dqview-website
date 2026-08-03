@@ -319,6 +319,20 @@ export function SolutionByRegulation({ content }: { content: ByRegulationContent
             {content.title}
             <span className="gradient-text">{content.titleHighlight}</span>
           </h2>
+          <p className="text-sm text-gray-400 mt-4">
+            Jump to the regulation you need:{" "}
+            {content.cards.map((card, index) => (
+              <span key={card.id}>
+                {index > 0 && " · "}
+                <a
+                  href={`#${card.id}`}
+                  className="text-violet-400 font-semibold hover:text-violet-300 transition-colors"
+                >
+                  {card.regulation}
+                </a>
+              </span>
+            ))}
+          </p>
         </motion.div>
         <div className="grid md:grid-cols-3 gap-4">
           {content.cards.map((card, index) => (
@@ -327,13 +341,26 @@ export function SolutionByRegulation({ content }: { content: ByRegulationContent
               id={card.id}
               {...FADE_UP}
               transition={{ delay: index * 0.08 }}
-              className="rounded-2xl bg-surface border border-white/5 p-6 card-hover"
+              className="rounded-2xl bg-surface border border-white/5 p-6 card-hover scroll-mt-24"
             >
               <div className="text-xs font-extrabold text-orange-400 tracking-wider mb-2">
                 {card.regulation}
               </div>
               <h3 className="text-base font-bold text-white mb-2">{card.title}</h3>
-              <p className="text-xs text-gray-400 leading-relaxed">{card.description}</p>
+              {card.requiresText ? (
+                <div className="space-y-3">
+                  <p className="text-xs text-gray-400 leading-relaxed">
+                    <span className="font-semibold text-gray-300">What the regulation requires: </span>
+                    {card.requiresText}
+                  </p>
+                  <p className="text-xs text-gray-400 leading-relaxed">
+                    <span className="font-semibold text-gray-300">How deKorvai helps: </span>
+                    {card.helpsText}
+                  </p>
+                </div>
+              ) : (
+                <p className="text-xs text-gray-400 leading-relaxed">{card.description}</p>
+              )}
             </motion.div>
           ))}
         </div>
