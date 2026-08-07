@@ -8,6 +8,45 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+# Legacy locale-prefixed URLs -> clean URLs (site is English-only)
+# Must precede the Next.js handler so /en/* never reaches a 404.
+[[redirects]]
+  from = "/en"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/*"
+  to = "/:splat"
+  status = 301
+  force = true
+
+# Retired locales: send everything to the English equivalent.
+[[redirects]]
+  from = "/nl"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nl/*"
+  to = "/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/*"
+  to = "/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/admin"
   to = "/admin/index.html"

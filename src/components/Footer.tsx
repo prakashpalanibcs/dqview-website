@@ -7,7 +7,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 
 type FooterLink =
   | { label: string; section: string; route?: never; external?: never }
@@ -57,7 +57,7 @@ export default function Footer() {
       title: t("company"),
       links: [
         { label: t("companyLinks.aboutUs"), section: "why-dekorvai" },
-        { label: t("companyLinks.contact"), section: "demo" },
+        { label: t("companyLinks.contact"), route: "/contact" },
         { label: t("companyLinks.partners"), section: "global-presence" },
       ],
     },
@@ -100,7 +100,7 @@ export default function Footer() {
                 <ArrowUpRight className="w-3 h-3" />
               </a>
               <a
-                href="https://www.linkedin.com/company/business-core-solutions"
+                href="https://www.linkedin.com/company/dekorvai/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-gray-400 hover:text-blue-400 transition-colors"

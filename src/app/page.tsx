@@ -1,4 +1,3 @@
-import { setRequestLocale } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import AnswerFirst from "@/components/AnswerFirst";
@@ -18,11 +17,8 @@ import UseCaseShowcase from "@/components/UseCaseShowcase";
 import FuzzyDuplicateShowcase from "@/components/FuzzyDuplicateShowcase";
 import { getBlogPosts, getEvents } from "@/lib/content";
 
-export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-
-  const blogs = getBlogPosts(locale).map((b) => ({
+export default function HomeRoute() {
+  const blogs = getBlogPosts().map((b) => ({
     title: b.title,
     excerpt: b.excerpt,
     slug: b.slug,

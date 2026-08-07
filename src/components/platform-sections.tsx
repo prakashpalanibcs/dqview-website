@@ -16,7 +16,7 @@ import {
   Award,
   HelpCircle,
 } from "lucide-react";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 
 const FADE_UP = {
   initial: { opacity: 0, y: 20 },
@@ -24,8 +24,8 @@ const FADE_UP = {
   viewport: { once: true } as const,
 };
 
-const CALENDLY_URL =
-  "https://calendly.com/gokulprasad-s-businesscoresolutions/30min";
+const DEMO_URL =
+  "/contact#book-a-demo";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -139,9 +139,7 @@ export function PlatformHero({ content }: { content: PlatformHeroProps }) {
           className="flex flex-col sm:flex-row gap-4 mb-5"
         >
           <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={DEMO_URL}
             className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-2xl shadow-blue-500/25"
           >
             Book a Demo
@@ -790,9 +788,7 @@ export function PlatformCTA({ content }: { content: CTAProps }) {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">{content.title}</h2>
             <p className="text-gray-400 mb-8 max-w-lg mx-auto">{content.description}</p>
             <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={DEMO_URL}
               className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-lg shadow-blue-500/25"
             >
               {content.buttonText}

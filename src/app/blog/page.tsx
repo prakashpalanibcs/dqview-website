@@ -1,24 +1,23 @@
-import { setRequestLocale, getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { getBlogPosts } from "@/lib/content";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ArrowUpRight, BookOpen } from "lucide-react";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "blog" });
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("blog");
   return {
     title: `${t("title1")} ${t("title2")} | deKorvai`,
     description: t("subtitle"),
+    alternates: { canonical: "/blog" },
   };
 }
 
-export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "blog" });
-  const blogPosts = getBlogPosts(locale);
+export default async function BlogIndexRoute() {
+  const t = await getTranslations("blog");
+  const blogPosts = getBlogPosts();
 
   return (
     <>

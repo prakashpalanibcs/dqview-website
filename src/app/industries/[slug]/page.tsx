@@ -1,4 +1,3 @@
-import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
@@ -13,7 +12,7 @@ const BASE_URL = "https://www.dekorvai.com";
 /* ------------------------------------------------------------------ */
 
 interface IndustryPageProps {
-  params: Promise<{ locale: string; slug: string }>;
+  params: Promise<{ slug: string }>;
 }
 
 export function generateStaticParams() {
@@ -31,7 +30,7 @@ export async function generateMetadata({
   const content = ALL_INDUSTRIES[slug];
   if (!content) return {};
 
-  const pageUrl = `${BASE_URL}/en/industries/${slug}`;
+  const pageUrl = `${BASE_URL}/industries/${slug}`;
 
   return {
     title: content.meta.title,
@@ -67,7 +66,7 @@ function IndustryJsonLd({
   breadcrumbLabel: string;
   description: string;
 }) {
-  const pageUrl = `${BASE_URL}/en/industries/${slug}`;
+  const pageUrl = `${BASE_URL}/industries/${slug}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -91,7 +90,7 @@ function IndustryJsonLd({
             "@type": "ListItem",
             position: 2,
             name: "Industries",
-            item: `${BASE_URL}/en/industries`,
+            item: `${BASE_URL}/industries`,
           },
           {
             "@type": "ListItem",
@@ -116,9 +115,8 @@ function IndustryJsonLd({
 /*  Page                                                               */
 /* ------------------------------------------------------------------ */
 
-export default async function IndustrySlugPage({ params }: IndustryPageProps) {
-  const { locale, slug } = await params;
-  setRequestLocale(locale);
+export default async function IndustryRoute({ params }: IndustryPageProps) {
+  const { slug } = await params;
 
   const content = ALL_INDUSTRIES[slug];
   if (!content) {

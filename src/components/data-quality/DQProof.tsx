@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Award } from "lucide-react";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { DQ_PROOF } from "@/lib/data-quality-content";
 
 export default function DQProof() {

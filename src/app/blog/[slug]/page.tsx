@@ -1,39 +1,41 @@
-import { setRequestLocale, getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { getBlogPosts, getBlogBySlug } from "@/lib/content";
-import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, User } from "lucide-react";
 import { remark } from "remark";
 import html from "remark-html";
 
 export function generateStaticParams() {
-  const params: { locale: string; slug: string }[] = [];
-  for (const locale of routing.locales) {
-    for (const post of getBlogPosts(locale)) {
-      params.push({ locale, slug: post.slug });
-    }
-  }
-  return params;
+  return getBlogPosts().map((post) => ({ slug: post.slug }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
-  const { locale, slug } = await params;
-  const post = getBlogBySlug(locale, slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getBlogBySlug(slug);
   if (!post) return { title: "Not Found" };
   return {
     title: `${post.title} | deKorvai Blog`,
     description: post.excerpt,
+    alternates: { canonical: `/blog/${slug}` },
   };
 }
 
-export default async function BlogPostPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
-  const { locale, slug } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "blog" });
-  const post = getBlogBySlug(locale, slug);
+export default async function BlogPostRoute({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const t = await getTranslations("blog");
+  const post = getBlogBySlug(slug);
   if (!post) notFound();
 
   const processedContent = await remark().use(html).process(post.content);
@@ -90,9 +92,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
               {t("readyCta")}
             </p>
             <a
-              href="https://calendly.com/gokulprasad-s-businesscoresolutions/30min"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/contact#book-a-demo"
               className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-lg shadow-blue-500/25"
             >
               {t("bookDemo")}

@@ -1,4 +1,3 @@
-import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
@@ -82,7 +81,7 @@ const ALL_SOLUTION_SLUGS = Object.keys(DEDICATED_SOLUTIONS);
 /* ------------------------------------------------------------------ */
 
 interface SolutionPageProps {
-  params: Promise<{ locale: string; slug: string }>;
+  params: Promise<{ slug: string }>;
 }
 
 export function generateStaticParams() {
@@ -108,7 +107,7 @@ export async function generateMetadata({
       description: config.meta.description,
       type: "website",
       siteName: "deKorvai",
-      url: `${BASE_URL}/en/solutions/${slug}`,
+      url: `${BASE_URL}/solutions/${slug}`,
     },
     twitter: {
       card: "summary_large_image",
@@ -116,7 +115,7 @@ export async function generateMetadata({
       description: config.meta.description,
     },
     alternates: {
-      canonical: `${BASE_URL}/en/solutions/${slug}`,
+      canonical: `${BASE_URL}/solutions/${slug}`,
     },
   };
 }
@@ -132,7 +131,7 @@ function SolutionJsonLd({
   slug: string;
   config: DedicatedSolutionConfig;
 }) {
-  const pageUrl = `${BASE_URL}/en/solutions/${slug}`;
+  const pageUrl = `${BASE_URL}/solutions/${slug}`;
 
   const graph: Record<string, unknown>[] = [
     {
@@ -154,7 +153,7 @@ function SolutionJsonLd({
           "@type": "ListItem",
           position: 2,
           name: "Solutions",
-          item: `${BASE_URL}/en/solutions`,
+          item: `${BASE_URL}/solutions`,
         },
         {
           "@type": "ListItem",
@@ -191,9 +190,8 @@ function SolutionJsonLd({
 /*  Page                                                               */
 /* ------------------------------------------------------------------ */
 
-export default async function SolutionPage({ params }: SolutionPageProps) {
-  const { locale, slug } = await params;
-  setRequestLocale(locale);
+export default async function SolutionRoute({ params }: SolutionPageProps) {
+  const { slug } = await params;
 
   const config = DEDICATED_SOLUTIONS[slug];
   if (!config) {

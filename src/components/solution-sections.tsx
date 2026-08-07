@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Zap, Award, Layers, Link2, Users, Shield } from "lucide-react";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import type {
   BeforeAfterContent,
   HowItWorksContent,

@@ -144,3 +144,48 @@ body {
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
+
+/* Browser autofill on a dark form.
+   Chrome/Safari paint their own pale background via :-webkit-autofill and it
+   outranks any background-color we set, so an autofilled field flashes white.
+   The fix is an inset box-shadow large enough to cover the field (shadows paint
+   above that background) plus -webkit-text-fill-color for the text itself.
+   The long background-color transition stops the pale colour appearing at all
+   in browsers that animate into it. */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover {
+  -webkit-box-shadow: 0 0 0 1000px #0e0b1c inset !important;
+  box-shadow: 0 0 0 1000px #0e0b1c inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #ffffff !important;
+  border-radius: 0.75rem;
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
+/* The masking shadow above would also wipe out Tailwind's focus ring, which is
+   itself a box-shadow. Re-add the ring alongside the mask so an autofilled
+   field still shows focus. */
+input:-webkit-autofill:focus,
+select:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #0e0b1c inset,
+    0 0 0 1px rgba(139, 92, 246, 0.3) !important;
+  box-shadow: 0 0 0 1000px #0e0b1c inset, 0 0 0 1px rgba(139, 92, 246, 0.3) !important;
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #ffffff !important;
+  border-radius: 0.75rem;
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
+/* Firefox uses its own mechanism and ignores the -webkit- rules above. */
+input:autofill,
+select:autofill,
+textarea:autofill {
+  background-color: #0e0b1c !important;
+  color: #ffffff !important;
+}

@@ -13,8 +13,8 @@ const FADE_UP = {
   viewport: { once: true },
 };
 
-const CALENDLY_URL =
-  "https://calendly.com/gokulprasad-s-businesscoresolutions/30min";
+const DEMO_URL =
+  "/contact#book-a-demo";
 
 function HeroSection({ content }: { content: PlatformPageContent }) {
   return (
@@ -34,9 +34,7 @@ function HeroSection({ content }: { content: PlatformPageContent }) {
             {content.subtitle}
           </p>
           <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={DEMO_URL}
             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-lg shadow-blue-500/25"
           >
             Book a Demo
@@ -230,9 +228,7 @@ function CtaSection({ content }: { content: PlatformPageContent }) {
               {content.ctaDescription}
             </p>
             <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={DEMO_URL}
               className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-lg shadow-blue-500/25"
             >
               Schedule Your Demo

@@ -1,4 +1,3 @@
-import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
@@ -62,7 +61,7 @@ const DEDICATED_PAGES: Record<string, DedicatedPageConfig> = {
 };
 
 interface PlatformPageProps {
-  params: Promise<{ locale: string; slug: string }>;
+  params: Promise<{ slug: string }>;
 }
 
 export function generateStaticParams() {
@@ -84,7 +83,7 @@ export async function generateMetadata({
         description: dedicated.meta.description,
         type: "website",
         siteName: "deKorvai",
-        url: `${BASE_URL}/en/platform/${slug}`,
+        url: `${BASE_URL}/platform/${slug}`,
       },
       twitter: {
         card: "summary_large_image",
@@ -92,7 +91,7 @@ export async function generateMetadata({
         description: dedicated.meta.description,
       },
       alternates: {
-        canonical: `${BASE_URL}/en/platform/${slug}`,
+        canonical: `${BASE_URL}/platform/${slug}`,
       },
     };
   }
@@ -107,7 +106,7 @@ export async function generateMetadata({
 }
 
 function PlatformJsonLd({ slug, config }: { slug: string; config: DedicatedPageConfig }) {
-  const pageUrl = `${BASE_URL}/en/platform/${slug}`;
+  const pageUrl = `${BASE_URL}/platform/${slug}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -139,7 +138,7 @@ function PlatformJsonLd({ slug, config }: { slug: string; config: DedicatedPageC
             "@type": "ListItem",
             position: 2,
             name: "Platform",
-            item: `${BASE_URL}/en/platform`,
+            item: `${BASE_URL}/platform`,
           },
           {
             "@type": "ListItem",
@@ -160,9 +159,8 @@ function PlatformJsonLd({ slug, config }: { slug: string; config: DedicatedPageC
   );
 }
 
-export default async function PlatformPage({ params }: PlatformPageProps) {
-  const { locale, slug } = await params;
-  setRequestLocale(locale);
+export default async function PlatformRoute({ params }: PlatformPageProps) {
+  const { slug } = await params;
 
   const dedicated = DEDICATED_PAGES[slug];
   if (dedicated) {

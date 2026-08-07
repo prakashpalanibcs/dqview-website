@@ -21,8 +21,8 @@ export interface Event {
 
 const contentDir = path.join(process.cwd(), "content");
 
-export function getBlogPosts(locale: string): BlogPost[] {
-  const dir = path.join(contentDir, "blog", locale);
+export function getBlogPosts(): BlogPost[] {
+  const dir = path.join(contentDir, "blog");
   if (!fs.existsSync(dir)) return [];
 
   const files = fs.readdirSync(dir).filter((f) => f.endsWith(".md"));
@@ -40,11 +40,8 @@ export function getBlogPosts(locale: string): BlogPost[] {
   });
 }
 
-export function getBlogBySlug(
-  locale: string,
-  slug: string
-): BlogPost | undefined {
-  const filePath = path.join(contentDir, "blog", locale, `${slug}.md`);
+export function getBlogBySlug(slug: string): BlogPost | undefined {
+  const filePath = path.join(contentDir, "blog", `${slug}.md`);
   if (!fs.existsSync(filePath)) return undefined;
 
   const raw = fs.readFileSync(filePath, "utf-8");

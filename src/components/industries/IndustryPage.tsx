@@ -12,8 +12,8 @@ import {
 } from "@/components/solution-sections";
 import type { IndustryPageContent } from "@/lib/industry-content";
 
-const CALENDLY_URL =
-  "https://calendly.com/gokulprasad-s-businesscoresolutions/30min";
+const DEMO_URL =
+  "/contact#book-a-demo";
 
 /* ------------------------------------------------------------------ */
 /*  Industry Hero (simpler — no ledger, no rating)                     */
@@ -69,9 +69,7 @@ function IndustryHero({ content }: { content: IndustryPageContent["hero"] }) {
           className="flex flex-col sm:flex-row gap-4"
         >
           <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={DEMO_URL}
             className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-2xl shadow-blue-500/25"
           >
             Book a Demo
