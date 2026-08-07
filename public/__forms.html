@@ -1,0 +1,37 @@
+<!doctype html>
+<!--
+  Netlify Forms field declaration.
+
+  Netlify discovers forms by parsing deployed HTML at build time. Our real form
+  is a React component that submits with fetch(), which the build-time parser
+  cannot see, so this static file declares the schema instead. This is the
+  documented approach for JS-framework sites.
+
+  The React form POSTs here as application/x-www-form-urlencoded with a
+  `form-name=contact` field (see MessageForm in
+  src/components/contact/ContactPage.tsx).
+
+  Keep the input `name` attributes below in sync with the form. A field that is
+  not declared here is dropped from the dashboard submission.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Netlify form declarations</title>
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body>
+    <form name="contact" data-netlify="true" data-netlify-honeypot="website" hidden>
+      <input type="text" name="area" />
+      <input type="text" name="fullName" />
+      <input type="email" name="email" />
+      <input type="text" name="company" />
+      <input type="text" name="country" />
+      <textarea name="message"></textarea>
+      <input type="text" name="attribution" />
+      <!-- Honeypot: always empty for humans. Netlify silently spam-bins any
+           submission where this is filled. -->
+      <input type="text" name="website" />
+    </form>
+  </body>
+</html>

@@ -30,6 +30,9 @@ import {
 const CALENDLY_URL =
   "https://calendly.com/gokulprasad-s-businesscoresolutions/30min";
 
+/** Must match the form `name` in public/__forms.html. */
+const NETLIFY_FORM_NAME = "contact";
+
 /* ------------------------------------------------------------------ */
 /*  Hero                                                               */
 /* ------------------------------------------------------------------ */
@@ -127,10 +130,48 @@ function MessageForm() {
   );
   /** Honeypot: bots fill hidden inputs, humans never see this one. */
   const [honeypot, setHoneypot] = useState("");
-  const mountedAt = useRef(Date.now());
+
+  /* Mount time, for the anti-bot timing check. Stamped in an effect rather than
+     useRef(Date.now()) — the latter calls an impure function during render. 0
+     means "not yet stamped", which the server reads as "skip the check". */
+  const mountedAt = useRef(0);
+  useEffect(() => {
+    mountedAt.current = Date.now();
+  }, []);
 
   function update(field: keyof typeof EMPTY_FORM, value: string) {
     setValues((prev) => ({ ...prev, [field]: value }));
+  }
+
+  /** Sends the enquiry as email via Microsoft Graph. */
+  function submitToGraph() {
+    return fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...values,
+        website: honeypot,
+        elapsed: mountedAt.current ? Date.now() - mountedAt.current : 0,
+      }),
+    });
+  }
+
+  /**
+   * Records the enquiry in the Netlify Forms dashboard as a second, independent
+   * copy. Netlify expects a urlencoded body with a `form-name` matching the
+   * declaration in public/__forms.html. This only works on Netlify — locally
+   * a POST to a static file 405s, which is handled as a non-fatal miss below.
+   */
+  function submitToNetlifyForms() {
+    return fetch("/__forms.html", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        "form-name": NETLIFY_FORM_NAME,
+        ...values,
+        website: honeypot,
+      }).toString(),
+    });
   }
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -138,22 +179,41 @@ function MessageForm() {
     if (status === "sending") return;
     setStatus("sending");
 
+    // Sequential, Netlify Forms first: the enquiry is recorded in the dashboard
+    // before the email is attempted, so a Graph outage can never lose a lead.
+    // Step 1 failing does NOT stop step 2 — the email is the delivery that
+    // matters, and locally there is no Netlify Forms endpoint at all.
+    let netlifyOk = false;
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...values,
-          website: honeypot,
-          elapsed: Date.now() - mountedAt.current,
-        }),
-      });
+      const netlifyResponse = await submitToNetlifyForms();
+      netlifyOk = netlifyResponse.ok;
+      if (!netlifyOk) {
+        console.warn(
+          `[contact] Netlify Forms capture missed (${netlifyResponse.status})`
+        );
+      }
+    } catch (error) {
+      console.warn("[contact] Netlify Forms capture missed", error);
+    }
 
-      if (!response.ok) throw new Error(`Request failed (${response.status})`);
+    let graphOk = false;
+    try {
+      const graphResponse = await submitToGraph();
+      graphOk = graphResponse.ok;
+      if (!graphOk) {
+        console.error(`[contact] email delivery failed (${graphResponse.status})`);
+      }
+    } catch (error) {
+      console.error("[contact] email delivery failed", error);
+    }
 
+    // Treat it as sent if either destination accepted it — the enquiry is
+    // recorded and the visitor should not be asked to submit twice. Only both
+    // failing is a real failure.
+    if (graphOk || netlifyOk) {
       setStatus("success");
       setValues(EMPTY_FORM);
-    } catch {
+    } else {
       // Keep the entered values so nobody has to retype after a failure.
       setStatus("error");
     }

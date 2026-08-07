@@ -9,6 +9,19 @@ import {
 /** POST-only handler; never prerender. */
 export const dynamic = "force-dynamic";
 
+/**
+ * Email is an explicit opt-in: IS_EMAIL must be set to true. Unset or anything
+ * else means no email is sent. Accepts a few spellings so a value of "TRUE" or
+ * "1" does not silently disable delivery.
+ *
+ * Netlify Forms capture is deliberately NOT gated by this — the dashboard record
+ * always happens, so turning email off cannot lose an enquiry.
+ */
+function isEmailEnabled(): boolean {
+  const flag = process.env.IS_EMAIL?.trim().toLowerCase();
+  return flag === "true" || flag === "1" || flag === "yes";
+}
+
 /* ------------------------------------------------------------------ */
 /*  Validation                                                         */
 /* ------------------------------------------------------------------ */
@@ -157,6 +170,16 @@ export async function POST(request: Request) {
 
   const { submission } = result;
 
+  // Email is opt-in via IS_EMAIL. Netlify Forms capture is unaffected — that
+  // happens client-side and always runs, so switching email off never loses an
+  // enquiry. With the flag off we still return ok so the visitor sees success.
+  if (!isEmailEnabled()) {
+    console.log(
+      "[contact] IS_EMAIL is not enabled — enquiry captured, email skipped"
+    );
+    return NextResponse.json({ ok: true, emailSent: false });
+  }
+
   try {
     const receivedAt = new Date().toUTCString();
     await sendMail({
@@ -167,7 +190,7 @@ export async function POST(request: Request) {
       replyTo: submission.email,
     });
 
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, emailSent: true });
   } catch (error) {
     // Log the real cause server-side; return something generic to the client so
     // Graph errors and env details are never exposed publicly.
