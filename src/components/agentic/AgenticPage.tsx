@@ -32,8 +32,8 @@ import {
   AGENTIC_CTA,
 } from "@/lib/agentic-content";
 
-const CALENDLY_URL =
-  "https://calendly.com/gokulprasad-s-businesscoresolutions/30min";
+const DEMO_URL =
+  "/contact#book-a-demo";
 
 const FADE_UP = {
   initial: { opacity: 0, y: 20 },
@@ -62,7 +62,7 @@ function AgenticHero() {
           className="text-lg text-gray-300 max-w-3xl mb-8 leading-relaxed">{hero.subtitle}</motion.p>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }}
           className="flex flex-col sm:flex-row gap-4 mb-5">
-          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer"
+          <a href={DEMO_URL}
             className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-2xl shadow-blue-500/25">
             Book a Demo<ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" /></a>
           <a href="#how" className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-xl border border-white/10 text-gray-300 hover:text-white hover:bg-white/5 transition-all">

@@ -14,7 +14,7 @@ import {
   Clock,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 
 const stages = [
   { key: "extract", icon: Database, color: "from-blue-500 to-cyan-500" },

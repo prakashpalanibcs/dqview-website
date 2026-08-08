@@ -7,8 +7,8 @@
     "platform": "Platform",
     "solutions": "Solutions",
     "industries": "Industries",
-    "howItWorks": "How It Works",
     "resources": "Resources",
+    "contactUs": "Contact Us",
     "bookDemo": "Book a Demo",
     "productLinks": {
       "dataQualityProfiling": { "title": "Data Quality Profiling", "desc": "Automated completeness, accuracy & consistency checks" },
@@ -19,8 +19,7 @@
     },
     "resourceLinks": {
       "caseStudies": { "title": "Case Studies", "desc": "Customer success stories" },
-      "blog": { "title": "Blog", "desc": "Insights & articles" },
-      "events": { "title": "Events", "desc": "Meet us at upcoming events" }
+      "blog": { "title": "Blog", "desc": "Insights & articles" }
     },
     "solutionLenses": {
       "byUseCase": { "title": "By Use Case", "desc": "Solve a specific data problem" },

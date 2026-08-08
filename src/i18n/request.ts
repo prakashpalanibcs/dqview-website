@@ -1,13 +1,10 @@
 import { getRequestConfig } from "next-intl/server";
-import { routing } from "./routing";
 
-export default getRequestConfig(async ({ requestLocale }) => {
-  let locale = await requestLocale;
-  if (!locale || !routing.locales.includes(locale as "en" | "nl" | "de")) {
-    locale = routing.defaultLocale;
-  }
-  return {
-    locale,
-    messages: (await import(`../../messages/${locale}.json`)).default,
-  };
-});
+// Single-locale site. next-intl is retained purely as the string catalog
+// (messages/en.json) — there is no locale routing or prefix.
+export const locale = "en";
+
+export default getRequestConfig(async () => ({
+  locale,
+  messages: (await import("../../messages/en.json")).default,
+}));

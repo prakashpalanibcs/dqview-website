@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Server } from "lucide-react";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { DQ_ARCHITECTURE } from "@/lib/data-quality-content";
 
 export default function DQArchitecture() {

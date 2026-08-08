@@ -13,13 +13,11 @@ import {
   Zap,
   FileText,
   Newspaper,
-  CalendarDays,
   Cpu,
   ArrowRight,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import LanguageSwitcher from "./LanguageSwitcher";
+import Link from "next/link";
 
 const productIcons = [BarChart3, Workflow, Shield, Cpu, Database];
 const productKeys = [
@@ -43,9 +41,9 @@ const INDUSTRY_LINKS = [
   { key: "lifeSciences", slug: "life-sciences" },
 ] as const;
 
-const resourceIcons = [FileText, Newspaper, CalendarDays];
-const resourceKeys = ["caseStudies", "blog", "events"];
-const resourceSections = ["case-studies", "", "insights"];
+const resourceIcons = [FileText, Newspaper];
+const resourceKeys = ["caseStudies", "blog"];
+const resourceSections = ["case-studies", ""];
 
 /* ------------------------------------------------------------------ */
 /*  Solutions Mega-Menu Data                                           */
@@ -214,13 +212,6 @@ export default function Navbar() {
             </AnimatePresence>
           </div>
 
-          <button
-            onClick={() => scrollTo("how-it-works")}
-            className="px-4 py-2 text-sm text-gray-300 hover:text-white transition-colors cursor-pointer"
-          >
-            {t("howItWorks")}
-          </button>
-
           {/* Resources Dropdown */}
           <div
             className="relative"
@@ -285,17 +276,14 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* CTA Buttons + Language Switcher */}
+        {/* CTA Button */}
         <div className="hidden lg:flex items-center gap-3">
-          <LanguageSwitcher />
-          <a
-            href="https://calendly.com/gokulprasad-s-businesscoresolutions/30min"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/contact"
             className="px-5 py-2.5 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-500 to-violet-500 text-white hover:from-blue-400 hover:to-violet-400 transition-all shadow-lg shadow-blue-500/25"
           >
-            {t("bookDemo")}
-          </a>
+            {t("contactUs")}
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -317,9 +305,6 @@ export default function Navbar() {
             className="lg:hidden nav-blur mt-2 mx-4 rounded-xl overflow-hidden"
           >
             <div className="p-6 space-y-4">
-              <div className="flex items-center justify-between pb-2">
-                <LanguageSwitcher />
-              </div>
               <button onClick={() => { scrollTo("features"); setMobileOpen(false); }} className="block text-gray-300 hover:text-white py-2 cursor-pointer">
                 {t("platform")}
               </button>
@@ -341,21 +326,17 @@ export default function Navbar() {
                   ))}
                 </div>
               </div>
-              <button onClick={() => { scrollTo("how-it-works"); setMobileOpen(false); }} className="block text-gray-300 hover:text-white py-2 cursor-pointer">
-                {t("howItWorks")}
-              </button>
               <Link href="/blog" className="block text-gray-300 hover:text-white py-2" onClick={() => setMobileOpen(false)}>
                 {t("resources")}
               </Link>
               <div className="pt-4 border-t border-white/10 space-y-3">
-                <a
-                  href="https://calendly.com/gokulprasad-s-businesscoresolutions/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/contact"
+                  onClick={() => setMobileOpen(false)}
                   className="block text-center py-2.5 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-500 to-violet-500 text-white"
                 >
-                  {t("bookDemo")}
-                </a>
+                  {t("contactUs")}
+                </Link>
               </div>
             </div>
           </motion.div>
@@ -513,14 +494,13 @@ function SolutionsMegaMenu({
                 <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-end">
                   <span className="text-xs text-gray-500">
                     Not sure which fits?{" "}
-                    <a
-                      href="https://calendly.com/gokulprasad-s-businesscoresolutions/30min"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      href="/contact"
+                      onClick={handleClose}
                       className="text-violet-400 hover:text-violet-300"
                     >
-                      Book a demo
-                    </a>
+                      Talk to us
+                    </Link>
                   </span>
                 </div>
               </div>
