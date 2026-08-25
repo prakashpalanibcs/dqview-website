@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { sendMail, getRecipients } from "@/lib/email";
+import { MIN_FILL_MS } from "@/lib/contact-config";
 import {
   buildContactEnquiryHtml,
   buildContactSubject,
@@ -47,8 +48,7 @@ const REQUIRED_FIELDS: (keyof ContactSubmission)[] = [
 /** Deliberately permissive — real validation is whether Graph can deliver. */
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-/** Bots submit instantly; a human takes longer than this to fill seven fields. */
-const MIN_FILL_MS = 3000;
+
 
 function asString(value: unknown): string {
   return typeof value === "string" ? value.trim() : "";

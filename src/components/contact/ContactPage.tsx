@@ -26,12 +26,17 @@ import {
   AREA_OF_INTEREST_OPTIONS,
   ATTRIBUTION_OPTIONS,
 } from "@/lib/contact-content";
+import { MIN_FILL_MS } from "@/lib/contact-config";
 
 const CALENDLY_URL =
   "https://calendly.com/gokulprasad-s-businesscoresolutions/30min";
 
 /** Must match the form `name` in public/__forms.html. */
 const NETLIFY_FORM_NAME = "contact";
+
+/** Google Ads "Submit lead form" conversion: "AW-<id>/<label>". */
+const ADS_CONVERSION_SEND_TO = "AW-18374593051/0vEOCMym_NwcEJuU2LlE";
+
 
 /* ------------------------------------------------------------------ */
 /*  Hero                                                               */
@@ -139,20 +144,21 @@ function MessageForm() {
     mountedAt.current = Date.now();
   }, []);
 
+  /* The success panel offers "send another message", which resets status to
+     idle, so one visitor can submit repeatedly. Google Ads should hear about
+     the lead once, so the conversion is latched to the first success. */
+  const conversionSent = useRef(false);
+
   function update(field: keyof typeof EMPTY_FORM, value: string) {
     setValues((prev) => ({ ...prev, [field]: value }));
   }
 
   /** Sends the enquiry as email via Microsoft Graph. */
-  function submitToGraph() {
+  function submitToGraph(elapsed: number) {
     return fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        ...values,
-        website: honeypot,
-        elapsed: mountedAt.current ? Date.now() - mountedAt.current : 0,
-      }),
+      body: JSON.stringify({ ...values, website: honeypot, elapsed }),
     });
   }
 
@@ -179,6 +185,10 @@ function MessageForm() {
     if (status === "sending") return;
     setStatus("sending");
 
+    // 0 means "mount time not stamped yet", which the server reads as
+    // "skip the timing check".
+    const elapsed = mountedAt.current ? Date.now() - mountedAt.current : 0;
+
     // Sequential, Netlify Forms first: the enquiry is recorded in the dashboard
     // before the email is attempted, so a Graph outage can never lose a lead.
     // Step 1 failing does NOT stop step 2 — the email is the delivery that
@@ -198,7 +208,7 @@ function MessageForm() {
 
     let graphOk = false;
     try {
-      const graphResponse = await submitToGraph();
+      const graphResponse = await submitToGraph(elapsed);
       graphOk = graphResponse.ok;
       if (!graphOk) {
         console.error(`[contact] email delivery failed (${graphResponse.status})`);
@@ -211,6 +221,26 @@ function MessageForm() {
     // recorded and the visitor should not be asked to submit twice. Only both
     // failing is a real failure.
     if (graphOk || netlifyOk) {
+      // Google Ads conversion. Optional-chained because gtag.js loads after
+      // hydration and is commonly ad-blocked; a missing tag must never throw
+      // and cost the visitor their submission.
+      //
+      // The anti-bot checks are re-run here rather than inferred from the
+      // response: /api/contact answers 200 to honeypot and too-fast
+      // submissions on purpose, so a bot is never told it was caught. That
+      // makes a 200 unsafe as proof of a real lead, and reporting bot traffic
+      // to Google Ads would corrupt bidding.
+      const looksHuman = !honeypot && elapsed >= MIN_FILL_MS;
+
+      if (looksHuman && !conversionSent.current) {
+        conversionSent.current = true;
+        window.gtag?.("event", "conversion", {
+          send_to: ADS_CONVERSION_SEND_TO,
+          value: 1.0,
+          currency: "INR",
+        });
+      }
+
       setStatus("success");
       setValues(EMPTY_FORM);
     } else {
