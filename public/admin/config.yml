@@ -17,7 +17,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Excerpt", name: "excerpt", widget: "text" }
-      - { label: "Tag", name: "tag", widget: "select", options: ["Data Quality", "Agentic AI", "SAP Migration", "Data Governance", "ETL"] }
+      - { label: "Tag", name: "tag", widget: "select", options: ["Data Quality", "Data Migration", "SAP Migration", "ETL", "Data Governance", "Agentic AI"] }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
