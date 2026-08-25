@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, User } from "lucide-react";
 import { remark } from "remark";
 import html from "remark-html";
+import gfm from "remark-gfm";
 
 export function generateStaticParams() {
   return getBlogPosts().map((post) => ({ slug: post.slug }));
@@ -38,7 +39,7 @@ export default async function BlogPostRoute({
   const post = getBlogBySlug(slug);
   if (!post) notFound();
 
-  const processedContent = await remark().use(html).process(post.content);
+  const processedContent = await remark().use(gfm).use(html).process(post.content);
   const contentHtml = processedContent.toString();
 
   return (
@@ -79,7 +80,7 @@ export default async function BlogPostRoute({
 
           {/* Content */}
           <div
-            className="prose prose-invert prose-blue max-w-none prose-headings:text-white prose-headings:font-bold prose-p:text-gray-300 prose-p:leading-relaxed prose-li:text-gray-300 prose-a:text-blue-400 prose-strong:text-white"
+            className="prose prose-invert prose-blue max-w-none prose-headings:text-white prose-headings:font-bold prose-p:text-gray-300 prose-p:leading-relaxed prose-li:text-gray-300 prose-a:text-blue-400 prose-strong:text-white prose-table:block prose-table:overflow-x-auto prose-th:text-white prose-th:border-white/10 prose-td:text-gray-300 prose-td:border-white/10 prose-blockquote:text-gray-300 prose-blockquote:border-blue-500/40"
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           />
 

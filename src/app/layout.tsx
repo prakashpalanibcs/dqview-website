@@ -132,11 +132,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           src="https://www.googletagmanager.com/gtag/js?id=G-VY2DPTL0KG"
           strategy="afterInteractive"
         />
+        {/* One gtag.js loader, two configs: GA4 for analytics and Google Ads
+            for conversion tracking. Google's setup email says to paste a second
+            <script src="gtag/js?id=AW-..."> block, but that would load gtag.js
+            twice and can double-count. Adding the config here is the path
+            Google documents for sites that already have the tag from another
+            product, and it inherits the afterInteractive timing above. */}
         <Script id="gtag-config" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-VY2DPTL0KG');`}
+gtag('config', 'G-VY2DPTL0KG');
+gtag('config', 'AW-18374593051');`}
         </Script>
 
         <Script id="clarity" strategy="afterInteractive">
