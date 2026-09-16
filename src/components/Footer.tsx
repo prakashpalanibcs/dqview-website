@@ -106,7 +106,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-sm text-gray-400 hover:text-blue-400 transition-colors"
               >
                 <Linkedin className="w-4 h-4" />
-                Business Core Solutions
+                deKorvai
               </a>
             </div>
           </div>
