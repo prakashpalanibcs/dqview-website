@@ -1,6 +1,7 @@
 ---
 title: "Test Data Management: The Complete Guide"
 excerpt: "Test data management provides the right data for development and testing, safely. What TDM is, why it pays twice, its components from subsetting to governance, and where to start."
+metaDescription: "Test data management provides the right data for development and testing, safely. What TDM is, its components, and where to start."
 tag: "Test Data Management"
 author: "Prakash Palani"
 slug: "test-data-management-guide"

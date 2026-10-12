@@ -1,6 +1,8 @@
 ---
 title: "The 6 Data Quality Dimensions Explained (With Examples)"
 excerpt: "The six data quality dimensions, completeness, accuracy, consistency, validity, uniqueness, and timeliness, explained with clear examples and how to measure each."
+metaTitle: "The 6 Data Quality Dimensions, With Examples"
+metaDescription: "The six data quality dimensions, completeness, accuracy, consistency, validity, uniqueness and timeliness, explained with examples."
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "data-quality-dimensions"

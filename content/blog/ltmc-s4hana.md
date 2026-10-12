@@ -1,6 +1,8 @@
 ---
 title: "LTMC in S/4HANA: Objects, Staging Tables and Its Deprecated Status"
 excerpt: "LTMC opened the S/4HANA Migration Cockpit, but it is deprecated since S/4HANA 2020 and read-only since 2021, replaced by Migrate Your Data. What LTMC was, what carries forward, and what no cockpit version does."
+metaTitle: "LTMC in S/4HANA: Objects, Staging and Deprecation"
+metaDescription: "LTMC opened the S/4HANA Migration Cockpit but is deprecated since 2020 and read-only since 2021. What it was and what carries forward."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "ltmc-s4hana"

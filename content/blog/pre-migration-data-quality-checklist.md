@@ -1,6 +1,7 @@
 ---
 title: "The Pre-Migration Data Quality Checklist for S/4HANA"
 excerpt: "A practical pre-migration data quality checklist for S/4HANA: profiled, de-duplicated, complete, valid, mapped, safe in non-production, and reconcilable. Get your data ready before cutover."
+metaDescription: "A pre-migration data quality checklist for S/4HANA: profiled, de-duplicated, complete, valid, mapped, safe in non-production and reconcilable."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "pre-migration-data-quality-checklist"

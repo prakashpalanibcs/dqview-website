@@ -1,6 +1,7 @@
 ---
 title: "Why Is Data Quality Important? The Real Cost of Bad Data"
 excerpt: "Bad data quietly drains money, delays projects, breaks compliance, and misleads AI. Here is where the cost really lands, and what to do about it."
+metaTitle: "Why Is Data Quality Important?"
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "why-is-data-quality-important"

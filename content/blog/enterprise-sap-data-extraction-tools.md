@@ -1,6 +1,7 @@
 ---
 title: "SAP Data Extraction Tools for Enterprise Migrations"
 excerpt: "Enterprise data extraction tools for SAP migrations: ELT platforms, integration suites, and SAP's own methods (RFC, OData, JDBC). What matters is rule-based, repeatable extraction that feeds profiling."
+metaDescription: "Enterprise data extraction tools for SAP migrations: ELT platforms, integration suites and SAP's own RFC, OData and JDBC methods compared."
 tag: "ETL"
 author: "Prakash Palani"
 slug: "enterprise-sap-data-extraction-tools"

@@ -1,6 +1,7 @@
 ---
 title: "What Is Master Data? A Plain Guide to MDM"
 excerpt: "Master data is your core business entities: customers, products, vendors. How it differs from transaction and reference data, why MDM matters, and what a golden record is."
+metaDescription: "Master data is your core business entities: customers, products, vendors. How it differs from transaction and reference data, and what MDM is."
 tag: "Master Data"
 author: "Prakash Palani"
 slug: "what-is-master-data"

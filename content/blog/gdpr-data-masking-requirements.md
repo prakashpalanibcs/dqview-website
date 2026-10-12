@@ -1,6 +1,8 @@
 ---
 title: "GDPR Data Masking Requirements: What Compliance Actually Needs"
 excerpt: "GDPR does not mandate masking by name, but requires protecting personal data. How masking supports compliance, why reversibility affects scope, and why non-production is the priority."
+metaTitle: "GDPR Data Masking Requirements Explained"
+metaDescription: "GDPR does not mandate masking by name but requires protecting personal data. How masking supports compliance and why non-production comes first."
 tag: "Compliance"
 author: "Prakash Palani"
 slug: "gdpr-data-masking-requirements"

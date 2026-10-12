@@ -1,6 +1,8 @@
 ---
 title: "A Practical Data Quality Framework (Not Another Pyramid)"
 excerpt: "A practical data quality framework in four working parts: measure across dimensions, define rules and thresholds, fix and prevent, and govern. A cycle that keeps data clean, not a diagram."
+metaTitle: "A Practical Data Quality Framework"
+metaDescription: "A practical data quality framework in four parts: measure, define rules, fix and prevent, govern. A cycle that keeps data clean, not a diagram."
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "data-quality-framework"

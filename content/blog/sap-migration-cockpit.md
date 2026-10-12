@@ -1,6 +1,7 @@
 ---
 title: "What Is the SAP Migration Cockpit? The Practical Guide"
 excerpt: "The SAP Migration Cockpit is the standard tool for loading data into S/4HANA. How it works, staging tables vs direct transfer, migration objects, the Migrate Your Data app, and where it stops."
+metaDescription: "The SAP Migration Cockpit is the standard tool for loading data into S/4HANA. How it works, staging vs direct transfer, and where it stops."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "sap-migration-cockpit"

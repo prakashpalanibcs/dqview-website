@@ -1,6 +1,7 @@
 ---
 title: "How Long Does an S/4HANA Migration Really Take?"
 excerpt: "An S/4HANA migration can take months to over a year, driven mostly by data quality and approach. What determines the timeline, why data is the biggest variable, and how profiling makes it realistic."
+metaDescription: "An S/4HANA migration can take months to over a year. What determines the timeline, why data is the biggest variable, and how profiling helps."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "s4hana-migration-timeline"

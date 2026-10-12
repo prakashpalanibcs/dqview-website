@@ -1,6 +1,8 @@
 ---
 title: "ECC to S/4HANA Migration: A Step-by-Step Guide for 2026"
 excerpt: "A step-by-step guide to ECC to S/4HANA migration: assess, prepare data, extract, transform, load through the Migration Cockpit, validate and reconcile. Data-first, for 2026."
+metaTitle: "ECC to S/4HANA Migration: Step-by-Step Guide"
+metaDescription: "ECC to S/4HANA migration step by step: assess, prepare data, extract, transform, load through the Migration Cockpit, validate and reconcile."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "ecc-to-s4hana-migration"

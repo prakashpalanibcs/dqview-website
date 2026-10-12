@@ -1,6 +1,7 @@
 ---
 title: "Tokenization vs Masking: When to Use Each"
 excerpt: "Tokenization is reversible via a vault; masking is generally irreversible. The core difference, when to use each, and where scrambling fits. A practical guide to choosing."
+metaDescription: "Tokenization is reversible via a vault; masking is generally irreversible. The core difference, when to use each, and where scrambling fits."
 tag: "Data Protection"
 author: "Prakash Palani"
 slug: "tokenization-vs-masking"

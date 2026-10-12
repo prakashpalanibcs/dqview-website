@@ -1,6 +1,7 @@
 ---
 title: "S/4HANA Migration: The Complete Guide (Phase by Phase)"
 excerpt: "A phase-by-phase guide to S/4HANA migration: assess, plan, prepare data, convert, migrate, test and reconcile, cut over. Why data preparation is the phase that decides success."
+metaDescription: "S/4HANA migration phase by phase: assess, plan, prepare data, convert, migrate, test and reconcile, cut over. Why data preparation decides it."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "s4hana-migration-guide"

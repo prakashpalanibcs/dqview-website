@@ -1,6 +1,8 @@
 ---
 title: "Greenfield vs Brownfield vs Bluefield: Choosing Your S/4HANA Path"
 excerpt: "Greenfield rebuilds, Brownfield converts, Bluefield selectively transitions. A clear comparison of the three S/4HANA migration approaches, adoption data, and how to choose."
+metaTitle: "Greenfield vs Brownfield vs Bluefield for S/4HANA"
+metaDescription: "Greenfield rebuilds, Brownfield converts, Bluefield selectively transitions. A clear comparison of the three S/4HANA paths and how to choose."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "greenfield-brownfield-bluefield"

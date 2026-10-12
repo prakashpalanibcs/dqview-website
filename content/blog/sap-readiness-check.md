@@ -1,6 +1,8 @@
 ---
 title: "The SAP Readiness Check, Explained: What It Tells You Before You Migrate"
 excerpt: "The SAP Readiness Check (SAP Note 2290622) scans your ECC system and flags simplification items, custom code, sizing, data volume, and financial data quality before migration. What it checks, and what it leaves to you."
+metaTitle: "The SAP Readiness Check, Explained"
+metaDescription: "The SAP Readiness Check scans ECC and flags simplification items, custom code, sizing, data volume and financial data quality before migration."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "sap-readiness-check"

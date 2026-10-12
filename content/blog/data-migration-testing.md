@@ -1,6 +1,8 @@
 ---
 title: "Data Migration Testing: How to Prove Your Migration Worked"
 excerpt: "Data migration testing proves data moved completely and accurately. Pre-migration profiling, validation, and reconciliation, and why a completed load is not a proven one."
+metaTitle: "Data Migration Testing: Prove the Migration Worked"
+metaDescription: "Data migration testing proves data moved completely and accurately. Pre-migration profiling, validation and reconciliation, and why a load is not proof."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "data-migration-testing"

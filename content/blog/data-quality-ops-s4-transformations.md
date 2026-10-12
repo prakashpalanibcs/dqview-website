@@ -1,6 +1,7 @@
 ---
 title: "Own the Middle: Data Quality Operations for S/4 Transformations"
 excerpt: "How data quality operations become the critical middle layer in successful S/4HANA transformation programs."
+metaTitle: "Data Quality Operations for S/4 Transformations"
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "data-quality-ops-s4-transformations"

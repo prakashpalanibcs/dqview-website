@@ -1,6 +1,7 @@
 ---
 title: "Data Cleansing Tools: From Excel to Enterprise"
 excerpt: "Data cleansing tools span spreadsheets to enterprise platforms. What forces the upgrade, the capabilities that matter, why standardisation must precede de-duplication, and cleansing for migrations."
+metaDescription: "Data cleansing tools from spreadsheets to enterprise platforms. What forces the upgrade, the capabilities that matter, and why standardisation comes first."
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "data-cleansing-tools"

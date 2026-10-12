@@ -1,6 +1,7 @@
 ---
 title: "S/4HANA Data Migration Step-by-Step: The DMC Edition"
 excerpt: "A step-by-step guide to S/4HANA data migration with the Migration Cockpit (DMC): create the project, use staging tables, simulate, load, and reconcile. Plus where the Cockpit stops."
+metaDescription: "S/4HANA data migration with the Migration Cockpit step by step: create the project, use staging tables, simulate, load and reconcile."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "s4hana-data-migration-dmc"

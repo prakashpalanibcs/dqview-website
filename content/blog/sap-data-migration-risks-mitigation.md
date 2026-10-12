@@ -1,6 +1,7 @@
 ---
 title: "Data Migration Risks & Mitigation: The SAP Edition"
 excerpt: "The main SAP migration risks, poor data quality, Business Partner conversion errors, financial mismatches, and how to mitigate each. Front-load the data work to design out the risk."
+metaDescription: "The main SAP migration risks, poor data quality, Business Partner conversion errors and financial mismatches, and how to mitigate each."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "sap-data-migration-risks-mitigation"

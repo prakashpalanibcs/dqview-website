@@ -1,6 +1,8 @@
 ---
 title: "Data Quality Rules: The Categories Every Enterprise Should Check"
 excerpt: "Data quality rules turn a vague standard into checkable tests. The five categories to cover, completeness, validity, consistency, uniqueness, and business rules, with examples."
+metaTitle: "Data Quality Rules: Categories to Check"
+metaDescription: "Data quality rules turn a vague standard into checkable tests. The five categories to cover, with examples you can apply."
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "data-quality-rules"

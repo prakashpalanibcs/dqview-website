@@ -1,6 +1,8 @@
 ---
 title: "The SAP ECC 2027 Deadline: Why Your Migration Lives or Dies on Data"
 excerpt: "SAP ECC mainstream maintenance ends 31 December 2027, with extended maintenance to 2030 at a premium. What the deadline really means, and why data readiness decides whether your S/4HANA migration succeeds."
+metaTitle: "The SAP ECC 2027 Deadline and Your Data"
+metaDescription: "SAP ECC mainstream maintenance ends 31 December 2027, with extended maintenance to 2030. What the deadline means and why data readiness decides."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "sap-ecc-2027-deadline-data-migration"

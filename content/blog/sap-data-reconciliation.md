@@ -1,6 +1,8 @@
 ---
 title: "SAP Data Reconciliation: Proving Your Migration Balanced"
 excerpt: "Data reconciliation proves S/4HANA matches ECC. How to reconcile domain by domain, why dry runs at every mock matter, what to do with variances, and the cutover sign-off sequence."
+metaTitle: "SAP Data Reconciliation: Prove It Balanced"
+metaDescription: "Data reconciliation proves S/4HANA matches ECC. How to reconcile domain by domain, why dry runs matter, and the cutover sign-off sequence."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "sap-data-reconciliation"

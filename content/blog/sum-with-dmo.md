@@ -1,6 +1,8 @@
 ---
 title: "SUM with DMO, Explained: How a Brownfield Move to S/4HANA Really Runs"
 excerpt: "SUM's Database Migration Option (DMO) combines a software update and HANA migration in one in-place run. How it works, why the shadow system keeps downtime low, and where data prep still matters."
+metaTitle: "SUM with DMO, Explained: The Brownfield Move"
+metaDescription: "SUM's Database Migration Option combines a software update and HANA migration in one in-place run. How it works and where data prep still matters."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "sum-with-dmo"

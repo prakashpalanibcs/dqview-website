@@ -1,6 +1,8 @@
 ---
 title: "Master Data Harmonization Without Breaking Transactions"
 excerpt: "Master data harmonization reconciles data from multiple systems into one version. How to do it without orphaning transactions: golden records and re-pointing, not deletion."
+metaTitle: "Master Data Harmonization Without Breakage"
+metaDescription: "Master data harmonization reconciles data from multiple systems into one version. How to do it without orphaning transactions: golden records."
 tag: "Master Data"
 author: "Prakash Palani"
 slug: "master-data-harmonization"

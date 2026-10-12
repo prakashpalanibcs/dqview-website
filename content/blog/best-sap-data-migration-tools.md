@@ -1,6 +1,8 @@
 ---
 title: "Best SAP Data Migration Tools 2026: An Honest Referee Guide"
 excerpt: "A practical, honest guide to SAP data migration tools in 2026: Migration Cockpit, BODS, LSMW, and third-party platforms, what each is for, and where they fall short."
+metaTitle: "Best SAP Data Migration Tools 2026: Honest Guide"
+metaDescription: "SAP data migration tools in 2026 compared: Migration Cockpit, BODS, LSMW and third-party platforms. What each is for, and where each falls short."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "best-sap-data-migration-tools"

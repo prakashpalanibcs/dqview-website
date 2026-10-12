@@ -1,6 +1,7 @@
 ---
 title: "ETL Testing Tools: How to Validate Your Pipelines"
 excerpt: "ETL testing tools validate data from source to target: completeness, transformation logic, quality rules, and referential integrity. What to look for, and why pre-load validation matters most."
+metaDescription: "ETL testing tools validate source to target: completeness, transformation logic, quality rules and referential integrity. What to look for."
 tag: "ETL"
 author: "Prakash Palani"
 slug: "etl-testing-tools"

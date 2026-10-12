@@ -22,9 +22,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getBlogBySlug(slug);
   if (!post) return { title: "Not Found" };
+  // The on-page title and excerpt are written to read well; metaTitle and
+  // metaDescription are the shorter variants that fit what Google displays.
+  // The suffix matches the rest of the site, which uses "| deKorvai".
   return {
-    title: `${post.title} | deKorvai Blog`,
-    description: post.excerpt,
+    title: `${post.metaTitle ?? post.title} | deKorvai`,
+    description: post.metaDescription ?? post.excerpt,
     alternates: { canonical: `/blog/${slug}` },
   };
 }

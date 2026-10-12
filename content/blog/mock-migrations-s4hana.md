@@ -1,6 +1,8 @@
 ---
 title: "Mock Migrations: Why Two Dress Rehearsals Beat One Go-Live"
 excerpt: "A mock migration rehearses the full extract, transform, load sequence before cutover. Why two full-volume runs are the minimum, what to measure, and how the cutover window constrains everything."
+metaTitle: "Mock Migrations for S/4HANA: Why Rehearsals Win"
+metaDescription: "A mock migration rehearses the full extract, transform and load sequence before cutover. Why two full-volume runs are the minimum."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "mock-migrations-s4hana"

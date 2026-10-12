@@ -1,6 +1,8 @@
 ---
 title: "How to Measure Data Quality: Metrics, Scorecards and Thresholds"
 excerpt: "How to measure data quality in practice: the dimensions that matter, the metrics behind each, how to set thresholds, and how to turn them into a scorecard leaders will actually use."
+metaTitle: "How to Measure Data Quality: Metrics and Scorecards"
+metaDescription: "How to measure data quality: the dimensions that matter, the metrics behind each, how to set thresholds, and how to build a usable scorecard."
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "how-to-measure-data-quality"

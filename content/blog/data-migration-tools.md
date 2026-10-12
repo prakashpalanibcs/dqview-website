@@ -1,6 +1,7 @@
 ---
 title: "Data Migration Tools: The 2026 Buyer's Guide"
 excerpt: "A category-by-category guide to data migration tools in 2026: cloud replication, ELT pipelines, and enterprise suites. How to evaluate, and why SAP to S/4HANA needs data readiness, not just transport."
+metaDescription: "Data migration tools in 2026 by category: cloud replication, ELT pipelines and enterprise suites. How to evaluate, and why SAP needs data readiness."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "data-migration-tools"
