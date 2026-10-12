@@ -1,6 +1,7 @@
 ---
 title: "What Is Data Quality? Definition, Dimensions and Why It Matters"
 excerpt: "A clear definition of data quality, the dimensions that define it, why it matters to the business, and how to keep it high. A plain-language guide."
+metaTitle: "What Is Data Quality? Definition and Dimensions"
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "what-is-data-quality"

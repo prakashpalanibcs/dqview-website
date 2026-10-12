@@ -1,6 +1,7 @@
 ---
 title: "Test Data Management Tools 2026: A Buyer's Guide"
 excerpt: "TDM tools differ by emphasis: masking, provisioning, synthetic data, or platform specialism. How to choose from your bottleneck, and why referential integrity is the deciding criterion."
+metaDescription: "TDM tools differ by emphasis: masking, provisioning, synthetic data or platform specialism. How to choose from your bottleneck."
 tag: "Test Data Management"
 author: "Prakash Palani"
 slug: "test-data-management-tools"

@@ -1,6 +1,7 @@
 ---
 title: "Fuzzy Duplicate Detection in SAP Master Data"
 excerpt: "Fuzzy duplicate detection finds near-duplicate SAP master data that exact checks miss, using Levenshtein, Jaro-Winkler, and phonetic matching. Why it matters and how to resolve to golden records."
+metaDescription: "Fuzzy duplicate detection finds near-duplicate SAP master data that exact checks miss, using Levenshtein, Jaro-Winkler and phonetic matching."
 tag: "Master Data"
 author: "Prakash Palani"
 slug: "fuzzy-duplicate-detection-sap"

@@ -1,6 +1,8 @@
 ---
 title: "SAP Data Extraction Tools Compared: RFC, OData, JDBC and More"
 excerpt: "How to extract data from SAP: RFC and BAPI, OData, IDocs, and direct database or JDBC reads compared. Which method fits which job, and what matters most for migration."
+metaTitle: "SAP Data Extraction Tools: RFC, OData and JDBC"
+metaDescription: "Extracting data from SAP: RFC and BAPI, OData, IDocs and direct JDBC reads compared. Which method fits which job, and what matters for migration."
 tag: "ETL"
 author: "Prakash Palani"
 slug: "sap-data-extraction-tools"

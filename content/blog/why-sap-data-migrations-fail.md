@@ -1,6 +1,7 @@
 ---
 title: "Why Do SAP Data Migrations Fail? (And How to Avoid It)"
 excerpt: "SAP data migrations fail mostly on data, not technology: poor quality, late data work, no reconciliation. The real causes, why S/4HANA's model exposes them, and how to prevent failure."
+metaDescription: "SAP data migrations fail mostly on data, not technology: poor quality, late data work, no reconciliation. The real causes and how to prevent them."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "why-sap-data-migrations-fail"

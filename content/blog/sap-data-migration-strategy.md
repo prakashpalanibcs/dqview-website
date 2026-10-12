@@ -1,6 +1,8 @@
 ---
 title: "SAP Data Migration Strategy: Building the Plan Before the Tool"
 excerpt: "A SAP data migration strategy decides what moves, what is left behind, how data is cleaned and proven, and in what order, before you choose a tool. A data-first, decision-led guide."
+metaTitle: "SAP Data Migration Strategy: Plan Before Tool"
+metaDescription: "A SAP data migration strategy decides what moves, what is left behind, how data is cleaned and proven, and in what order, before you pick a tool."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "sap-data-migration-strategy"

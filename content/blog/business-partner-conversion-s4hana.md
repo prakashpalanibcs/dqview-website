@@ -1,6 +1,8 @@
 ---
 title: "Business Partner Conversion in S/4HANA: The Vendor-to-BP Guide (CVI)"
 excerpt: "In S/4HANA, customers and vendors become Business Partners via CVI. How Customer/Vendor Integration works, why it is mandatory before conversion, and why data cleansing is the hard part."
+metaTitle: "Business Partner Conversion in S/4HANA: CVI Guide"
+metaDescription: "In S/4HANA, customers and vendors become Business Partners via CVI. How it works, why it is mandatory, and why cleansing is the hard part."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "business-partner-conversion-s4hana"

@@ -1,6 +1,8 @@
 ---
 title: "SAP Data Migration Best Practices: A Data-First Go-Live Guide"
 excerpt: "The SAP data migration best practices that decide go-live: profile early, fix master data, map to the S/4HANA model, validate and reconcile. A practical, data-first guide."
+metaTitle: "SAP Data Migration Best Practices"
+metaDescription: "The SAP data migration best practices that decide go-live: profile early, fix master data, map to the S/4HANA model, validate and reconcile."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "sap-data-migration-best-practices"

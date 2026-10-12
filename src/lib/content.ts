@@ -9,6 +9,11 @@ export interface BlogPost {
   tag: string;
   author: string;
   content: string; // raw markdown body
+  /** Optional SEO overrides. The excerpt and title read well on the page but
+   *  often exceed what Google shows, so a post may supply a tighter pair for
+   *  the <title> and meta description without changing the visible copy. */
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export interface Event {
@@ -36,6 +41,8 @@ export function getBlogPosts(): BlogPost[] {
       tag: data.tag,
       author: data.author,
       content,
+      metaTitle: data.metaTitle,
+      metaDescription: data.metaDescription,
     };
   });
 }
@@ -53,6 +60,8 @@ export function getBlogBySlug(slug: string): BlogPost | undefined {
     tag: data.tag,
     author: data.author,
     content,
+    metaTitle: data.metaTitle,
+    metaDescription: data.metaDescription,
   };
 }
 

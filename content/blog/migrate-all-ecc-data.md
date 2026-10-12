@@ -1,6 +1,7 @@
 ---
 title: "Do You Really Need to Migrate All Your ECC Data?"
 excerpt: "Migrating all your ECC data inflates cost, effort, and risk. The better approach is selective: migrate what the business needs, archive what must be retained, leave the rest. How to decide."
+metaDescription: "Migrating all your ECC data inflates cost, effort and risk. The selective approach: migrate what is needed, archive what must be kept."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "migrate-all-ecc-data"

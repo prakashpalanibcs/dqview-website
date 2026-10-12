@@ -1,6 +1,7 @@
 ---
 title: "Reference Data vs Master Data (With SAP Examples)"
 excerpt: "Master data is your core business entities; reference data is the classification values that categorise them. The difference, SAP examples, and why governance differs."
+metaDescription: "Master data is your core business entities; reference data is the values that classify them. The difference, SAP examples, and why governance differs."
 tag: "Master Data"
 author: "Prakash Palani"
 slug: "reference-data-vs-master-data"

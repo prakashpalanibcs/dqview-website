@@ -1,6 +1,8 @@
 ---
 title: "SAP Data Masking: Tables, Clusters and Sensitive Fields"
 excerpt: "Masking SAP data for non-production: static vs dynamic masking, which fields to protect, the three tests good masking passes, why cross-system consistency matters, and reapplying on refresh."
+metaTitle: "SAP Data Masking: Tables and Sensitive Fields"
+metaDescription: "Masking SAP data for non-production: static vs dynamic, which fields to protect, why cross-system consistency matters, and reapplying on refresh."
 tag: "Data Protection"
 author: "Prakash Palani"
 slug: "sap-data-masking"

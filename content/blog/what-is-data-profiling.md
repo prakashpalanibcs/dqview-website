@@ -1,6 +1,8 @@
 ---
 title: "What Is Data Profiling? Definition, Techniques and Tools"
 excerpt: "Data profiling examines your data to reveal its real structure, content, and quality. The techniques, why it is the essential first step, and its critical role before a migration."
+metaTitle: "What Is Data Profiling? Techniques and Tools"
+metaDescription: "Data profiling examines your data to reveal its real structure, content and quality. The techniques, and why it is the essential first step."
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "what-is-data-profiling"

@@ -1,6 +1,7 @@
 ---
 title: "The S/4HANA Cutover Plan: Runbook, Freeze, Go/No-Go"
 excerpt: "A cutover plan is the timed runbook for switching ECC to S/4HANA: freeze, final delta load, task sequence, reconciliation checkpoints, go/no-go criteria, and rollback. Why rehearsal makes it real."
+metaDescription: "A cutover plan is the timed runbook for switching ECC to S/4HANA: freeze, final delta load, reconciliation checkpoints, go/no-go and rollback."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "s4hana-cutover-plan"

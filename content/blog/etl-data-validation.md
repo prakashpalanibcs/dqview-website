@@ -1,6 +1,8 @@
 ---
 title: "ETL Data Validation: Catch Errors Before the Load, Not After"
 excerpt: "ETL data validation checks data as it moves, so errors are caught before they reach the target. Here are the checks that matter, where to run them, and why pre-load validation wins."
+metaTitle: "ETL Data Validation: Catch Errors Before the Load"
+metaDescription: "ETL data validation checks data as it moves, so errors are caught before the target. The checks that matter and why pre-load validation wins."
 tag: "ETL"
 author: "Prakash Palani"
 slug: "etl-data-validation"

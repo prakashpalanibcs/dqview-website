@@ -1,6 +1,8 @@
 ---
 title: "Data Observability vs Data Quality: Monitoring Isn't Fixing"
 excerpt: "Data observability monitors pipeline health; data quality measures whether the data is fit to use. Here is the real difference, why you need both, and where to start."
+metaTitle: "Data Observability vs Data Quality: The Difference"
+metaDescription: "Data observability monitors pipeline health; data quality measures whether data is fit to use. The real difference, and why you need both."
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "data-observability-vs-data-quality"

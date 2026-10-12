@@ -1,6 +1,8 @@
 ---
 title: "Fuzzy Duplicates in SAP Master Data: How deKorvai Detects, Reports, and Cleanses What Others Miss"
 excerpt: "Fuzzy duplicates silently erode operational efficiency and derail S/4HANA migrations. Learn how deKorvai's pipeline-driven approach finds near-matches, routes them for review, and cleanses both master and transactional data — with real examples."
+metaTitle: "Fuzzy Duplicates in SAP Master Data: deKorvai"
+metaDescription: "Fuzzy duplicates erode efficiency and derail S/4HANA migrations. How deKorvai finds near-matches, routes them for review and cleanses them."
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "fuzzy-duplicate-detection-sap-master-data-dekorvai"

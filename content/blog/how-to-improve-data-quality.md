@@ -1,6 +1,8 @@
 ---
 title: "How to Improve Data Quality: A Practical 7-Step Framework"
 excerpt: "How to improve data quality with a practical seven-step framework: profile, set rules, cleanse, de-duplicate, prevent, monitor, and govern. Fix root causes, not just symptoms."
+metaTitle: "How to Improve Data Quality: A 7-Step Framework"
+metaDescription: "Improve data quality with a seven-step framework: profile, set rules, cleanse, de-duplicate, prevent, monitor and govern. Fix root causes."
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "how-to-improve-data-quality"

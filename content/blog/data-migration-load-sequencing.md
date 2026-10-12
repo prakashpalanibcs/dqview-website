@@ -1,6 +1,8 @@
 ---
 title: "Load Sequencing: Why the Order You Migrate Data Matters"
 excerpt: "Load sequencing is the order you migrate data objects, and dependencies decide it: reference data, then master data, then transactions. How to map the chain and check integrity after each layer."
+metaTitle: "Load Sequencing: Why Migration Order Matters"
+metaDescription: "Load sequencing is the order you migrate data objects: reference, then master, then transactions. How to map the chain and check integrity."
 tag: "Data Migration"
 author: "Prakash Palani"
 slug: "data-migration-load-sequencing"

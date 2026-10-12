@@ -1,6 +1,7 @@
 ---
 title: "SAP Data Migration Cockpit: The Deep Dive"
 excerpt: "Working with the SAP Migration Cockpit: choosing migration objects, extending with LTMOM, populating staging tables, the simulate-fix-repeat loop, and handling rejected records."
+metaDescription: "Working with the SAP Migration Cockpit: choosing migration objects, extending with LTMOM, staging tables, the simulate-fix loop, and rejects."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "sap-data-migration-cockpit-deep-dive"

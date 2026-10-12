@@ -1,6 +1,7 @@
 ---
 title: "Data Profiling Tools Compared (2026)"
 excerpt: "Data profiling tools compared: profiling inside quality platforms, standalone and open-source options, and profiling in catalogues. What separates them, and why the question is what happens after the finding."
+metaDescription: "Data profiling tools compared: quality platforms, standalone and open-source options, and catalogues. What separates them and what happens after."
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "data-profiling-tools"

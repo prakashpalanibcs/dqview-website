@@ -1,6 +1,8 @@
 ---
 title: "SAP Data Volume Management: Why Size Matters Before You Migrate"
 excerpt: "SAP data volume management controls how much data you carry through archiving and cleanup. Why volume drives migration cost and time, the keep-archive-leave decision, and how profiling makes it real."
+metaTitle: "SAP Data Volume Management Before Migration"
+metaDescription: "SAP data volume management controls how much data you carry through archiving and cleanup. Why volume drives migration cost and time."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "sap-data-volume-management"

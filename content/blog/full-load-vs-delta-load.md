@@ -1,6 +1,8 @@
 ---
 title: "Full Load vs Delta Load: Getting SAP Data Extraction Right"
 excerpt: "A full load takes everything; a delta load takes only what changed. The difference, when to use each, and why a migration uses both, full for the initial load and delta before cutover."
+metaTitle: "Full Load vs Delta Load in SAP Data Extraction"
+metaDescription: "A full load takes everything; a delta load takes only what changed. When to use each, and why a migration needs both."
 tag: "ETL"
 author: "Prakash Palani"
 slug: "full-load-vs-delta-load"

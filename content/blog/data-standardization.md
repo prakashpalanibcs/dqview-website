@@ -1,6 +1,7 @@
 ---
 title: "Data Standardization: Techniques and Tools That Work"
 excerpt: "Data standardization brings data into a consistent format, structure, and values, so the same thing looks the same everywhere. The techniques, why it is foundational, and its role in migration."
+metaDescription: "Data standardization brings data into consistent format, structure and values. The techniques, why it is foundational, and its role in migration."
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "data-standardization"

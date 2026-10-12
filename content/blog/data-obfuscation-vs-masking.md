@@ -1,6 +1,8 @@
 ---
 title: "Data Obfuscation vs Masking vs Encryption: The Differences"
 excerpt: "Data obfuscation is the umbrella term; masking, encryption, and tokenization are techniques within it. The real hierarchy, how encryption and masking differ, and how to choose."
+metaTitle: "Data Obfuscation vs Masking vs Encryption"
+metaDescription: "Data obfuscation is the umbrella term; masking, encryption and tokenization sit within it. The real hierarchy, how they differ, and how to choose."
 tag: "Data Protection"
 author: "Prakash Palani"
 slug: "data-obfuscation-vs-masking"

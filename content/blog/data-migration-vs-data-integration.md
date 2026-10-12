@@ -1,6 +1,7 @@
 ---
 title: "Data Migration vs Data Integration: Different Jobs, Different Tools"
 excerpt: "Data migration moves data once; data integration keeps data flowing. Here is the real difference, when you need each, and why confusing them derails projects."
+metaTitle: "Data Migration vs Data Integration: Key Differences"
 tag: "Data Migration"
 author: "Prakash Palani"
 slug: "data-migration-vs-data-integration"

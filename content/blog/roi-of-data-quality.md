@@ -1,6 +1,7 @@
 ---
 title: "The ROI of Data Quality: A Model Your CFO Will Accept"
 excerpt: "The ROI of data quality comes from avoided cost: less rework, fewer delays, lower risk, safer automation. How to baseline the cost of bad data and prove the return."
+metaDescription: "The ROI of data quality comes from avoided cost: less rework, fewer delays, lower risk. How to baseline bad data and prove the return."
 tag: "Data Quality"
 author: "Prakash Palani"
 slug: "roi-of-data-quality"

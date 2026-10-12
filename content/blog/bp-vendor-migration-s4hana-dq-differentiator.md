@@ -1,6 +1,8 @@
 ---
 title: "Business Partner Migration in S/4HANA: How deKorvai Becomes the Differentiator"
 excerpt: "Migrating Vendors as Business Partners in SAP S/4HANA is one of the most complex data challenges. See how deKorvai's ETL intelligence transforms this process from error-prone to predictable."
+metaTitle: "Business Partner Migration in S/4HANA"
+metaDescription: "Migrating vendors as Business Partners in S/4HANA is a hard data problem. How deKorvai makes the process predictable instead of error-prone."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "bp-vendor-migration-s4hana-dq-differentiator"

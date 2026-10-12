@@ -1,6 +1,8 @@
 ---
 title: "The Universal Journal (ACDOCA): Why It Changes Your Data"
 excerpt: "S/4HANA's Universal Journal (ACDOCA) merges BSEG, COEP, FAGLFLEXA and more into one financial table. What it merges, why it ends FI-CO reconciliation, and what it means for migrating financial data."
+metaTitle: "The Universal Journal (ACDOCA) and Your Data"
+metaDescription: "S/4HANA's Universal Journal (ACDOCA) merges BSEG, COEP, FAGLFLEXA and more into one table. Why it ends FI-CO reconciliation."
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "universal-journal-acdoca"

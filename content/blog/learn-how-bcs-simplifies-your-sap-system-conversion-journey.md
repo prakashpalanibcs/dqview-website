@@ -1,6 +1,7 @@
 ---
 title: "Learn How BCS Simplifies Your SAP System Conversion Journey"
 excerpt: "The global shift to SAP S/4HANA marks one of the most significant modernization waves in enterprise IT history."
+metaTitle: "How BCS Simplifies SAP System Conversion"
 tag: "SAP Migration"
 author: "Prakash Palani"
 slug: "learn-how-bcs-simplifies-your-sap-system-conversion-journey"
