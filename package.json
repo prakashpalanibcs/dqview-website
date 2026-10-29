@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/run-next.mjs dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node scripts/run-next.mjs start",
     "lint": "eslint"
   },
   "dependencies": {
@@ -22,6 +22,7 @@
     "remark-html": "^16.0.1"
   },
   "devDependencies": {
+    "@next/env": "16.1.6",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
