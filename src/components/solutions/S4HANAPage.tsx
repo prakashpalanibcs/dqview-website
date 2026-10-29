@@ -1,58 +1,53 @@
 "use client";
 
+import { PlatformFAQ } from "@/components/platform-sections";
 import {
-  PlatformHero,
-  PlatformAnswerFirst,
-  PlatformStatBand,
-  PlatformProblems,
-  PlatformFeatures,
-  PlatformBenefits,
-  PlatformProof,
-  PlatformFAQ,
-  PlatformCTA,
-} from "@/components/platform-sections";
-
-import {
-  SolutionHowItWorks,
   SolutionPoweredBy,
   SolutionRelatedSolutions,
-  SolutionCustomerProof,
 } from "@/components/solution-sections";
 
 import {
+  S4HANAHero,
+  S4HANATrustStrip,
+  S4HANAReadinessSection,
+  S4HANAUrgencyStats,
+  S4HANADataPath,
+  S4HANAApproaches,
+  S4HANAScaleProof,
+  S4HANAFinalCta,
+  S4HANAStickyCta,
+} from "@/components/solutions/s4hana-sections";
+
+import {
   S4HANA_HERO,
-  S4HANA_ANSWER_FIRST,
-  S4HANA_STATS,
-  S4HANA_PROBLEMS,
-  S4HANA_FEATURES,
+  S4HANA_TRUST,
+  S4HANA_FORM,
+  S4HANA_URGENCY,
+  S4HANA_PATH,
   S4HANA_APPROACHES,
-  S4HANA_HOW_IT_WORKS,
-  S4HANA_BENEFITS,
+  S4HANA_SCALE,
   S4HANA_POWERED_BY,
-  S4HANA_PROOF,
-  S4HANA_CUSTOMERS,
   S4HANA_FAQ,
   S4HANA_RELATED_SOLUTIONS,
-  S4HANA_CTA,
+  S4HANA_FINAL_CTA,
+  S4HANA_STICKY_CTA_LABEL,
 } from "@/lib/s4hana-content";
 
 export default function S4HANAPage() {
   return (
     <>
-      <PlatformHero content={S4HANA_HERO} />
-      <PlatformAnswerFirst content={S4HANA_ANSWER_FIRST} />
-      <PlatformStatBand stats={S4HANA_STATS} />
-      <PlatformProblems content={S4HANA_PROBLEMS} />
-      <PlatformFeatures content={S4HANA_FEATURES} />
-      <PlatformFeatures content={S4HANA_APPROACHES} />
-      <SolutionHowItWorks content={S4HANA_HOW_IT_WORKS} />
-      <PlatformBenefits content={S4HANA_BENEFITS} />
+      <S4HANAHero content={S4HANA_HERO} />
+      <S4HANATrustStrip content={S4HANA_TRUST} />
+      <S4HANAReadinessSection content={S4HANA_FORM} />
+      <S4HANAUrgencyStats content={S4HANA_URGENCY} />
+      <S4HANADataPath content={S4HANA_PATH} />
+      <S4HANAApproaches content={S4HANA_APPROACHES} />
+      <S4HANAScaleProof content={S4HANA_SCALE} />
       <SolutionPoweredBy content={S4HANA_POWERED_BY} />
-      <PlatformProof content={S4HANA_PROOF} />
-      <SolutionCustomerProof content={S4HANA_CUSTOMERS} />
       <PlatformFAQ content={S4HANA_FAQ} />
       <SolutionRelatedSolutions content={S4HANA_RELATED_SOLUTIONS} />
-      <PlatformCTA content={S4HANA_CTA} />
+      <S4HANAFinalCta content={S4HANA_FINAL_CTA} />
+      <S4HANAStickyCta label={S4HANA_STICKY_CTA_LABEL} />
     </>
   );
 }

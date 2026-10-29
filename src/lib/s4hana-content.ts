@@ -1,272 +1,280 @@
 /* ------------------------------------------------------------------ */
-/*  SAP S/4HANA Migration Solution Page — Content                      */
+/*  SAP S/4HANA Data Migration Page — Content                          */
+/*                                                                     */
+/*  This page doubles as the landing page for paid ECC-deadline        */
+/*  traffic, so the copy leads with the 2027 deadline and the data     */
+/*  readiness session rather than a generic solution pitch.            */
 /* ------------------------------------------------------------------ */
 
-import type {
-  PlatformHeroProps,
-  AnswerFirstProps,
-  StatItem,
-  ProblemsProps,
-  FeaturesProps,
-  BenefitsProps,
-  ProofProps,
-  FAQProps,
-  CTAProps,
-} from "@/components/platform-sections";
+import type { FAQProps } from "@/components/platform-sections";
 
 import type {
-  HowItWorksContent,
   PoweredByContent,
   RelatedSolutionsContent,
 } from "@/lib/mdm-content";
 
-import type { CustomerProofContent } from "@/lib/dqg-content";
+import type {
+  S4HeroContent,
+  S4TrustContent,
+  S4FormContent,
+  S4StatsContent,
+  S4PathContent,
+  S4ApproachesContent,
+  S4ScaleContent,
+  S4FinalCtaContent,
+} from "@/components/solutions/s4hana-sections";
 
 /* ------------------------------------------------------------------ */
 /*  Meta                                                               */
 /* ------------------------------------------------------------------ */
 
 export const S4HANA_META = {
-  title: "SAP Data Migration to S/4HANA — Validated & DMC-Ready | deKorvai",
+  title: "SAP S/4HANA Data Migration Before the 2027 ECC Deadline | deKorvai",
   description:
-    "deKorvai runs SAP S/4HANA data migration end to end — extract from ECC, profile, transform, validate, and load into DMC staging. 50,000+ vendor records at 100% accuracy. Greenfield, Bluefield & GROW. Book a demo.",
+    "Built for SAP estates with millions of records: deKorvai profiles, transforms, validates and loads ECC data into S/4HANA before support ends on December 31, 2027.",
 };
 
 /* ------------------------------------------------------------------ */
 /*  Hero                                                               */
 /* ------------------------------------------------------------------ */
 
-export const S4HANA_HERO: PlatformHeroProps = {
-  kick: "Solution · SAP S/4HANA Migration",
-  badge: "ECC → S/4HANA · DMC-ready",
-  title: "SAP Data Migration to S/4HANA — ",
-  titleHighlight: "Validated, DMC-Ready",
-  subtitle:
-    "Migrating to S/4HANA is only as good as the data you bring. deKorvai extracts from ECC, profiles and cleanses, transforms to the S/4HANA model, validates, and loads into DMC staging — so data lands accurate, complete, and ready, across Greenfield, Bluefield, and GROW approaches.",
-  rating: "50,000+ vendor records migrated at 100% data accuracy",
-  ledgerTitle: "ECC → S/4HANA · migration",
-  ledgerRows: [
-    {
-      label: "extract from ECC",
-      detail: "",
-      tag: "SOURCED",
-      tagStyle: "bg-emerald-500/20 text-emerald-300",
-    },
-    {
-      label: "profile · transform · validate",
-      detail: "",
-      tag: "CLEAN",
-      tagStyle: "bg-emerald-500/20 text-emerald-300",
-    },
-    {
-      label: "load to DMC staging",
-      detail: "",
-      tag: "DMC-READY",
-      tagStyle: "bg-emerald-500/20 text-emerald-300",
-    },
-  ],
+export const S4HANA_HERO: S4HeroContent = {
+  kicker: "SAP S/4HANA data migration",
+  title: "Land your ECC data in S/4HANA ",
+  titleHighlight: "clean, complete and on time",
+  lede:
+    "deKorvai runs the whole data path of your migration: extraction from ECC, profiling, transformation to the S/4HANA model, validation before load, Migration Cockpit loading and reconciliation. Built for SAP estates with millions of records.",
+  primaryCta: "Book a data readiness session",
+  secondaryCta: "See how it works",
+  fitsPrefix: "For ",
+  fitsApproaches: ["Greenfield", "Brownfield", "Bluefield"],
+  fitsSuffix: " migrations, including SAP GROW.",
+  clockCaption: "Time left on ECC mainstream maintenance",
+  clockNote:
+    "SAP ends mainstream maintenance for ECC 6.0 (EHP 6–8) on December 31, 2027.",
+  clockNoteSmall: "Extended maintenance runs to 2030 at additional cost.",
 };
 
 /* ------------------------------------------------------------------ */
-/*  Answer First (In Short)                                            */
+/*  Trust strip                                                        */
 /* ------------------------------------------------------------------ */
 
-export const S4HANA_ANSWER_FIRST: AnswerFirstProps = {
-  label: "In short",
-  paragraphs: [
-    "SAP S/4HANA data migration moves data from legacy SAP ECC into S/4HANA. The hard part isn't moving data — it's making sure what lands is accurate, complete, and mapped correctly to the new model.",
-    "deKorvai runs the full data path: rule-based extraction from ECC, profiling and validation, transformation to the S/4HANA model, and loading into DMC staging tables — validating before load so the migration lands clean.",
-  ],
+export const S4HANA_TRUST: S4TrustContent = {
+  lead: "Trusted in SAP programmes at",
+  customers: ["Evident Scientific", "GRT Ethanol", "Coromandel International"],
+  credit: "A product of",
+  creditOrg: "Business Core Solutions",
+  certification: "ISO/IEC 42001:2023 certified",
 };
 
 /* ------------------------------------------------------------------ */
-/*  Stat Band                                                          */
+/*  Data readiness session (offer + lead form)                         */
 /* ------------------------------------------------------------------ */
 
-export const S4HANA_STATS: StatItem[] = [
-  { value: "50K+", label: "Vendor records migrated", source: "Documented BP vendor case" },
-  { value: "100%", label: "Data accuracy", source: "Post-migration validation" },
-  { value: "95%+", label: "DMC first-pass rate", source: "BP vendor migration" },
-  { value: "3x", label: "Faster lead time", source: "Compared to manual migration" },
-];
-
-/* ------------------------------------------------------------------ */
-/*  Problems                                                           */
-/* ------------------------------------------------------------------ */
-
-export const S4HANA_PROBLEMS: ProblemsProps = {
-  badge: "The Migration Problem",
-  title: "A migration is only ",
-  titleHighlight: "as good as its data",
-  subtitle:
-    "Move data to S/4HANA without cleaning and validating it first, and you carry every legacy error into a brand-new system — where it's harder and costlier to fix.",
-  items: [
+export const S4HANA_FORM: S4FormContent = {
+  title: "See where your ECC data stands ",
+  titleHighlight: "before the clock runs out",
+  lede:
+    "Book a working session with our migration team. You leave with a clear view of where the data risk sits in your migration and what it will take to land it clean.",
+  bullets: [
     {
-      number: "01",
-      title: "Legacy data is dirty",
+      title: "Your scope, made concrete.",
       description:
-        "ECC data has accumulated duplicates, gaps, and inconsistencies over years. Migrated as-is, it corrupts S/4HANA from day one.",
+        "Which ECC objects move, which history is archived, and what is better left behind.",
     },
     {
-      number: "02",
-      title: "The model changes",
+      title: "Where the risk concentrates for your approach.",
       description:
-        "S/4HANA's data model differs from ECC — vendors become business partners, structures shift. Data has to be transformed, not just copied.",
+        "Business Partner conversion, material master, open items and finance data.",
     },
     {
-      number: "03",
-      title: "Errors surface at load",
+      title: "How deKorvai would run it.",
       description:
-        "Without validation up front, problems appear during DMC load, stalling the migration and forcing rework.",
-    },
-    {
-      number: "04",
-      title: "Only migrate what matters",
-      description:
-        "Not every legacy record should move. Deciding what to migrate needs checks against real business activity.",
+        "Profiling, transformation, validation and reconciliation, shown on the platform.",
     },
   ],
+  assurance: "No obligation. Takes two minutes to request.",
+  step1Title: "Tell us about your migration",
+  step2Title: "Where should we send the invite?",
+  approachLegend: "Which approach are you taking?",
+  approachOptions: ["Greenfield", "Brownfield", "Bluefield", "Not decided yet"],
+  goLiveLegend: "When are you aiming to go live?",
+  goLiveOptions: ["2026", "2027", "2028 or later", "Not set yet"],
+  continueLabel: "Continue",
+  backLabel: "Back to step 1",
+  submitLabel: "Book my data readiness session",
+  sendingLabel: "Sending your request",
+  consentLabel:
+    "Send me occasional updates on S/4HANA data migration. Unsubscribe any time.",
+  successTitle: "Your session request is in",
+  successBody:
+    "Our migration team will contact you at {email} to schedule it.",
+  errorTitle: "We could not send your request",
+  errorBody: "Email us and we will arrange the session:",
+  privacyNote:
+    "We use these details only to arrange your session.",
 };
 
 /* ------------------------------------------------------------------ */
-/*  Features (What deKorvai Does)                                      */
+/*  Urgency stats                                                      */
 /* ------------------------------------------------------------------ */
 
-export const S4HANA_FEATURES: FeaturesProps = {
-  badge: "What deKorvai Does",
-  title: "The full data path ",
-  titleHighlight: "into S/4HANA",
-  subtitle: "",
-  items: [
+export const S4HANA_URGENCY: S4StatsContent = {
+  title: "Why the deadline is really ",
+  titleHighlight: "a data problem",
+  stats: [
     {
-      number: "01",
-      title: "Rule-based extraction",
-      description:
-        "Extract data from source ECC based on extraction rules — full or selective.",
+      value: "37%",
+      label:
+        "of companies still running ECC expect to be on S/4HANA by the end of 2027.",
+      source: "DSAG investment report, 2026",
     },
     {
-      number: "02",
-      title: "Profiling & validation",
-      description:
-        "Mandatory-field checks, duplicate detection, and anomaly checks against the target system.",
+      value: "8%",
+      label: "of completed S/4HANA migrations finished on schedule.",
+      source: "Horváth study of 200 SAP user companies, 2025",
     },
     {
-      number: "03",
-      title: "Active-record checks",
-      description:
-        "Check records against real business activity (e.g. PO/GR/IR/FI line items) to decide what migrates.",
-    },
-    {
-      number: "04",
-      title: "Transformation & mapping",
-      description:
-        "Map to the S/4HANA model — company codes, org structures, account groups, BP roles.",
-    },
-    {
-      number: "05",
-      title: "Validate before load",
-      description:
-        "Pre-load validation and staging so errors are caught before they reach the target.",
-    },
-    {
-      number: "06",
-      title: "DMC staging load",
-      description:
-        "Load into the S/4HANA DMC staging tables, then simulate and migrate.",
-    },
-    {
-      number: "07",
-      title: "Scrambling for clones",
-      description:
-        "Mask data for sandbox and QA clones used during the migration.",
-    },
-    {
-      number: "08",
-      title: "Reconciliation",
-      description:
-        "Reconcile migrated data against the source to confirm accuracy and completeness.",
+      value: "6 in 10",
+      label: "S/4HANA migrations went over budget.",
+      source: "Horváth study of 200 SAP user companies, 2025",
     },
   ],
+  bridge:
+    "The technical conversion is well understood. What slips is the data: duplicates in customer and vendor masters, material views that do not fit the new model, balances that will not reconcile.",
+  bridgeEmphasis:
+    "The earlier you know the condition of your data, the more of your timeline you control.",
 };
 
 /* ------------------------------------------------------------------ */
-/*  Migration Approaches (uses FeaturesProps shape)                     */
+/*  The data path (7 stages)                                           */
 /* ------------------------------------------------------------------ */
 
-export const S4HANA_APPROACHES: FeaturesProps = {
-  badge: "Migration Approaches",
-  title: "Fits your ",
-  titleHighlight: "migration path",
-  subtitle: "",
-  items: [
-    {
-      number: "Greenfield",
-      title: "New implementation",
-      description:
-        "Selective extraction from legacy, clean transformation to the S/4HANA model, and strong profiling to fix quality issues up front.",
-    },
-    {
-      number: "Bluefield",
-      title: "Selective data transition",
-      description:
-        "Hybrid data selection — keep what matters — with complex transformation across entities and simulation cycles before cutover.",
-    },
-    {
-      number: "GROW",
-      title: "SAP GROW programs",
-      description:
-        "Supports SAP GROW programs, including meeting tight timelines for legacy data loads.",
-    },
-  ],
-};
-
-/* ------------------------------------------------------------------ */
-/*  How It Works (flow steps)                                          */
-/* ------------------------------------------------------------------ */
-
-export const S4HANA_HOW_IT_WORKS: HowItWorksContent = {
+export const S4HANA_PATH: S4PathContent = {
   badge: "How It Works",
-  title: "Extract → Profile → Transform → ",
-  titleHighlight: "Load → Migrate",
-  steps: [
-    { step: "1", title: "Extract", description: "Rule-based extraction from ECC." },
-    { step: "2", title: "Profile", description: "Mandatory, duplicate & anomaly checks." },
-    { step: "3", title: "Transform", description: "Map to the S/4HANA model." },
-    { step: "4", title: "Load", description: "Into DMC staging, then simulate." },
-    { step: "5", title: "Migrate", description: "Migrate & reconcile against source." },
+  title: "The full data path, ",
+  titleHighlight: "from ECC to S/4HANA",
+  subtitle:
+    "Seven stages, one platform. Every stage runs on the same rules, so each mock cycle behaves like the last and cutover is a repeat of something already proven.",
+  stages: [
+    {
+      title: "Discovery and assessment",
+      description: "Profile ECC data to size the work before scope and budget are fixed.",
+    },
+    {
+      title: "Data extraction",
+      description: "Rule-based extraction from ECC, full or selective.",
+    },
+    {
+      title: "Profiling and validation",
+      description:
+        "Mandatory fields, duplicates, anomalies and integrity checks against the target.",
+    },
+    {
+      title: "Transformation and scrambling",
+      description:
+        "Mapping to the S/4HANA model, plus data masking (scrambling) for non-production copies.",
+    },
+    {
+      title: "Simulation and reconciliation",
+      description: "Mock runs reconciled against the source before cutover.",
+    },
+    {
+      title: "Migration execution",
+      description: "Orchestrated cutover through the Migration Cockpit (DMC or LTMC).",
+    },
+    {
+      title: "RPA and automation",
+      description: "Post-go-live validation and repetitive tasks, automated.",
+    },
+  ],
+  loopTitle: "Errors go to the people who can fix them",
+  loopBody:
+    "When a record fails validation, deKorvai sends it to the responsible business user to correct and return, so procurement fixes vendors and supply chain fixes materials, without waiting in an IT queue.",
+};
+
+/* ------------------------------------------------------------------ */
+/*  Migration approaches                                               */
+/* ------------------------------------------------------------------ */
+
+export const S4HANA_APPROACHES: S4ApproachesContent = {
+  badge: "Migration Approaches",
+  title: "Built for the way ",
+  titleHighlight: "you are migrating",
+  items: [
+    {
+      name: "Greenfield",
+      subtitle: "New implementation, including SAP GROW",
+      color: "#4ADE80",
+      points: [
+        "Selective extraction from the legacy system",
+        "Clean transformation to the S/4HANA model",
+        "Profiling that fixes quality issues up front",
+        "End-to-end validation and reconciliation",
+      ],
+    },
+    {
+      name: "Brownfield",
+      subtitle: "System conversion with SUM and DMO",
+      color: "#C68A4A",
+      points: [
+        "Cleansing and enrichment before conversion",
+        "Duplicate detection and inconsistency fixing",
+        "Scrambling for sandbox and QA clones",
+        "Reconciliation against the source ECC",
+      ],
+    },
+    {
+      name: "Bluefield",
+      subtitle: "Selective data transition",
+      color: "#3B82F6",
+      points: [
+        "Hybrid data selection: keep what matters",
+        "Transformation across entities and periods",
+        "Mock conversion and simulation cycles",
+        "Selective history with integrity preserved",
+      ],
+    },
   ],
 };
 
 /* ------------------------------------------------------------------ */
-/*  Benefits                                                           */
+/*  Scale and proof                                                    */
 /* ------------------------------------------------------------------ */
 
-export const S4HANA_BENEFITS: BenefitsProps = {
-  badge: "Business Benefits",
-  title: "Land clean, ",
-  titleHighlight: "on time",
-  items: [
+export const S4HANA_SCALE: S4ScaleContent = {
+  title: "Built for SAP estates with ",
+  titleHighlight: "millions of records",
+  lede:
+    "Parallel runs, rule-driven processing and a scalable architecture, so data volume does not decide your timeline.",
+  headlineCase: {
+    title: "Business Partner vendor migration",
+    context:
+      "ECC to S/4HANA: extraction, profiling, transformation and loading into DMC staging tables.",
+    metrics: [
+      { value: "Millions", label: "of records in this migration" },
+      { value: "100%", label: "data accuracy" },
+      { value: "95%+", label: "DMC first-pass rate" },
+      { value: "3x", label: "faster lead time" },
+    ],
+  },
+  cases: [
     {
-      icon: "✓",
-      title: "Accurate from day one",
-      description: "Validation before load means S/4HANA starts with clean, correct data — 100% accuracy on the BP vendor migration.",
+      title: "GRT Ethanol",
+      context: "SAP GROW programme. Legacy data loads delivered against a three-month target.",
     },
     {
-      icon: "⚡",
-      title: "Faster cutover",
-      description: "High DMC first-pass rates and 3x faster lead time reduce rework and delay.",
-    },
-    {
-      icon: "◈",
-      title: "Migrate only what matters",
-      description: "Active-record checks keep dead legacy data out of the new system.",
-    },
-    {
-      icon: "🛡",
-      title: "Safe non-prod clones",
-      description: "Scrambling protects sensitive data in sandbox and QA environments during the project.",
+      title: "Evident Scientific",
+      context:
+        "S/4HANA roll-out for the US region, covering master and transaction data migration with profiling.",
     },
   ],
+  outcomes: [
+    { value: "3x", label: "faster data issue resolution" },
+    { value: "70%", label: "reduction in data errors" },
+    { value: "100%", label: "audit readiness" },
+  ],
+  outcomesSource: "Platform outcomes as reported by Business Core Solutions.",
 };
 
 /* ------------------------------------------------------------------ */
@@ -277,7 +285,8 @@ export const S4HANA_POWERED_BY: PoweredByContent = {
   badge: "Powered By the Platform",
   title: "Migration runs on ",
   titleHighlight: "deKorvai's capabilities",
-  subtitle: "This solution is delivered by the deKorvai platform — explore the capabilities behind it.",
+  subtitle:
+    "This solution is delivered by the deKorvai platform — explore the capabilities behind it.",
   links: [
     {
       href: "/platform/etl",
@@ -298,77 +307,42 @@ export const S4HANA_POWERED_BY: PoweredByContent = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Proof (stats)                                                      */
-/* ------------------------------------------------------------------ */
-
-export const S4HANA_PROOF: ProofProps = {
-  badge: "Proof",
-  title: "50,000+ vendor records migrated at ",
-  titleHighlight: "100% accuracy",
-  description:
-    "A BP vendor migration from ECC to S/4HANA — automated extraction, profiling, transformation, and loading into DMC staging tables.",
-  stats: [
-    { value: "50K+", label: "Vendor Records" },
-    { value: "100%", label: "Data Accuracy" },
-    { value: "95%+", label: "DMC First-Pass" },
-    { value: "3x", label: "Faster Lead Time" },
-  ],
-  ctaText: "",
-  ctaHref: "",
-};
-
-/* ------------------------------------------------------------------ */
-/*  Proof (customer references)                                        */
-/* ------------------------------------------------------------------ */
-
-export const S4HANA_CUSTOMERS: CustomerProofContent = {
-  badge: "",
-  title: "",
-  titleHighlight: "",
-  customers: [
-    {
-      name: "Evident Scientific",
-      description: "S/4HANA roll-out (US) — master & transaction data migration with profiling",
-    },
-    {
-      name: "GRT Ethanol",
-      description: "S/4HANA GROW program — legacy data loads to a 3-month target",
-    },
-  ],
-};
-
-/* ------------------------------------------------------------------ */
 /*  FAQ                                                                */
 /* ------------------------------------------------------------------ */
 
 export const S4HANA_FAQ: FAQProps = {
-  title: "SAP S/4HANA migration, ",
+  title: "SAP S/4HANA data migration, ",
   titleHighlight: "answered",
   items: [
     {
-      question: "How does deKorvai migrate data to S/4HANA?",
+      question: "When does SAP ECC support end?",
       answer:
-        "It extracts from ECC with rules, profiles and validates the data, transforms it to the S/4HANA model, and loads it into DMC staging tables — validating before load so the migration lands clean.",
+        "SAP ends mainstream maintenance for ECC 6.0 with enhancement packages 6 to 8 on December 31, 2027. Extended maintenance is available to December 31, 2030 at additional cost. Mainstream maintenance for enhancement packages 0 to 5 already ended on December 31, 2025.",
     },
     {
-      question: "Which migration approaches are supported?",
+      question: "What does deKorvai do in an S/4HANA migration?",
       answer:
-        "Greenfield (new implementation), Bluefield (selective data transition), and SAP GROW programs.",
+        "It runs the data path: discovery and assessment, rule-based extraction from ECC, profiling and validation, transformation to the S/4HANA model with scrambling for non-production copies, simulation and reconciliation, migration execution through the Migration Cockpit, and post-go-live validation.",
     },
     {
-      question: "How is data accuracy ensured?",
+      question: "Which migration approaches does deKorvai support?",
       answer:
-        "Profiling, mandatory and duplicate checks, transformation mapping, and pre-load validation. On the BP vendor migration this delivered 100% data accuracy and a 95%+ DMC first-pass rate.",
+        "Greenfield including SAP GROW, Brownfield system conversion, and Bluefield selective data transition. The data path adapts to each: selective extraction for Greenfield, cleansing before conversion for Brownfield, and hybrid data selection with history preserved for Bluefield.",
     },
     {
-      question: "How do you decide what to migrate?",
+      question: "How do you prove the data migrated correctly?",
       answer:
-        "Active-record checks test records against real business activity — for example open PO/GR/IR/FI line items — so only relevant data moves.",
+        "Data is validated against business and technical rules before it loads, mock runs are reconciled against the source before cutover, and every operation is recorded in a full audit trail. That gives finance and audit the evidence they need to sign off.",
     },
     {
-      question: "What about sensitive data in test systems?",
+      question: "Can deKorvai handle large data volumes?",
       answer:
-        "Scrambling masks sensitive data in sandbox and QA clones used during the migration.",
+        "Yes. deKorvai is built for SAP estates with millions of records, with parallel runs, rule-driven processing and a scalable architecture. Selective extraction and active-record checks also reduce how much data you need to move in the first place.",
+    },
+    {
+      question: "What happens in a data readiness session?",
+      answer:
+        "You walk through your ECC landscape with our migration team: which objects are in scope, where data risk concentrates for your approach, and how deKorvai would profile, transform, validate and reconcile your data. There is no obligation.",
     },
   ],
 };
@@ -401,13 +375,16 @@ export const S4HANA_RELATED_SOLUTIONS: RelatedSolutionsContent = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  CTA                                                                */
+/*  Final CTA                                                          */
 /* ------------------------------------------------------------------ */
 
-export const S4HANA_CTA: CTAProps = {
-  title: "Land your S/4HANA migration clean",
-  description:
-    "See how deKorvai extracts, validates, and loads your ECC data into S/4HANA — DMC-ready.",
-  buttonText: "Book a Demo",
-  subtext: "A working session on your migration",
+export const S4HANA_FINAL_CTA: S4FinalCtaContent = {
+  title: "ECC support ends December 31, 2027. ",
+  titleHighlight: "Start with your data.",
+  leftPrefix: "",
+  leftMiddle: " days and ",
+  leftSuffix: " hours left on ECC mainstream maintenance.",
+  buttonText: "Book a data readiness session",
 };
+
+export const S4HANA_STICKY_CTA_LABEL = "Book a session";
