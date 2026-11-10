@@ -55,7 +55,7 @@ Reconciliation is often treated as a technical task, but the sign-off that matte
 
 ## How deKorvai helps
 
-Validating migration data accuracy and completeness is one of deKorvai's documented capabilities, and reconciliation is built into its migration flow rather than bolted on at the end. It profiles source data so you know what should move, validates against business and technical rules through the pipeline, preserves referential integrity through transformation, and reconciles the loaded result against the source so counts and values can be proven to match. Because the flow is repeatable, the same reconciliation runs at every mock migration, which is exactly the dry-run pattern that makes cutover predictable. In one documented business partner migration, deKorvai moved more than 50,000 vendor records with 100% data accuracy and a 95%+ first-pass rate.
+Validating migration data accuracy and completeness is one of deKorvai's documented capabilities, and reconciliation is built into its migration flow rather than bolted on at the end. It profiles source data so you know what should move, validates against business and technical rules through the pipeline, preserves referential integrity through transformation, and reconciles the loaded result against the source so counts and values can be proven to match. Because the flow is repeatable, the same reconciliation runs at every mock migration, which is exactly the dry-run pattern that makes cutover predictable. In one documented business partner migration, deKorvai moved millions of records with 100% data accuracy and a 95%+ first-pass rate.
 
 ## Key takeaways
 

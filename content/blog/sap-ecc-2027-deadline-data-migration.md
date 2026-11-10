@@ -89,7 +89,7 @@ The organisations that treat 2027 as a data programme with a technology event at
 
 deKorvai is a data platform built for exactly this work. For S/4HANA migrations, it runs as an end-to-end flow: extract from ECC, profile and validate, transform and map to the S/4HANA model, scramble sensitive data for non-production, then load into the Migration Cockpit (DMC or LTMC) staging tables with reconciliation built in. It supports Greenfield, Bluefield, and GROW programmes.
 
-The point is that data quality, transformation, and validation are not separate tools stitched together at the last minute. They run on one platform, as one process, so readiness is continuous rather than a scramble before go-live. In one documented business partner migration, deKorvai moved more than 50,000 vendor records into DMC staging tables with 100% data accuracy and a 95%+ first-pass rate.
+The point is that data quality, transformation, and validation are not separate tools stitched together at the last minute. They run on one platform, as one process, so readiness is continuous rather than a scramble before go-live. In one documented business partner migration, deKorvai moved millions of records into DMC staging tables with 100% data accuracy and a 95%+ first-pass rate.
 
 ## Key takeaways
 

@@ -65,7 +65,7 @@ It is tempting to treat migration as a finish line, but the data you worked so h
 
 ## How deKorvai helps
 
-deKorvai is built around exactly this data-first sequence. It extracts from ECC using rules, profiles and validates against business and technical checks, transforms and maps to the S/4HANA model, scrambles sensitive data for non-production, and loads into the Migration Cockpit (DMC or LTMC) staging tables with reconciliation built in. In one documented business partner migration, it moved more than 50,000 vendor records with 100% data accuracy and a 95%+ first-pass rate.
+deKorvai is built around exactly this data-first sequence. It extracts from ECC using rules, profiles and validates against business and technical checks, transforms and maps to the S/4HANA model, scrambles sensitive data for non-production, and loads into the Migration Cockpit (DMC or LTMC) staging tables with reconciliation built in. In one documented business partner migration, it moved millions of records with 100% data accuracy and a 95%+ first-pass rate.
 
 ## Key takeaways
 

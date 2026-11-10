@@ -64,7 +64,7 @@ It also creates the audit trail that matters later, when someone asks months aft
 
 ## How deKorvai helps
 
-deKorvai is built to take these risks off the table. It profiles data early to expose quality problems, validates against business and technical rules throughout the pipeline, preserves referential integrity through transformation, scrambles sensitive data for non-production, stages loads so nothing questionable touches the target, and reconciles the result against the source. In one documented business partner migration, it moved more than 50,000 vendor records with 100% data accuracy and a 95%+ first-pass rate.
+deKorvai is built to take these risks off the table. It profiles data early to expose quality problems, validates against business and technical rules throughout the pipeline, preserves referential integrity through transformation, scrambles sensitive data for non-production, stages loads so nothing questionable touches the target, and reconciles the result against the source. In one documented business partner migration, it moved millions of records with 100% data accuracy and a 95%+ first-pass rate.
 
 ## Key takeaways
 

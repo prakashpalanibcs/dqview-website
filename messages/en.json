@@ -282,7 +282,7 @@
     "subtitle": "See how deKorvai orchestrates the full Business Partner migration from SAP ECC to S/4HANA — the most complex workstream in any transformation program.",
     "scenarioTag": "Business Partner",
     "scenarioTitle": "Vendor to Business Partner Migration — SAP ECC to S/4HANA",
-    "scenarioDescription": "50,000+ vendor records across multiple company codes and purchasing organizations, migrated with automated extraction rules, profiling, transformation, and loading into DMC staging tables.",
+    "scenarioDescription": "Millions of records across multiple company codes and purchasing organizations, migrated with automated extraction rules, profiling, transformation, and loading into DMC staging tables.",
     "stages": {
       "extract": {
         "title": "Extract",

@@ -54,7 +54,7 @@ If you strip away the detail, the Migration Cockpit is the reliable, standard wa
 
 ## How deKorvai helps
 
-deKorvai does the upstream work that makes a Cockpit load succeed. It extracts from ECC and other sources with rule-based extraction, profiles and validates data against configurable rules, cleanses and de-duplicates, transforms and maps to the S/4HANA model while preserving referential integrity, and then loads into the Migration Cockpit (DMC or LTMC) staging tables with reconciliation built in. Because the data arriving at the Cockpit is already clean and validated, the load runs with a high first-pass rate. In one documented business partner migration, deKorvai moved more than 50,000 vendor records into DMC staging tables with 100% data accuracy and a 95%+ first-pass rate.
+deKorvai does the upstream work that makes a Cockpit load succeed. It extracts from ECC and other sources with rule-based extraction, profiles and validates data against configurable rules, cleanses and de-duplicates, transforms and maps to the S/4HANA model while preserving referential integrity, and then loads into the Migration Cockpit (DMC or LTMC) staging tables with reconciliation built in. Because the data arriving at the Cockpit is already clean and validated, the load runs with a high first-pass rate. In one documented business partner migration, deKorvai moved millions of records into DMC staging tables with 100% data accuracy and a 95%+ first-pass rate.
 
 ## Key takeaways
 

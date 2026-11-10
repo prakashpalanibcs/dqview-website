@@ -53,7 +53,7 @@ To cut through the crowded market quickly, a few questions do most of the work. 
 
 ## Where deKorvai fits
 
-deKorvai is built for the SAP data-readiness job that general migration tools do not focus on. It profiles ECC data, cleanses and de-duplicates master data with fuzzy matching, transforms and maps to the S/4HANA model while preserving referential integrity, scrambles sensitive data for non-production, and reconciles the loaded result against the source, all as one flow, then loads into the Migration Cockpit (DMC) staging tables. It is not a general-purpose database replication tool; it is the data-readiness layer an SAP ECC to S/4HANA migration needs. In one documented business partner migration, this approach moved more than 50,000 vendor records with 100% data accuracy and a 95%+ first-pass rate.
+deKorvai is built for the SAP data-readiness job that general migration tools do not focus on. It profiles ECC data, cleanses and de-duplicates master data with fuzzy matching, transforms and maps to the S/4HANA model while preserving referential integrity, scrambles sensitive data for non-production, and reconciles the loaded result against the source, all as one flow, then loads into the Migration Cockpit (DMC) staging tables. It is not a general-purpose database replication tool; it is the data-readiness layer an SAP ECC to S/4HANA migration needs. In one documented business partner migration, this approach moved millions of records with 100% data accuracy and a 95%+ first-pass rate.
 
 ## Key takeaways
 
