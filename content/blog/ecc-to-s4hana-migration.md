@@ -59,7 +59,7 @@ The migration does not end the moment S/4HANA goes live, even though it can feel
 
 ## How deKorvai helps
 
-deKorvai runs this entire sequence as one flow. It extracts from ECC using rules, profiles and validates the data, transforms and maps it to the S/4HANA model, scrambles sensitive data for non-production, and loads into the Migration Cockpit (DMC or LTMC) staging tables with reconciliation built in. It supports Greenfield, Bluefield, and GROW approaches, and because data quality, transformation, and validation run on one platform rather than separate tools, readiness is continuous rather than a last-minute scramble. In one documented business partner migration, deKorvai moved more than 50,000 vendor records with 100% data accuracy and a 95%+ first-pass rate.
+deKorvai runs this entire sequence as one flow. It extracts from ECC using rules, profiles and validates the data, transforms and maps it to the S/4HANA model, scrambles sensitive data for non-production, and loads into the Migration Cockpit (DMC or LTMC) staging tables with reconciliation built in. It supports Greenfield, Bluefield, and GROW approaches, and because data quality, transformation, and validation run on one platform rather than separate tools, readiness is continuous rather than a last-minute scramble. In one documented business partner migration, deKorvai moved millions of records with 100% data accuracy and a 95%+ first-pass rate.
 
 ## Key takeaways
 

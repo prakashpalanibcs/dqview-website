@@ -67,7 +67,7 @@ The healthiest way to approach tool selection is to define the data strategy fir
 
 ## Where deKorvai fits
 
-deKorvai is not a replacement for the Migration Cockpit; it is the data-readiness layer in front of it. It extracts from ECC, profiles and validates against business and technical rules, cleanses and de-duplicates, transforms and maps to the S/4HANA model, scrambles sensitive data for non-production, and then loads into the Migration Cockpit (DMC or LTMC) staging tables with reconciliation built in. In other words, it does the upstream data quality work that the native load tools are not designed to do, and hands clean, validated data to the tool that performs the load. In one documented business partner migration, this approach moved more than 50,000 vendor records with 100% data accuracy and a 95%+ first-pass rate.
+deKorvai is not a replacement for the Migration Cockpit; it is the data-readiness layer in front of it. It extracts from ECC, profiles and validates against business and technical rules, cleanses and de-duplicates, transforms and maps to the S/4HANA model, scrambles sensitive data for non-production, and then loads into the Migration Cockpit (DMC or LTMC) staging tables with reconciliation built in. In other words, it does the upstream data quality work that the native load tools are not designed to do, and hands clean, validated data to the tool that performs the load. In one documented business partner migration, this approach moved millions of records with 100% data accuracy and a 95%+ first-pass rate.
 
 ## Key takeaways
 

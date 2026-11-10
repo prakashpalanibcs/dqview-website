@@ -57,7 +57,7 @@ If you remember one thing about LTMC in 2026, let it be this: it is a name from 
 
 ## How deKorvai helps
 
-deKorvai handles the upstream data work that no version of the migration cockpit performs. It extracts from ECC and other sources with rules, profiles and validates the data, cleanses and de-duplicates it, transforms and maps it to the S/4HANA model while preserving referential integrity, and loads the result into the migration cockpit (DMC or LTMC) staging tables with reconciliation built in. In one documented business partner migration, this approach moved more than 50,000 vendor records with 100% data accuracy and a 95%+ first-pass rate, because the data arriving at the staging tables was already ready.
+deKorvai handles the upstream data work that no version of the migration cockpit performs. It extracts from ECC and other sources with rules, profiles and validates the data, cleanses and de-duplicates it, transforms and maps it to the S/4HANA model while preserving referential integrity, and loads the result into the migration cockpit (DMC or LTMC) staging tables with reconciliation built in. In one documented business partner migration, this approach moved millions of records with 100% data accuracy and a 95%+ first-pass rate, because the data arriving at the staging tables was already ready.
 
 ## Key takeaways
 

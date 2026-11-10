@@ -51,7 +51,7 @@ Of all the mitigations, reconciliation deserves special mention because it prote
 
 ## How deKorvai helps
 
-deKorvai is built to take these SAP risks off the table. It profiles data early to expose quality problems, cleanses and de-duplicates master data before the Business Partner conversion, preserves referential integrity through transformation, scrambles sensitive data for non-production sandboxes and QA clones, and reconciles migrated data, including financial data, against the source so accuracy is proven. In one documented business partner migration, this approach moved more than 50,000 vendor records with 100% data accuracy and a 95%+ first-pass rate, because the risks were handled before the load rather than discovered after it.
+deKorvai is built to take these SAP risks off the table. It profiles data early to expose quality problems, cleanses and de-duplicates master data before the Business Partner conversion, preserves referential integrity through transformation, scrambles sensitive data for non-production sandboxes and QA clones, and reconciles migrated data, including financial data, against the source so accuracy is proven. In one documented business partner migration, this approach moved millions of records with 100% data accuracy and a 95%+ first-pass rate, because the risks were handled before the load rather than discovered after it.
 
 ## Key takeaways
 

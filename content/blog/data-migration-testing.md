@@ -52,7 +52,7 @@ Beyond proving the migration worked on go-live day, testing produces something v
 
 ## How deKorvai helps
 
-deKorvai builds testing into the migration itself. It profiles the source before migration to expose quality problems, validates data against business and technical rules throughout the pipeline, and reconciles the loaded data against the source so accuracy is proven rather than assumed. Because it preserves referential integrity through transformation, the relationships between records survive the move. For S/4HANA specifically, it loads into the Migration Cockpit (DMC or LTMC) staging tables with reconciliation built in, and supports the simulation and mock runs that let teams rehearse before the real cutover. In one documented business partner migration, this approach moved more than 50,000 vendor records with 100% data accuracy and a 95%+ first-pass rate.
+deKorvai builds testing into the migration itself. It profiles the source before migration to expose quality problems, validates data against business and technical rules throughout the pipeline, and reconciles the loaded data against the source so accuracy is proven rather than assumed. Because it preserves referential integrity through transformation, the relationships between records survive the move. For S/4HANA specifically, it loads into the Migration Cockpit (DMC or LTMC) staging tables with reconciliation built in, and supports the simulation and mock runs that let teams rehearse before the real cutover. In one documented business partner migration, this approach moved millions of records with 100% data accuracy and a 95%+ first-pass rate.
 
 ## Key takeaways
 

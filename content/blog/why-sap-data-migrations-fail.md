@@ -53,7 +53,7 @@ The teams that migrate successfully share a mindset more than a method: they tre
 
 ## How deKorvai helps
 
-deKorvai is built to take the common causes of failure off the table. It profiles data early to expose quality problems, cleanses and de-duplicates master data, transforms and maps it to the S/4HANA model while preserving referential integrity, and reconciles the loaded data against the source so accuracy is proven rather than assumed. Because profiling, transformation, and validation run on one platform as one flow, data readiness is continuous rather than a last-minute scramble. In one documented business partner migration, this approach moved more than 50,000 vendor records with 100% data accuracy and a 95%+ first-pass rate.
+deKorvai is built to take the common causes of failure off the table. It profiles data early to expose quality problems, cleanses and de-duplicates master data, transforms and maps it to the S/4HANA model while preserving referential integrity, and reconciles the loaded data against the source so accuracy is proven rather than assumed. Because profiling, transformation, and validation run on one platform as one flow, data readiness is continuous rather than a last-minute scramble. In one documented business partner migration, this approach moved millions of records with 100% data accuracy and a 95%+ first-pass rate.
 
 ## Key takeaways
 

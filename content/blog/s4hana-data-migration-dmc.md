@@ -48,7 +48,7 @@ The Cockpit lets you simulate a load before committing data, and this step rewar
 
 ## How deKorvai helps
 
-deKorvai is built to do the upstream work that the Migration Cockpit does not. It connects to SAP ECC and other sources with rule-based extraction, profiles and validates the data against configurable rules, transforms and maps it to the S/4HANA model while maintaining referential integrity, and then loads into the DMC staging tables. Validation runs before load and reconciliation after, so accuracy is proven rather than assumed. In one documented business partner migration, deKorvai moved more than 50,000 vendor records into DMC staging tables, achieving 100% data accuracy and a 95%+ first-pass rate. It supports Greenfield, Bluefield, and GROW programmes.
+deKorvai is built to do the upstream work that the Migration Cockpit does not. It connects to SAP ECC and other sources with rule-based extraction, profiles and validates the data against configurable rules, transforms and maps it to the S/4HANA model while maintaining referential integrity, and then loads into the DMC staging tables. Validation runs before load and reconciliation after, so accuracy is proven rather than assumed. In one documented business partner migration, deKorvai moved millions of records into DMC staging tables, achieving 100% data accuracy and a 95%+ first-pass rate. It supports Greenfield, Bluefield, and GROW programmes.
 
 ## Key takeaways
 

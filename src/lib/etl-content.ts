@@ -295,7 +295,7 @@ export const ETL_ARCHITECTURE: ArchitectureProps = {
 
 export const ETL_PROOF: ProofProps = {
   badge: "PROOF",
-  title: "50,000+ records extracted, validated & loaded — ",
+  title: "Millions of records extracted, validated & loaded — ",
   titleHighlight: "95% first-pass",
   description:
     "A full extract-profile-transform-validate-load pipeline into target staging tables, with pre-load validation catching errors before they reached the target. (Delivered on an SAP migration, using the same engine that runs on any system.)",
