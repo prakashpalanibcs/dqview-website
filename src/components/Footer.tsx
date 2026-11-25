@@ -48,7 +48,7 @@ export default function Footer() {
     {
       title: t("resourcesTitle"),
       links: [
-        { label: t("resourcesLinks.caseStudies"), section: "case-studies" },
+        { label: t("resourcesLinks.caseStudies"), route: "/case-studies" },
         { label: t("resourcesLinks.blog"), route: "/blog" },
         { label: t("resourcesLinks.events"), section: "insights" },
       ],
