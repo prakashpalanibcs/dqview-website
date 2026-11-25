@@ -43,7 +43,7 @@ const INDUSTRY_LINKS = [
 
 const resourceIcons = [FileText, Newspaper];
 const resourceKeys = ["caseStudies", "blog"];
-const resourceSections = ["case-studies", ""];
+const resourceRoutes = ["/case-studies", "/blog"];
 
 /* ------------------------------------------------------------------ */
 /*  Solutions Dropdown Data                                            */
@@ -72,7 +72,7 @@ const SOLUTIONS_LENSES = [
 ];
 
 /** A mobile item either navigates to a route or scrolls to a section on the
- *  current page — Case Studies is the only one of the latter. */
+ *  current page. */
 type MobileItem =
   | { label: string; href: string }
   | { label: string; section: string };
@@ -118,8 +118,7 @@ export default function Navbar() {
     icon: resourceIcons[i],
     title: t(`resourceLinks.${key}.title`),
     desc: t(`resourceLinks.${key}.desc`),
-    section: resourceSections[i],
-    isRoute: key === "blog",
+    href: resourceRoutes[i],
   }));
 
   /* One description of the mobile menu, built from the same data the desktop
@@ -166,11 +165,7 @@ export default function Navbar() {
       label: t("resources"),
       groups: [
         {
-          items: resourceLinks.map((link) =>
-            link.isRoute
-              ? { label: link.title, href: "/blog" }
-              : { label: link.title, section: link.section }
-          ),
+          items: resourceLinks.map((link) => ({ label: link.title, href: link.href })),
         },
       ],
     },
@@ -321,45 +316,24 @@ export default function Navbar() {
                   transition={{ duration: 0.2 }}
                   className="absolute top-full right-0 mt-2 w-[280px] glass rounded-xl p-3"
                 >
-                  {resourceLinks.map((link) =>
-                    link.isRoute ? (
-                      <Link
-                        key={link.title}
-                        href="/blog"
-                        className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group"
-                        onClick={() => setActiveDropdown(null)}
-                      >
-                        <link.icon className="w-5 h-5 text-violet-400 mt-0.5 shrink-0" />
-                        <div>
-                          <div className="text-sm font-medium text-white group-hover:text-violet-300 transition-colors">
-                            {link.title}
-                          </div>
-                          <div className="text-xs text-gray-400 mt-0.5">
-                            {link.desc}
-                          </div>
+                  {resourceLinks.map((link) => (
+                    <Link
+                      key={link.title}
+                      href={link.href}
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group"
+                      onClick={() => setActiveDropdown(null)}
+                    >
+                      <link.icon className="w-5 h-5 text-violet-400 mt-0.5 shrink-0" />
+                      <div>
+                        <div className="text-sm font-medium text-white group-hover:text-violet-300 transition-colors">
+                          {link.title}
                         </div>
-                      </Link>
-                    ) : (
-                      <button
-                        key={link.title}
-                        onClick={() => {
-                          scrollTo(link.section);
-                          setActiveDropdown(null);
-                        }}
-                        className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group w-full text-left cursor-pointer"
-                      >
-                        <link.icon className="w-5 h-5 text-violet-400 mt-0.5 shrink-0" />
-                        <div>
-                          <div className="text-sm font-medium text-white group-hover:text-violet-300 transition-colors">
-                            {link.title}
-                          </div>
-                          <div className="text-xs text-gray-400 mt-0.5">
-                            {link.desc}
-                          </div>
+                        <div className="text-xs text-gray-400 mt-0.5">
+                          {link.desc}
                         </div>
-                      </button>
-                    )
-                  )}
+                      </div>
+                    </Link>
+                  ))}
                 </motion.div>
               )}
             </AnimatePresence>

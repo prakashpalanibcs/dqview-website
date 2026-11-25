@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getBlogPosts } from "@/lib/content";
 import { ALL_INDUSTRIES } from "@/lib/industry-content";
+import { CASE_STUDIES } from "@/lib/case-studies-content";
 
 const SITE = "https://www.dekorvai.com";
 
@@ -30,6 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: SITE, changeFrequency: "weekly", priority: 1 },
     { url: `${SITE}/blog`, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE}/case-studies`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE}/contact`, changeFrequency: "yearly", priority: 0.5 },
   ];
 
@@ -59,5 +61,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...platform, ...solutions, ...industries, ...posts];
+  const caseStudies: MetadataRoute.Sitemap = CASE_STUDIES.map((study) => ({
+    url: `${SITE}/case-studies/${study.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...platform, ...solutions, ...industries, ...caseStudies, ...posts];
 }
